@@ -1,14 +1,10 @@
-import "./styles.css";
-import Header from "./components/Header";
-// import MenuTabs from "./components/MenuTabs";
 import { useState } from "react";
-import MenuTabs from "./components/MenuTabs";
 
 type Content = {
   title: string,
   content: string[]
 }
-
+  
 const data: Content[] = [
   {
     title: "Why React?",
@@ -47,13 +43,30 @@ const data: Content[] = [
   }
 ];
 
-export default function App() {
+
+export default function MenuTabs() {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
 
   return (
-    <div>
-      <Header />
-      <MenuTabs />
+    <div id="tabs">
+      <menu>
+        {data.map((item: Content, index: number) => (
+          <button
+            key={index}
+            className={index === activeContentIndex ? "active" : ""}
+            onClick={() => setActiveContentIndex(index)}
+          >
+            {item.title}
+          </button>
+        ))}
+      </menu>
+      <div id="tab-content">
+        <ul>
+          {data[activeContentIndex].content.map((item: string, index: number) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
     </div>
-  );
+  )
 }
