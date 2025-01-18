@@ -1,5 +1,5 @@
 {
-  "name": "first-react-app",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -8,6 +8,7 @@
     "loader-utils": "3.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
@@ -25,7 +26,7 @@
     "deploy": "gh-pages -b main -d build",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://laislodi.github.io/portfolio",
+  "homepage": "https://laislodi.github.io/",
   "browserslist": [
     ">0.2%",
     "not dead",
