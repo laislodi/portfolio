@@ -17,6 +17,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+  color: var(--white);
+  background-color: var(--accent-dark-pink);
+  margin: 0;
+}
+
+
 html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
