@@ -26,7 +26,7 @@
     "deploy": "gh-pages -b main -d build",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://laislodi.github.io/",
+  "homepage": "https://laislodi.github.io/portfolio",
   "browserslist": [
     ">0.2%",
     "not dead",
