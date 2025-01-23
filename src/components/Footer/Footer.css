@@ -10,13 +10,13 @@ footer ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
 }
 
 footer li {
   background-color: var(--black);
-  padding: 20px;
+  padding: 15px;
   border: 6px solid var(--white);
   border-radius: 10%;
 }
@@ -27,17 +27,25 @@ footer li {
   fill: var(--white)
 }
 
-@media (max-width: 1200px) {}
-
 @media (max-width: 1000px) {
   .social svg {
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     fill: var(--white)
   }
 }
 
 @media (max-width: 700px) {
+  ul {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .social {
+    justify-items: center;
+  }
+
   .social svg {
     width: 50px;
     height: 50px;
