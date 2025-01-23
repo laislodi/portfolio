@@ -14,13 +14,8 @@ jobs:
 
     runs-on: ubuntu-latest
     permissions:
-      actions: write
-      checks: read
+      contents: read
       deployments: write
-      pages: write
-      pull-requests: write
-      statuses: read
-
 
     strategy:
       matrix:
