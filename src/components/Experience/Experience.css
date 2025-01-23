@@ -36,6 +36,7 @@
   align-items: center;
   transform: translateX(-50%);
   width: 80vw;
+  max-width: 1280px;
 }
 
 #experience ul li .job {
@@ -195,12 +196,6 @@
     width: 70vw;
   }
 }
-
-/* @media(max-width: 800px) {
-  #experience {
-    color: blueviolet;
-  }
-} */
 
 @media(max-width: 600px) {
   #experience ul li .line .where-when {
