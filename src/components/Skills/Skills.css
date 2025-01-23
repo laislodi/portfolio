@@ -27,9 +27,15 @@
 #tech-skills li {
   display: flex;
   flex-direction: column;
-  width: 160px;
+  justify-items: baseline;
+  align-items: center;
+  width: 230px;
   text-align: center;
   padding: 10px;
+}
+
+#soft-skills li img {
+  width: 170px;
 }
 
 #tech-skills li {
@@ -45,13 +51,14 @@
   border: 4px solid var(--accent-light-pink);
   background-color: var(--white);
   padding: 30px 30px;
+  width: 150px;
   border-radius: 50%;
 }
 
 #soft-skills li img,
 #tech-skills li img {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   object-fit: contain;
   align-self: center;
 }
