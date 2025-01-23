@@ -95,7 +95,7 @@ export const SKILLS = {
     }, {
       image: springFrameworkImg,
       type: "backend",
-      title: "Spring Framework"
+      title: "Spring"
     }, {
       image: restImg,
       type: "api",
@@ -127,7 +127,7 @@ export const SKILLS = {
     },{
       image: reactImg,
       type: "frontend",
-      title: "React Library"
+      title: "React"
     }, {
       image: postgreImg,
       type: "database",

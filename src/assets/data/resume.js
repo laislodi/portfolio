@@ -42,16 +42,18 @@ export const RESUME = {
     {
       "company": "Arctic Wolf",
       "title": "Software Developer",
-      "from": {
-        "month": "Oct",
-        "year": 2022
+      "date": {
+        "from": {
+          "month": "Oct",
+          "year": 2022
+        },
+        "to": {
+          "month": "Aug",
+          "year": 2024
+        }
       },
-      "to": {
-        "month": "Aug",
-        "year": 2024
-      },
-      "Location": {
-        "city": "Waterloo,",
+      "location": {
+        "city": "Waterloo",
         "province": "ON",
         "country": "Canada",
         "type": "remote"
@@ -70,15 +72,17 @@ export const RESUME = {
     {
       "company": "Tasktop",
       "title": "Software Engineer II",
-      "from": {
-        "month": "Jan",
-        "year": 2020
+      "date": {
+        "from": {
+          "month": "Jan",
+          "year": 2020
+        },
+        "to": {
+          "month": "Sep",
+          "year": 2022
+        }
       },
-      "to": {
-        "month": "Sep",
-        "year": 2022
-      },
-      "Location": {
+      "location": {
         "city": "Vanvcouver",
         "province": "BC",
         "country": "Canada",
@@ -100,15 +104,17 @@ export const RESUME = {
     {
       "company": "SAP",
       "title": "Java Developer",
-      "from": {
-        "month": "Jan",
-        "year": 2019
+      "date": {
+        "from": {
+          "month": "Jan",
+          "year": 2019
+        },
+        "to": {
+          "month": "Sep",
+          "year": 2019
+        }
       },
-      "to": {
-        "month": "Sep",
-        "year": 2019
-      },
-      "Location": {
+      "location": {
         "city": "Sao Leopoldo",
         "province": "RS",
         "country": "Brazil",
@@ -125,15 +131,17 @@ export const RESUME = {
     }, {
       "company": "Accenture Brasil",
       "title": "Software Analyst",
-      "from": {
-        "month": "Oct",
-        "year": 2017
+      "date": {
+        "from": {
+          "month": "Oct",
+          "year": 2017
+        },
+        "to": {
+          "month": "Jan",
+          "year": 2019
+        }
       },
-      "to": {
-        "month": "Jan",
-        "year": 2019
-      },
-      "Location": {
+      "location": {
         "city": "Porto Alegre",
         "province": "RS",
         "country": "Brazil",
@@ -195,6 +203,15 @@ export const RESUME = {
       "url": "",
       "github": "https://github.com/laislodi/Rock-Paper-Scissors-Lizard-Spock",
       "languages": ["Python"],
+      "technologies": [],
+      "screenshots": []
+    },
+    {
+      "name": "Anoter cute project",
+      "description": "This project is to check my portfolio. Just a mock. Nothing here",
+      "url": "",
+      "github": "https://github.com/laislodi/",
+      "languages": [],
       "technologies": [],
       "screenshots": []
     },
