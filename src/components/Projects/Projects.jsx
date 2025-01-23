@@ -1,8 +1,6 @@
 // This component is gonna be used to show my personal projects
 import { RESUME } from "../../assets/data/resume.js";
 import "./Projects.css";
-import { FaArrowUp } from "react-icons/fa";
-import { IconContext } from "react-icons"
 
 export default function Projects() {
   const projects = RESUME["projects"];
@@ -10,30 +8,24 @@ export default function Projects() {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <div className="back-button">
-        <IconContext.Provider value={{ 
-          size: "80px",
-          color: "var(--white)"
-        }}>
-          <div className="back-button-icon">
-            {/* TODO: Make this button sticky and appearing just on the second section */}
-            <a href="#home"><FaArrowUp /></a>
-          </div>
-        </IconContext.Provider>
-      </div>
+      <a href="#" className="back-button">
+        <span class="material-icons">
+          keyboard_double_arrow_up
+        </span>
+      </a>
       <ul className="project-list">
-        {projects.map((project) => (
-          <div className="project-info" key={project.name}>
+        {projects.map((project, index) => (
+          <div key={project.name.concat(index.toString())} className="project-info">
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <ul className="tech-list">
-              {project.languages.map((language) => (
-                <li key={language}>
+              {project.languages.map((language, i) => (
+                <li key={project.name.concat("-lang-").concat(i.toString())}>
                   {language}
                 </li>
               ))}
-              {project.technologies.map((technology) => (
-                <li key={technology}>
+              {project.technologies.map((technology, i) => (
+                <li key={project.name.concat("-tech-").concat(i.toString())}>
                   {technology}
                 </li>
               ))}
