@@ -6,7 +6,9 @@ export default function Experience() {
 
   return (
     <section id="experience">
-      <h1 id="timeline">Experience</h1>
+      <a href="#experience" className="title-link">
+        <h1 id="timeline">Experience</h1>
+      </a>
       <div id="exp-max-width">
         <ul>
           {jobExperiences.map((experience, index) => (

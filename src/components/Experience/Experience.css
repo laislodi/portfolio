@@ -3,6 +3,12 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  min-height: 100vh;
+}
+
+#experience .title-link {
+  text-decoration: none;
+  color: var(--white);
 }
 
 #exp-max-width {
@@ -27,7 +33,6 @@
   margin: 0 auto;
   padding: 10px 0;
   background-color: var(--white);
-  /* max-height: 250px; */
 }
 
 #experience ul li .line {

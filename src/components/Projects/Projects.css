@@ -1,5 +1,11 @@
 #projects {
   position: relative;
+  min-height: 100vh;
+}
+
+#projects .title-link {
+  text-decoration: none;
+  color: var(--black)
 }
 
 #projects .project-list {

@@ -7,7 +7,7 @@ export default function Projects() {
 
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <a href="#projects" className="title-link"><h1>Projects</h1></a>
       <a href="#" className="back-button">
         <span class="material-icons">
           keyboard_double_arrow_up

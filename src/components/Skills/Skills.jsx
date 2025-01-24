@@ -1,13 +1,18 @@
 import { SKILLS } from "../../assets/data/data.js";
 import "./Skills.css";
 
-export default function SoftSkills(props) {
+export default function Skills(props) {
   const skills = props.typeOfSkill === "soft" ? SKILLS.soft : SKILLS.tech
+  const sectionId = props.typeOfSkill === "soft" ? "soft-skills" : "tech-skills";
+  const title = props.typeOfSkill === "soft" ? "Soft Skills" : "Tech Skills";
+  const titleLinkClass = props.typeOfSkill === "soft" ? "solft-skill-title-link" : "tech-skill-title-link";
 
   return (
-    <section id={props.typeOfSkill === "soft" ? "soft-skills" : "tech-skills"}>
+    <section id={sectionId}>
       <div className="max-width">
-        <h2>{props.typeOfSkill === "soft" ? "Soft" : "Tech"} Skills</h2>
+        <a href={"#".concat(sectionId)} className={titleLinkClass}>
+          <h1>{title}</h1>
+        </a>
         <ul>
           {skills.map(skill => (
             <li key={skill.title}>
