@@ -17,20 +17,13 @@
   gap: 20px;
 }
 
-.back-button {
-  position: fixed;
-  bottom: 80px;
-  right: 80px;
-}
-
 .project-info {
-  flex-basis: 40%;
+  flex-basis: 45%;
   background-color: var(--accent-dark-blue);
   border-radius: 10px;
   color: var(--white);
   padding: 10px;
-  width: 45%;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 ul.tech-list {
@@ -60,8 +53,24 @@ ul.tech-list li:hover {
   }
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1000px) {
+  .back-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
+}
 
-@media (max-width: 1000px) {}
-
-@media (max-width: 700px) {}
+@media (max-width: 800px) {
+  .back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  #projects {
+    padding: 15px;
+  }
+  .project-info {
+    flex-basis: 80%;
+  }
+}

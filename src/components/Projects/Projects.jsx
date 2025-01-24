@@ -8,11 +8,6 @@ export default function Projects() {
   return (
     <section id="projects">
       <a href="#projects" className="title-link"><h1>Projects</h1></a>
-      <a href="#" className="back-button">
-        <span class="material-icons">
-          keyboard_double_arrow_up
-        </span>
-      </a>
       <ul className="project-list">
         {projects.map((project, index) => (
           <div key={project.name.concat(index.toString())} className="project-info">
