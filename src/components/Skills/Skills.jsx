@@ -19,8 +19,10 @@ export default function Skills(props) {
               <div className="skill-container">
                 <img src={skill.image} alt={skill.title} />
               </div>
-              <h4>{skill.title}</h4>
-              {skill.description ? <p>{skill.description}</p> : null}
+              <div className="skill-details">
+                <h4>{skill.title}</h4>
+                {skill.description ? <p>{skill.description}</p> : null}
+              </div>
             </li>)
           )}
         </ul>

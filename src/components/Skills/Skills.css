@@ -88,4 +88,27 @@
 
 @media (max-width: 1000px) {}
 
-@media (max-width: 700px) {}
+@media (max-width: 700px) {
+  section {
+    padding: 25px;
+  }
+  #soft-skills ul {
+    gap: 1rem;
+  }
+  #soft-skills li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+  }
+  #tech-skills ul {
+    gap: 1rem;
+  }
+  #tech-skills li{
+    flex-basis: 30%;
+  }
+  #soft-skills .skill-details {
+    display: flex;
+    flex-direction: column;
+  }
+}
