@@ -36,7 +36,7 @@ footer li {
 }
 
 @media (max-width: 700px) {
-  ul {
+  footer ul {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
