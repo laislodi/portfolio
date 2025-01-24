@@ -1,0 +1,60 @@
+.back-button {
+  position: fixed;
+  z-index: 2;
+  bottom: 80px;
+  right: 80px;
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 40%;
+}
+
+.back-button:hover {
+  box-shadow: 2px 2px 2px var(--shadow-pink);
+}
+
+.material-icons {
+  transform: translateY(3px);
+}
+
+.material-icons:hover {
+  transform: translateY(0);
+}
+
+.menu {
+  position: relative;
+  margin-top: 100px
+}
+
+.menu .menu-list{
+  list-style: none;
+  padding: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content;
+  display: inline-flex;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgb(78, 30, 57, 0.85);
+  box-shadow: 0 0 8px 8px var(--shadow-pink);
+  border-radius: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.menu .menu-option {
+  padding: 0 10px;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
+

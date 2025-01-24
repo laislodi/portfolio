@@ -1,4 +1,5 @@
 import Header from "./components/Header/Header.jsx";
+import Menu from "./components/Menu/Menu.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Experience from "./components/Experience/Experience.jsx";
 import Skills from "./components/Skills/Skills.jsx";
@@ -17,6 +18,7 @@ export default function App() {
       <Skills typeOfSkill="soft" />
       <Skills typeOfSkill="tech" />
       <Footer/>
+      <Menu />
     </Fragment>
   );
 }
