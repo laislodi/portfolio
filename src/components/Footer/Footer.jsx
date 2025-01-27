@@ -2,7 +2,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id="contact">
       <h1>Contact</h1>
       <div className="social">
         <ul>
