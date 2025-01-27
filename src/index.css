@@ -55,20 +55,3 @@ section {
   align-items: center;
   max-width: 2000px;
 }
-
-section:nth-child(even) {
-  background-color: var(--accent-light-pink);
-  color: var(--black);
-}
-
-section:nth-child(even) h2 {
-  color: var(--black);
-}
-
-section:nth-child(odd) {
-  color: var(--white);
-}
-
-section:nth-child(odd) h2 {
-  color: var(--white);
-}

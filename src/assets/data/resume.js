@@ -14,17 +14,19 @@ export const RESUME = {
   "about": "Full Stack Developer with 5+ years of experience building large-scale web applications. Proficient in ReactJS, Javascript, HTML, and CSS. A strong advocate for best practices. Collaborative and data-driven, passionate about delivering high-quality, user-centred solutions in dynamic environments.",
   "education": [
      {
-      "name": "Universidade Federal do Espirito Santo",
+      "institution": "Universidade Federal do Espirito Santo",
+      "name": "Computer Engineering",
       "location": {
         "city": "Sao Mateus",
         "state": "ES",
         "country": "Brazil"
       },
-      "type": "Barchelor",
+      "type": "Bachelor",
       "year": 2015
      },
      {
-      "name": "Centro Federal de Educacao Tecnologica do Espirito Santo",
+      "institution": "Centro Federal de Educacao Tecnologica do Espirito Santo",
+      "name": "High School",
       "location": {
         "city": "Colatina",
         "state": "ES",
