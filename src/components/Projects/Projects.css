@@ -1,6 +1,7 @@
 #projects {
   position: relative;
   min-height: 100vh;
+  background-color: var(--accent-light-pink);
 }
 
 #projects .title-link {

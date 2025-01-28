@@ -1,13 +1,10 @@
 import "./Menu.css";
 
-
 export default function Menu() {
-
-
   return (<>
       <div className="menu">
         <ul className="menu-list">
-          <a href="#portfolio">
+          <a href="#">
             <li className="menu-option">Portfolio</li>
           </a>
           <a href="#projects">

@@ -1,3 +1,8 @@
+#tech-skills {
+  background-color: var(--accent-light-pink);
+  color: var(--black);
+}
+
 #soft-skills, #tech-skills {
   display: flex;
   flex-direction: column;
