@@ -22,3 +22,31 @@
   padding: 10px;
   flex-basis: 50%;
 }
+
+@media (max-width: 800px) {
+  #education ul.certification-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  #education ul.certification-list li {
+    flex-basis: 40%;
+  }
+  #education ul.education-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  #education ul.education-list li {
+    flex-basis: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  #education ul.certification-list li {
+    flex-basis: 80%;
+  }
+}
