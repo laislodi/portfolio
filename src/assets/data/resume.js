@@ -209,12 +209,12 @@ export const RESUME = {
       "screenshots": []
     },
     {
-      "name": "Anoter cute project",
-      "description": "This project is to check my portfolio. Just a mock. Nothing here",
-      "url": "",
-      "github": "https://github.com/laislodi/",
-      "languages": [],
-      "technologies": [],
+      "name": "Vancouver Aquarium Exibitions",
+      "description": "This app is built using Google Maps Javascript API to create a funny way of showing the exibits going on in the Vancouver Aquarium.",
+      "url": "https://laislodi.github.io/vancouver-aquarium-map/",
+      "github": "https://github.com/laislodi/vancouver-aquarium-map/",
+      "languages": ["HTML", "CSS", "Javascript"],
+      "technologies": ["Google API"],
       "screenshots": []
     },
     {

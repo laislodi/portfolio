@@ -19,6 +19,8 @@
 }
 
 .project-info {
+  display: flex;
+  justify-content: space-between;
   flex-basis: 45%;
   background-color: var(--accent-dark-blue);
   border-radius: 10px;
@@ -29,15 +31,22 @@
 
 ul.tech-list {
   display: flex;
+  justify-content: center;
   padding-left: 0;
+  margin: 2px;
 }
 
 ul.tech-list li {
+  display: flex;
+  justify-content: center;
   padding: 1px 5px;
+  margin: 2px 4px;
+  border: 1px solid var(--accent-light-pink);
+  border-radius: 6px;
 }
 
 ul.tech-list li:hover {
-  border: 1px solid var(--shadow-pink);
+  border: 1px solid var(--accent-light-pink);
   box-shadow: 2px 2px 2px var(--shadow-pink);
   border-radius: 6px;
 }
@@ -45,7 +54,37 @@ ul.tech-list li:hover {
 .project-list li {
   display: flex;
   flex-direction: column;
-  
+}
+
+.project-info .project-links {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0;
+  gap: 1rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+}
+
+.project-links a:hover {
+  color: var(--accent-pink);
+  text-shadow: var(--shadow-pink) 3px 3px 4px;
+}
+
+.project-links a img {
+  margin: auto;
+}
+
+img.white {
+  filter: invert(100%);
+}
+
+.project-links a .github-link {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 @media(min-width: 1280px) {
@@ -63,11 +102,6 @@ ul.tech-list li:hover {
 }
 
 @media (max-width: 800px) {
-  .back-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
   #projects {
     padding: 15px;
   }

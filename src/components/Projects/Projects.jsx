@@ -1,5 +1,6 @@
 // This component is gonna be used to show my personal projects
 import { RESUME } from "../../assets/data/resume.js";
+import GitHubImg from "../../assets/images/github-logo.png";
 import "./Projects.css";
 
 export default function Projects() {
@@ -10,7 +11,7 @@ export default function Projects() {
       <a href="#projects" className="title-link"><h1>Projects</h1></a>
       <ul className="project-list">
         {projects.map((project, index) => (
-          <div key={project.name.concat(index.toString())} className="project-info">
+          <li key={project.name.concat(index.toString())} className="project-info">
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <ul className="tech-list">
@@ -25,12 +26,21 @@ export default function Projects() {
                 </li>
               ))}
             </ul>
-            { project.url && 
-              <a href={project.url} target="_blank">
-                <label>Check it out!</label>
+            <div className="project-links">
+              { project.github && 
+              <a href={project.github} target="_blank">
+                <img className="github-link white" src={GitHubImg} alt="GitHub logo" />
+                <span>Check the code!</span>
               </a>
-            }
-          </div>
+              }
+            
+              { project.url && 
+                <a href={project.url} target="_blank">
+                  <span>Try it!</span>
+                </a>
+              }
+            </div>
+          </li>
         ))}
       </ul>
     </section>
