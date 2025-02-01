@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.399a34c6.css",
-    "main.js": "/portfolio/static/js/main.89a35dc0.js",
+    "main.css": "/portfolio/static/css/main.efdcbd09.css",
+    "main.js": "/portfolio/static/js/main.23125ceb.js",
     "static/media/profile-image.jpg": "/portfolio/static/media/profile-image.45337567a8fab0809fdb.jpg",
     "static/media/postgresql-logo.png": "/portfolio/static/media/postgresql-logo.9f6aa013db4214400b08.png",
     "static/media/mysql.png": "/portfolio/static/media/mysql.167c88550478e6f0f85c.png",
@@ -25,11 +25,11 @@
     "static/media/soft-skill-teamwork.png": "/portfolio/static/media/soft-skill-teamwork.079f505567b9b74c1538.png",
     "static/media/soft-skills-communication.png": "/portfolio/static/media/soft-skills-communication.fc442f094620e0e96ecf.png",
     "index.html": "/portfolio/index.html",
-    "main.399a34c6.css.map": "/portfolio/static/css/main.399a34c6.css.map",
-    "main.89a35dc0.js.map": "/portfolio/static/js/main.89a35dc0.js.map"
+    "main.efdcbd09.css.map": "/portfolio/static/css/main.efdcbd09.css.map",
+    "main.23125ceb.js.map": "/portfolio/static/js/main.23125ceb.js.map"
   },
   "entrypoints": [
-    "static/css/main.399a34c6.css",
-    "static/js/main.89a35dc0.js"
+    "static/css/main.efdcbd09.css",
+    "static/js/main.23125ceb.js"
   ]
 }
