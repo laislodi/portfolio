@@ -7,7 +7,7 @@ import Skills from "./components/Skills/Skills.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import { Fragment } from "react/jsx-runtime";
 import { RESUME } from "./assets/data/resume.js";
-import { SKILLS } from "./assets/data/data.js";
+import { SKILLS, CONTACT } from "./assets/data/data.js";
 
 export default function App() {
   
@@ -28,7 +28,7 @@ export default function App() {
         className="tech-skills"
         id="tech-skills"
       />
-      <Footer/>
+      <Footer contact={CONTACT}/>
     </Fragment>
   );
 }
