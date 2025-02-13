@@ -25,25 +25,45 @@ The portfolio consists of multiple sections, each highlighting different aspects
 ## Project Structure
 ```
 portfolio/
+|-- public/
+│   │-- index.html
+│   │-- logo-purple-sm.png
+│   │-- logo-purple.png
+│   │-- profile-image.jpg
 │-- src/
+│   │-- assets/
+│   │   |-- data/
+│   │   |   |-- data.js
+│   │   |   |-- resume.js
+│   │   |-- images/
 │   │-- components/
-│   │   │-- Header.js
-│   │   │-- Hero.js
-│   │   │-- About.js
-│   │   │-- Projects.js
-│   │   │-- Contact.js
-│   │-- styles/
-│   │   │-- Global.css
-│   │   │-- Header.css
-│   │   │-- Hero.css
-│   │   │-- About.css
-│   │   │-- Projects.css
-│   │   │-- Contact.css
-│   │-- App.js
-│   │-- index.js
-│-- public/
+│   │   │-- Education/
+│   │   |   |-- Education.jsx
+│   │   |   |-- Education.css
+│   │   │-- Experience/
+│   │   |   |-- Experience.jsx
+│   │   |   |-- Experience.css
+│   │   │-- Footer/
+│   │   |   |-- Footer.jsx
+│   │   |   |-- Footer.css
+│   │   │-- Header/
+│   │   |   |-- Header.jsx
+│   │   |   |-- Header.css
+│   │   │-- Menu/
+│   │   |   |-- Menu.jsx
+│   │   |   |-- Menu.css
+│   │   │-- Projects/
+│   │   |   |-- Projects.jsx
+│   │   |   |-- Projects.css
+│   │   │-- Skills/
+│   │   |   |-- Skills.jsx
+│   │   |   |-- Skills.css
+│   │-- App.jsx
+│   │-- index.jsx
+│   │-- index.css
 │-- package.json
 │-- README.md
+│-- tsconfig.json
 ```
 
 ## React Fundamentals Used
