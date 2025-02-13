@@ -36,6 +36,33 @@ portfolio/
 │   │   |   |-- data.js
 │   │   |   |-- resume.js
 │   │   |-- images/
+│   │   |   |-- apollo.png
+│   │   |   |-- bash-shell-logo.png
+│   │   |   |-- bootstrap.png
+│   │   |   |-- css3.png
+│   │   |   |-- django.png
+│   │   |   |-- docker-logo.png
+│   │   |   |-- git-logo.png
+│   │   |   |-- github-logo.png
+│   │   |   |-- graphql-query.png
+│   │   |   |-- html5.png
+│   │   |   |-- java-logo.png
+│   │   |   |-- javascript.png
+│   │   |   |-- jenkins-logo.png
+│   │   |   |-- logo-purple.png
+│   │   |   |-- mysql.png
+│   │   |   |-- postgresql-logo.png
+│   │   |   |-- profile-image.png
+│   │   |   |-- python-logo.png
+│   │   |   |-- react-logo.png
+│   │   |   |-- restfull-api.png
+│   │   |   |-- soft-skill-mentorship.png
+│   │   |   |-- soft-skill-creativity-innovation.png
+│   │   |   |-- soft-skill-teamwork.png
+│   │   |   |-- soft-skill-communication.png
+│   │   |   |-- spring-framework.png
+│   │   |   |-- typescript.png
+│   │   |   |-- unix.png
 │   │-- components/
 │   │   │-- Education/
 │   │   |   |-- Education.jsx
