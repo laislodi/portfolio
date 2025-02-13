@@ -1,9 +1,6 @@
-import { RESUME } from "../../assets/data/resume.js";
 import "./Experience.css";
 
-export default function Experience() {
-  const jobExperiences = RESUME.jobExperience;
-
+export default function Experience({ jobExperiences }) {
   return (
     <section id="experience">
       <a href="#experience" className="title-link">

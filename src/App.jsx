@@ -15,7 +15,7 @@ export default function App() {
       <Header name={RESUME.name} aboutMe={RESUME.about} />
       <Menu />
       <Projects projects={RESUME.projects} />
-      <Experience />
+      <Experience jobExperiences={RESUME.jobExperience} />
       <Education />
       <Skills typeOfSkill="soft" />
       <Skills typeOfSkill="tech" />
