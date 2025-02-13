@@ -1,11 +1,8 @@
 // This component is gonna be used to show my personal projects
-import { RESUME } from "../../assets/data/resume.js";
 import GitHubImg from "../../assets/images/github-logo.png";
 import "./Projects.css";
 
-export default function Projects() {
-  const projects = RESUME["projects"];
-
+export default function Projects({ projects }) {
   return (
     <section id="projects">
       <a href="#projects" className="title-link"><h1>Projects</h1></a>
