@@ -7,6 +7,7 @@ import Skills from "./components/Skills/Skills.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import { Fragment } from "react/jsx-runtime";
 import { RESUME } from "./assets/data/resume.js";
+import { SKILLS } from "./assets/data/data.js";
 
 export default function App() {
   
@@ -17,8 +18,16 @@ export default function App() {
       <Projects projects={RESUME.projects} />
       <Experience jobExperiences={RESUME.jobExperience} />
       <Education education={RESUME.education} certifications={RESUME.certifications} />
-      <Skills typeOfSkill="soft" />
-      <Skills typeOfSkill="tech" />
+      <Skills
+        skills={SKILLS.soft}
+        className="soft-skills"
+        id="soft-skills"
+      />
+      <Skills
+        skills={SKILLS.tech}
+        className="tech-skills"
+        id="tech-skills"
+      />
       <Footer/>
     </Fragment>
   );
