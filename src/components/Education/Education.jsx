@@ -1,11 +1,6 @@
 import "./Education.css";
-import { RESUME } from "../../assets/data/resume.js";
 
-
-export default function Education() {
-  const education = RESUME.education;
-  const certifications = RESUME.certifications;
-
+export default function Education({ education, certifications}) {
   return (
     <section id="education">
       <div className="max-width">

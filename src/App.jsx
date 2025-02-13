@@ -16,7 +16,7 @@ export default function App() {
       <Menu />
       <Projects projects={RESUME.projects} />
       <Experience jobExperiences={RESUME.jobExperience} />
-      <Education />
+      <Education education={RESUME.education} certifications={RESUME.certifications} />
       <Skills typeOfSkill="soft" />
       <Skills typeOfSkill="tech" />
       <Footer/>
