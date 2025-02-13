@@ -1,4 +1,6 @@
 #education {
+  display: flex;
+  justify-content: center;
   background-color: var(--accent-light-pink);
   color: var(--black);
   min-height: 100vh;
@@ -45,7 +47,6 @@
 }
 
 @media (max-width: 500px) {
-
   #education ul.certification-list li {
     flex-basis: 80%;
   }
