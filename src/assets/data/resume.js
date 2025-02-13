@@ -11,7 +11,7 @@ export const RESUME = {
   "medias": {
     "LinkedIn": "https://www.linkedin.com/in/laislodi/"
   },
-  "about": "Full Stack Developer with 5+ years of experience building large-scale web applications. Proficient in ReactJS, Javascript, HTML, and CSS. A strong advocate for best practices. Collaborative and data-driven, passionate about delivering high-quality, user-centred solutions in dynamic environments.",
+  "about": "Full Stack Developer with 5+ years of experience building large-scale web applications. Proficient in ReactJS, Javascript, HTML, and CSS. Also knowledgeble in Java, Python, Relational databases, Docker, Jenkins, Linux environments and AWS. A strong advocate for best practices. Collaborative and data-driven, passionate about delivering high-quality, user-centred solutions in dynamic environments.",
   "education": [
      {
       "institution": "Universidade Federal do Espirito Santo",
@@ -213,16 +213,16 @@ export const RESUME = {
       "description": "This app is built using Google Maps Javascript API to create a funny way of showing the exibits going on in the Vancouver Aquarium.",
       "url": "https://laislodi.github.io/vancouver-aquarium-map/",
       "github": "https://github.com/laislodi/vancouver-aquarium-map/",
-      "languages": ["HTML", "CSS", "Javascript"],
+      "languages": ["HTML", "CSS3", "Javascript"],
       "technologies": ["Google API"],
       "screenshots": []
     },
     {
-      "name": "Anoter cute project",
-      "description": "This project is to check my portfolio. Just a mock. Nothing here",
-      "url": "",
-      "github": "https://github.com/laislodi/",
-      "languages": [],
+      "name": "Tic-Tac-Toe",
+      "description": "A Beautiful Tic Tac Toe game to play online.",
+      "url": "https://laislodi.github.io/tic-tac-toe/",
+      "github": "https://github.com/laislodi/tic-tac-toe",
+      "languages": ["React", "Javascript", "CSS3"],
       "technologies": [],
       "screenshots": []
     },
