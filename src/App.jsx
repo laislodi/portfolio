@@ -6,12 +6,13 @@ import Education from "./components/Education/Education.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import { Fragment } from "react/jsx-runtime";
+import { RESUME } from "./assets/data/resume.js";
 
 export default function App() {
   
   return (
     <Fragment>
-      <Header />
+      <Header name={RESUME.name} aboutMe={RESUME.about} />
       <Menu />
       <Projects />
       <Experience />
