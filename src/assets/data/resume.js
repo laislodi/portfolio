@@ -227,11 +227,11 @@ export const RESUME = {
       "screenshots": []
     },
     {
-      "name": "Anoter cute project",
-      "description": "This project is to check my portfolio. Just a mock. Nothing here",
-      "url": "",
-      "github": "https://github.com/laislodi/",
-      "languages": [],
+      "name": "Investment Calculator",
+      "description": "Investor Calculator is a React single-page application that helps users estimate the growth of their investments over time. By inputting key financial details, the app calculates the future value of an investment based on compound interest.",
+      "url": "https://laislodi.github.io/investment-calculator/",
+      "github": "https://github.com/laislodi/investment-calculator/",
+      "languages": ["React", "Javascript", "CSS3"],
       "technologies": [],
       "screenshots": []
     }
