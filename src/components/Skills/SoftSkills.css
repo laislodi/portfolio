@@ -1,9 +1,4 @@
-#tech-skills {
-  background-color: var(--accent-light-pink);
-  color: var(--black);
-}
-
-#soft-skills, #tech-skills {
+#soft-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,24 +7,12 @@
   font-size: 1.5rem;
 }
 
-#skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .soft-skill-title-link {
   text-decoration: none;
   color: var(--white);
 }
 
-.tech-skill-title-link {
-  text-decoration: none;
-  color: var(--back);
-}
-
-#soft-skills ul,
-#tech-skills ul {
+#soft-skills ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -39,8 +22,7 @@
   justify-content: center;
 }
 
-#soft-skills li,
-#tech-skills li {
+#soft-skills li {
   display: flex;
   flex-direction: column;
   justify-items: baseline;
@@ -54,15 +36,6 @@
   width: 170px;
 }
 
-#tech-skills li {
-  justify-content: space-between;
-}
-
-#tech-skills li:hover {
-  border-radius: 12px;
-  box-shadow: 0 0 8px 8px var(--shadow-pink);
-}
-
 #soft-skills .skill-container {
   border: 4px solid var(--accent-light-pink);
   background-color: var(--white);
@@ -71,32 +44,19 @@
   border-radius: 50%;
 }
 
-#soft-skills li img,
-#tech-skills li img {
+#soft-skills li img {
   height: 70px;
   width: 70px;
   object-fit: contain;
   align-self: center;
 }
 
-#soft-skills li h4,
-#tech-skills li h4 {
+#soft-skills li h4{
   margin: 0.5rem 0;
 }
 
-#soft-skills li p,
-#tech-skills li p {
+#soft-skills li p {
   font-size: 1rem;
-}
-
-@media (max-width: 1000px) {
-  #tech-skills ul {
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  #tech-skills li{
-    flex-basis: 20%;
-  }
 }
 
 @media (max-width: 700px) {
@@ -111,12 +71,6 @@
     flex-direction: row;
     width: 100%;
     gap: 15px;
-  }
-  #tech-skills ul {
-    gap: 0.8rem;
-  }
-  #tech-skills li{
-    flex-basis: 40%;
   }
   #soft-skills .skill-details {
     display: flex;
@@ -134,28 +88,17 @@
     width: 100%;
     gap: 15px;
   }
-  #tech-skills ul {
-    gap: 0.5rem;
-  }
-  #tech-skills li {
-    flex-basis: 40%;
-  }
   #soft-skills .skill-container {
     padding: 12px 12px;
     width: 100px;
   }
-  #tech-skills .skill-container {
-    width: 100px;
-  }
-  #soft-skills li img,
-  #tech-skills li img {
+  #soft-skills li img {
     height: 50px;
     width: 50px;
     object-fit: contain;
     align-self: center;
   }
-  #soft-skills li h4,
-  #tech-skills li h4 {
+  #soft-skills li h4 {
     font-size: 1.3rem;
   }
   #soft-skills li p {

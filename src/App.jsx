@@ -3,7 +3,8 @@ import Menu from "./components/Menu/Menu.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Experience from "./components/Experience/Experience.jsx";
 import Education from "./components/Education/Education.jsx";
-import Skills from "./components/Skills/Skills.jsx";
+import SoftSkills from "./components/Skills/SoftSkills.jsx";
+import TechSkills from "./components/Skills/TechSkills.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import { Fragment } from "react/jsx-runtime";
 import { RESUME } from "./assets/data/resume.js";
@@ -18,16 +19,8 @@ export default function App() {
       <Projects projects={RESUME.projects} />
       <Experience jobExperiences={RESUME.jobExperience} />
       <Education education={RESUME.education} certifications={RESUME.certifications} />
-      <Skills
-        skills={SKILLS.soft}
-        className="soft-skills"
-        id="soft-skills"
-      />
-      <Skills
-        skills={SKILLS.tech}
-        className="tech-skills"
-        id="tech-skills"
-      />
+      <SoftSkills />
+      <TechSkills />
       <Footer contact={CONTACT}/>
     </Fragment>
   );
