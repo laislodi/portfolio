@@ -234,10 +234,19 @@ export const RESUME = {
       "languages": ["React", "Javascript", "CSS3"],
       "technologies": [],
       "screenshots": []
+    },
+    {
+      "name": "Project Management",
+      "description": "React application that manages projects with checkable tasks. It deals with context, refs, portal and routes. The application have dark and light modes.",
+      "url": "https://laislodi.github.io/project-management/",
+      "github": "https://github.com/laislodi/project-management/",
+      "languages": ["React", "React Routes", "Javascript", "Tailwind"],
+      "technologies": [],
+      "screenshots": []
     }
   ],
   "skils": {
-    "proficient": ["Shell Script", "JSON", "Docker", "AWS", "Jira", "Confluence", "React", "React Hooks", "REST API", "Typescript", "ECMA Script", "CSS", "Git", "GitHub", "GitHub Actions", "Cypress", "Vite", "Jest", "Sass"],
+    "proficient": ["Shell Script", "JSON", "Docker", "AWS", "Jira", "Confluence", "React", "React Hooks", "REST API", "Typescript", "ECMA Script", "CSS", "Git", "GitHub", "GitHub Actions", "Cypress", "Vite", "Jest", "Sass", "Tailwind"],
     "intermediate": ["Java", "Python", "Django", "Maven", "Golang", "Ansible", "Jenkins", "GraphQL", "MySQL", "Postgres"]
   },
   "languages": {
