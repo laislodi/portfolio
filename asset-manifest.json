@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.13835f04.css",
-    "main.js": "/portfolio/static/js/main.99e865cf.js",
+    "main.css": "/portfolio/static/css/main.2696a944.css",
+    "main.js": "/portfolio/static/js/main.8ab085a7.js",
     "static/media/profile-image.jpg": "/portfolio/static/media/profile-image.45337567a8fab0809fdb.jpg",
     "static/media/postgresql-logo.png": "/portfolio/static/media/postgresql-logo.9f6aa013db4214400b08.png",
     "static/media/mysql.png": "/portfolio/static/media/mysql.167c88550478e6f0f85c.png",
@@ -27,17 +27,19 @@
     "static/media/cypress.svg": "/portfolio/static/media/cypress.96a238bfe1ec17fa8cc0c6c5fc90f886.svg",
     "static/media/self-motivated.svg": "/portfolio/static/media/self-motivated.b220f7cf29a90c9896bdeac5105d4069.svg",
     "static/media/jest.svg": "/portfolio/static/media/jest.36a7f49982fdcf9b0b86f3540fae1f4c.svg",
+    "static/media/confluence.svg": "/portfolio/static/media/confluence.c91401835582d6d1b991a12331e9256f.svg",
     "static/media/feedback.svg": "/portfolio/static/media/feedback.5f659a1e3ac7ff1be3b7944920024cc7.svg",
+    "static/media/jira.svg": "/portfolio/static/media/jira.5c6a6c10519184961753342ac6fd7dca.svg",
     "static/media/empathy.svg": "/portfolio/static/media/empathy.f26db1fed4391a750f76f5733484c728.svg",
     "static/media/knowledge-share.svg": "/portfolio/static/media/knowledge-share.1a7bb319b96895b4fc10806b1915f88f.svg",
     "static/media/investigative.svg": "/portfolio/static/media/investigative.aedf77506ad3d113090f949b51155f36.svg",
     "index.html": "/portfolio/index.html",
     "static/media/tailwind.svg": "/portfolio/static/media/tailwind.973c73e85d4daa24b257ba20298716c4.svg",
-    "main.13835f04.css.map": "/portfolio/static/css/main.13835f04.css.map",
-    "main.99e865cf.js.map": "/portfolio/static/js/main.99e865cf.js.map"
+    "main.2696a944.css.map": "/portfolio/static/css/main.2696a944.css.map",
+    "main.8ab085a7.js.map": "/portfolio/static/js/main.8ab085a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.13835f04.css",
-    "static/js/main.99e865cf.js"
+    "static/css/main.2696a944.css",
+    "static/js/main.8ab085a7.js"
   ]
 }
