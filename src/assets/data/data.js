@@ -31,6 +31,8 @@ import bootstrapImg from '../images/bootstrap.png';
 import tailwindImg from '../images/tailwind.svg';
 import jestImg from '../images/jest.svg';
 import cypressImg from '../images/cypress.svg';
+import jiraImg from "../images/jira.svg";
+import confluenceImg from "../images/confluence.svg";
 
 const SKILL_TYPE = {
   FRONTEND: "Frontend",
@@ -103,99 +105,107 @@ export const SKILLS = {
   "tech": [
     {
       image: gitImg,
-      type: [SKILL_TYPE.DEVOPS, SKILL_TYPE.BACKEND, SKILL_TYPE.FRONTEND, SKILL_TYPE.COLLABORATION],
+      types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.COLLABORATION],
       title: "Git"
     }, {
       image: gitHubImg,
-      type: [SKILL_TYPE.DEVOPS, SKILL_TYPE.BACKEND, SKILL_TYPE.FRONTEND, SKILL_TYPE.COLLABORATION],
+      types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.COLLABORATION],
       title: "GitHub"
     }, {
+      image: jiraImg,
+      types: [SKILL_TYPE.COLLABORATION],
+      title: "Jira"
+    }, {
+      image: confluenceImg,
+      types: [SKILL_TYPE.COLLABORATION],
+      title: "Confluence"
+    }, {
       image: bashIgm,
-      type: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
+      types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
       title: "Bash"
     }, {
       image: dockerImg,
-      type: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
+      types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
       title: "Docker"
     }, {
       image: linuxImg,
-      type: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
+      types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
       title: "Linux"
     }, {
       image: jenkinsImg,
-      type: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
+      types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
       title: "Jenkins"
     }, {
       image: pythonImg,
-      type: [SKILL_TYPE.BACKEND],
+      types: [SKILL_TYPE.BACKEND],
       title: "Python"
     }, {
       image: djangoImg,
-      type: [SKILL_TYPE.BACKEND],
+      types: [SKILL_TYPE.BACKEND],
       title: "Django"
     }, {
       image: javaImg,
-      type: [SKILL_TYPE.BACKEND],
+      types: [SKILL_TYPE.BACKEND],
       title: "Java"
     }, {
       image: springFrameworkImg,
-      type: [SKILL_TYPE.BACKEND],
+      types: [SKILL_TYPE.BACKEND],
       title: "Spring"
     }, {
       image: restImg,
-      type: [SKILL_TYPE.API],
+      types: [SKILL_TYPE.API],
       title: "REST"
     }, {
       image: graphQLImg,
-      type: [SKILL_TYPE.API],
+      types: [SKILL_TYPE.API],
       title: "GraphQL"
     }, {
       image: apolloImg,
-      type: [SKILL_TYPE.FRONTEND, SKILL_TYPE.API],
+      types: [SKILL_TYPE.FRONTEND],
       title: "Apollo"
     }, {
       image: typescriptImg,
-      type: [SKILL_TYPE.FRONTEND],
+      types: [SKILL_TYPE.FRONTEND],
       title: "Typescript"
     }, {
       image: htmlImg,
-      type: [SKILL_TYPE.FRONTEND],
+      types: [SKILL_TYPE.FRONTEND],
       title: "HTML5"
     }, {
       image: javascriptImg,
-      type: [SKILL_TYPE.FRONTEND],
+      types: [SKILL_TYPE.FRONTEND],
       title: "Javascript"
     }, {
       image: cssImag,
-      type: [SKILL_TYPE.FRONTEND],
+      types: [SKILL_TYPE.FRONTEND],
       title: "CSS3"
     }, {
       image: tailwindImg,
-      type: [SKILL_TYPE.FRONTEND],
+      types: [SKILL_TYPE.FRONTEND],
       title: "Tailwind"
     }, {
       image: reactImg,
-      type: [SKILL_TYPE.FRONTEND],
+      types: [SKILL_TYPE.FRONTEND],
       title: "React"
     }, {
       image: bootstrapImg,
-      type: [SKILL_TYPE.FRONTEND],
+      types: [SKILL_TYPE.FRONTEND],
       title: "Bootstrap"
     }, {
       image: postgreImg,
-      type: [SKILL_TYPE.DATABASE, SKILL_TYPE.BACKEND],
+      types: [SKILL_TYPE.DATABASE, SKILL_TYPE.BACKEND],
       title: "PostgreSQL"
     }, {
       image: mysqlImg,
-      type: [SKILL_TYPE.DATABASE, SKILL_TYPE.BACKEND],
+      types: [SKILL_TYPE.DATABASE, SKILL_TYPE.BACKEND],
       title: "MySQL"
     }, {
       image: cypressImg,
-      type: [SKILL_TYPE.TESTING, SKILL_TYPE.FRONTEND],
+      types: [SKILL_TYPE.TESTING, SKILL_TYPE.FRONTEND],
       title: "Cypress"
     }, {
       image: jestImg,
-      type: [SKILL_TYPE.TESTING, SKILL_TYPE.FRONTEND],
+      types: [SKILL_TYPE.TESTING, SKILL_TYPE.FRONTEND],
       title: "Jest"
     }
   ]

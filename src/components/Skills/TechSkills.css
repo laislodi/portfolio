@@ -17,6 +17,29 @@
   color: var(--black);
 }
 
+#tech-skills .filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  color: var(--white);
+  background-color: var(--shadow-dark);
+  box-shadow: 0 0 8px 8px var(--shadow-pink);
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  gap: 1rem;
+}
+
+#tech-skills .filter .filter-option {
+  display: flex;
+  gap: 1rem
+}
+
+#tech-skills .filter-option #label-select-all {
+  font-weight: bold;
+}
+
 #tech-skills ul {
   list-style: none;
   padding: 0;

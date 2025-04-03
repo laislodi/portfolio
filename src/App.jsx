@@ -8,7 +8,8 @@ import TechSkills from "./components/Skills/TechSkills.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import { Fragment } from "react/jsx-runtime";
 import { RESUME } from "./assets/data/resume.js";
-import { SKILLS, CONTACT } from "./assets/data/data.js";
+import { CONTACT } from "./assets/data/data.js";
+import FilterContextProvider from "./components/Skills/store/filter-context.jsx";
 
 export default function App() {
   
@@ -20,7 +21,9 @@ export default function App() {
       <Experience jobExperiences={RESUME.jobExperience} />
       <Education education={RESUME.education} certifications={RESUME.certifications} />
       <SoftSkills />
-      <TechSkills />
+      <FilterContextProvider>
+        <TechSkills />
+      </FilterContextProvider>
       <Footer contact={CONTACT}/>
     </Fragment>
   );
