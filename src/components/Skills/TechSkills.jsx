@@ -30,7 +30,6 @@ export default function TechSkills() {
                 <li key={skill.title}>
                   <img src={skill.image} alt={skill.title} />
                   <h4>{skill.title}</h4>
-                  {skill.description ? <p>{skill.description}</p> : null}
                 </li>)
             }
             return (<></>)}
