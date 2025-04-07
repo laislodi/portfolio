@@ -1,14 +1,14 @@
 #education {
   display: flex;
   justify-content: center;
-  background-color: var(--accent-light-pink);
-  color: var(--black);
+  background-color: var(--bg2);
+  color: var(--text);
   min-height: 100vh;
 }
 
 #education .education-title {
   text-decoration: none;
-  color: var(--black);
+  color: var(--text);
 }
 
 #education ul {
@@ -19,8 +19,10 @@
 }
 
 #education ul li {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--accent2-transparent);
   border-radius: 10px;
+  border: 2px solid var(--accent2) ;
+  box-shadow: 2px 2px 8px var(--accent2-transparent);
   padding: 10px;
   flex-basis: 50%;
 }
@@ -30,7 +32,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
   }
   #education ul.certification-list li {
     flex-basis: 40%;
@@ -39,7 +40,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
   }
   #education ul.education-list li {
     flex-basis: 80%;

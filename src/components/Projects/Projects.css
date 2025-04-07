@@ -1,12 +1,16 @@
 #projects {
   position: relative;
   min-height: 100vh;
-  background-color: var(--accent-light-pink);
+  background-color: var(--bg2);
+
+}
+
+#projects h1 {
+  color: var(--accent2);
 }
 
 #projects .title-link {
   text-decoration: none;
-  color: var(--black)
 }
 
 #projects .project-list {
@@ -22,11 +26,16 @@
   display: flex;
   justify-content: space-between;
   flex-basis: 45%;
-  background-color: var(--accent-dark-blue);
+  background-color: var(--accent2-transparent);
   border-radius: 10px;
-  color: var(--white);
+  box-shadow: 2px 2px 4px var(--bg1);
+  color: var(--test);
   padding: 10px;
   max-width: 500px;
+}
+
+.project-info h3 {
+  color: var(--text);
 }
 
 ul.tech-list {
@@ -42,13 +51,7 @@ ul.tech-list li {
   justify-content: center;
   padding: 1px 5px;
   margin: 2px 4px;
-  border: 1px solid var(--accent-light-pink);
-  border-radius: 6px;
-}
-
-ul.tech-list li:hover {
-  border: 1px solid var(--accent-light-pink);
-  box-shadow: 2px 2px 2px var(--shadow-pink);
+  border: 2px solid var(--bg1);
   border-radius: 6px;
 }
 
@@ -66,21 +69,21 @@ ul.tech-list li:hover {
 
 .project-links a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--text);
   display: flex;
 }
 
 .project-links a:hover {
-  color: var(--accent-pink);
-  text-shadow: var(--shadow-pink) 3px 3px 4px;
+  color: var(--bg1);
+  text-shadow: var(--shadow-color) 3px 3px 4px;
 }
 
 .project-links a img {
   margin: auto;
 }
 
-img.white {
-  filter: invert(100%);
+img.text-color {
+  filter: invert(var(--invert-text));
 }
 
 .project-links a .github-link {
@@ -110,10 +113,3 @@ img.white {
     flex-basis: 80%;
   }
 }
-
-/* @media (max-width: 400px) {
-  #projects .tech-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-} */

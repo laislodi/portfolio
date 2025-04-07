@@ -26,7 +26,7 @@ export default function Projects({ projects }) {
             <div className="project-links">
               { project.github && 
               <a href={project.github} target="_blank">
-                <img className="github-link white" src={GitHubImg} alt="GitHub logo" />
+                <img className="github-link text-color" src={GitHubImg} alt="GitHub logo" />
                 <span>Check the code!</span>
               </a>
               }

@@ -7,9 +7,17 @@
   font-size: 1.5rem;
 }
 
+#soft-skills h1 {
+  color: var(--accent3);
+}
+
+#soft-skills h4 {
+  color: var(--accent3);
+}
+
 .soft-skill-title-link {
   text-decoration: none;
-  color: var(--white);
+  color: var(--text);
 }
 
 #soft-skills ul {
@@ -17,6 +25,7 @@
   padding: 0;
   margin: 0;
   display: flex;
+  max-width: 1300px;
   gap: 2.3rem;
   flex-wrap: wrap;
   justify-content: center;
@@ -37,8 +46,7 @@
 }
 
 #soft-skills .skill-container {
-  border: 4px solid var(--accent-light-pink);
-  background-color: var(--white);
+  background-color: var(--accent3);
   padding: 30px 30px;
   width: 150px;
   border-radius: 50%;
@@ -49,6 +57,10 @@
   width: 70px;
   object-fit: contain;
   align-self: center;
+}
+
+#soft-skills li img.bg-color {
+  filter: invert(var(--invert-bg));
 }
 
 #soft-skills li h4{

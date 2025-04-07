@@ -28,13 +28,9 @@ export default function TechSkills() {
             if (hasCategory) {
               return (
                 <li key={skill.title}>
-                  <div className="skill-container">
-                    <img src={skill.image} alt={skill.title} />
-                  </div>
-                  <div className="skill-details">
-                    <h4>{skill.title}</h4>
-                    {skill.description ? <p>{skill.description}</p> : null}
-                  </div>
+                  <img src={skill.image} alt={skill.title} />
+                  <h4>{skill.title}</h4>
+                  {skill.description ? <p>{skill.description}</p> : null}
                 </li>)
             }
             return (<></>)}

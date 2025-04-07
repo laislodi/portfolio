@@ -1,16 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
 
 :root {
-  --white: #f9d5d3;
-  --black: #2f2629;
-  --accent-dark-blue: #2d344d;
-  --accent-blue: #7595e2;
-  --accent-light-blue: #48d9f3;
-  --accent-pink: #cb6883;
-  --accent-dark-pink: #4e1e39;
-  --accent-light-pink: #c76d9e;
-  --shadow-dark: rgba(0, 0, 0, 0.3);
-  --shadow-pink: #9c5968;
+  --text: hsl(255, 36%, 17%);
+  --accent1: hsl(175, 79%, 26%);
+  --accent1-transparent: hsl(175, 79%, 26%, 0.4);
+  --accent2: hsl(269, 63%, 65%);
+  --accent2-transparent: hsl(269, 63%, 65%, 0.2);
+  --accent2-hover: hsl(269, 56%, 49%);
+  --accent3: hsl(40, 77%, 53%);
+  --bg1: hsl(240, 20%, 92%);
+  --bg2: hsl(240, 31%, 90%);
+  --shadow: 12px 12px 30px hsl(255, 36%, 17%, 0.35);
+  --shadow-color: hsla(0, 0%, 35%, 0.4);
+  --invert-text-color: 0%;
+  --invert-bg-color: 100%;
+  
+  --text-dark: hsl(217, 54.2%, 88%);
+  --accent1-dark: hsl(175, 79%, 26%);
+  --accent1-transparent-dark: hsl(175, 79%, 26%, 0.7);
+  --accent2-dark: hsl(269, 63%, 65%);
+  --accent2-transparent-dark: hsl(269, 63%, 65%, 0.6);
+  --accent2-hover-dark: hsl(269, 44%, 68%);
+  --accent3-dark: hsl(40, 77%, 53%);
+  --bg1-dark: hsl(0, 0%, 10%);
+  --bg2-dark: hsl(240, 4%, 32%);
+  --shadow-dark: 12px 12px 30px hsl(26, 37%, 96%, 0.15);
+  --shadow-color-dark: hsl(26, 37%, 96%, 0.4);
+  --invert-text-color-dark: 100%;
+  --invert-bg-color-dark: 0%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: var(--text-dark);
+    --accent1: var(--accent1-dark);
+    --accent1-transparent: var(--accent1-transparent-dark);
+    --accent2: var(--accent2-dark);
+    --accent2-transparent: var(--accent2-transparent-dark);
+    --accent2-hover: var(--accent2-hover-dark);
+    --accent3: var(--accent3-dark);
+    --bg1: var(--bg1-dark);
+    --bg2: var(--bg2-dark);
+    --shadow: var(--shadow-dark);
+    --shadow-color: var(--shadow-color-dark);
+    --invert-text-color: var(--invert-text-color-dark);
+    --invert-bg-color: var(--invert-bg-color-dark);
+  }
 }
 
 * {
@@ -19,8 +54,8 @@
 
 body {
   font-family: sans-serif;
-  color: var(--white);
-  background-color: var(--accent-dark-pink);
+  color: var(--text);
+  background-color: var(--bg1);
   margin: 0;
 }
 
@@ -28,7 +63,7 @@ body {
 html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
-  color: var(--white);
+  color: var(--text);
   scroll-behavior: smooth;
   scroll-margin: 0;
   font-synthesis: none;

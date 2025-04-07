@@ -3,13 +3,15 @@
   z-index: 2;
   bottom: 80px;
   right: 80px;
-  border: 2px solid var(--white);
-  color: var(--white);
+  border: 2px solid var(--text);
+  color: var(--text);
   border-radius: 40%;
+  background-color: var(--bg1);
 }
 
 .back-button:hover {
-  box-shadow: 2px 2px 2px var(--shadow-pink);
+  box-shadow: 2px 2px 2px var(--accent1);
+  background-color: var(--bg2);
 }
 
 .material-icons {
@@ -17,22 +19,26 @@
 }
 
 .material-icons:hover {
+  animation:  up 0.5s;
+  animation-iteration-count: infinite;
   transform: translateY(0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@keyframes up {
+  from {transform: translateY(0);}
+  to {transform: translateY(3px);}
 }
 
 .menu {
   position: relative;
-  z-index: 10;
+  z-index: -1;
   opacity: 0;
   animation: fade-in linear forwards;
   animation-timeline: view();
 }
 
 @keyframes fade-in {
-  to {opacity: 1;}
+  to {opacity: 1; z-index: 10}
 }
 
 .menu .menu-list {
@@ -47,14 +53,14 @@
   display: inline-flex;
   justify-content: center;
   gap: 8px;
-  background-color: rgb(78, 30, 57, 0.85);
-  box-shadow: 0 0 8px 8px var(--shadow-pink);
+  background-color: hsla(175, 79%, 26%, 0.85);
+  box-shadow: 2px 4px 8px 4px var(--shadow-color);
   border-radius: 20px;
 }
 
 .menu a {
   text-decoration: none;
-  color: var(--white);
+  color: white;
   font-weight: bold;
 }
 

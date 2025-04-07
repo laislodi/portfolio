@@ -16,7 +16,7 @@ export default function SoftSkills() {
           {skills.map(skill => (
             <li key={skill.title}>
               <div className="skill-container">
-                <img src={skill.image} alt={skill.title} />
+                <img className="bg-color" src={skill.image} alt={skill.title} />
               </div>
               <div className="skill-details">
                 <h4>{skill.title}</h4>

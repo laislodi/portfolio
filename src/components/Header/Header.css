@@ -3,7 +3,7 @@ header {
   flex-direction: column;
   justify-items: center;
   justify-content: center;
-  background-color: var(--accent-dark-blue);
+  background-color: var(--bg1);
   min-height: 100vh;
   padding: 30px;
 }
@@ -24,34 +24,17 @@ header .profile-info {
   max-width: 1000px;
 }
 
-header .profile-image {
-  max-width: 400px;
-  overflow: hidden;
-  min-height: 400px;
-  min-width: 400px;
-  border: 10px solid var(--accent-dark-pink);
-  border-radius: 50%;
-  box-shadow: 8px 4px 4px var(--shadow-pink);
-  background-image: url("../../assets/images/profile-image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: -30px;
-  object-fit: cover;
-  margin: 40px;
-}
-
 header h1 {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 5rem;
-  background: var(--accent-pink);
+  background: var(--accent1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
 }
 
 header h3 {
-  color: var(--accent-blue);
+  color: var(--accent2);
   font-size: 2.6rem;
 }
 
@@ -61,15 +44,31 @@ header p {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+header .profile-image {
+  max-width: 400px;
+  overflow: hidden;
+  min-height: 400px;
+  min-width: 400px;
+  border: 10px solid var(--accent1);
+  border-radius: 50%;
+  box-shadow: 8px 8px 10px var(--accent1-transparent);
+  background-image: url("../../assets/images/profile-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -30px;
+  object-fit: cover;
+  margin: 40px;
+}
+
 header .button {
-  background-color: var(--accent-pink);
-  color: var(--white);
-  border: var(--white) solid 3px;
+  background-color: var(--accent2);
+  color: var(--bg1);
+  border: var(--bg2) solid 3px;
   border-radius: 12px;
-  box-shadow: 1px 2px 2px rgba(50, 50, 50, 0.6);
+  box-shadow: 4px 4px 20px var(--accent2-transparent);
   padding: 20px;
   max-width: 200px;
-  margin: 50px 0 0 0;
+  margin: 50px 0 50px 0;
   font-size: 1.5rem;
   font-variant: small-caps;
   font-weight: bold;
@@ -78,10 +77,8 @@ header .button {
 }
 
 header .button:hover {
-  color: var(--accent-pink);
-  background-color: var(--white);
-  border: var(--accent-pink) solid 3px;
-  box-shadow: 4px 4px 4px var(--shadow-pink);
+  color: var(--text);
+  border: var(--text) solid 3px;
 }
 
 header .button:active {

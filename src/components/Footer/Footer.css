@@ -5,6 +5,10 @@ footer {
   padding-bottom: 130px;
 }
 
+footer h1 {
+  color: var(--accent1);
+}
+
 footer ul {
   list-style: none;
   padding: 0;
@@ -15,23 +19,22 @@ footer ul {
 }
 
 footer li {
-  background-color: var(--black);
+  background-color: var(--bg1);
   padding: 15px;
-  border: 6px solid var(--white);
+  border: 6px solid var(--accent1);
   border-radius: 10%;
 }
 
 .social svg {
   width: 80px;
   height: 80px;
-  fill: var(--white)
+  fill: var(--text)
 }
 
 @media (max-width: 1000px) {
   .social svg {
     width: 65px;
     height: 65px;
-    fill: var(--white)
   }
 }
 
@@ -49,6 +52,5 @@ footer li {
   .social svg {
     width: 50px;
     height: 50px;
-    fill: var(--white)
   }
 }

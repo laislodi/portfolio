@@ -1,6 +1,6 @@
 #tech-skills {
-  background-color: var(--accent-light-pink);
-  color: var(--black);
+  background-color: var(--bg2);
+  color: var(--text);
 }
 
 #tech-skills {
@@ -14,7 +14,7 @@
 
 .tech-skill-title-link {
   text-decoration: none;
-  color: var(--black);
+  color: var(--text);
 }
 
 #tech-skills .filter {
@@ -22,18 +22,24 @@
   justify-content: center;
   flex-wrap: wrap;
   font-size: 1.2rem;
-  color: var(--white);
-  background-color: var(--shadow-dark);
-  box-shadow: 0 0 8px 8px var(--shadow-pink);
+  color: var(--text);
+  background-color: var(--bg1);
+  box-shadow: var(--shadow);
   padding: 10px 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 20px;
   gap: 1rem;
 }
 
 #tech-skills .filter .filter-option {
   display: flex;
-  gap: 1rem
+  gap: 1rem;
+}
+
+#tech-skills .filter input[type="checkbox"] {
+  accent-color: var(--accent2);
+  padding: 2px;
+  margin-right: 8px;
 }
 
 #tech-skills .filter-option #label-select-all {
@@ -45,6 +51,7 @@
   padding: 0;
   margin: 0;
   display: flex;
+  max-width: 1600px;
   gap: 2.3rem;
   flex-wrap: wrap;
   justify-content: center;
@@ -58,15 +65,12 @@
   width: 230px;
   text-align: center;
   padding: 10px;
-}
-
-#tech-skills li {
-  justify-content: space-between;
+  border-radius: 12px;
 }
 
 #tech-skills li:hover {
   border-radius: 12px;
-  box-shadow: 0 0 8px 8px var(--shadow-pink);
+  box-shadow: 8px 8px 20px 4px var(--shadow-color);
 }
 
 #tech-skills li img {
@@ -86,7 +90,6 @@
 
 @media (max-width: 1000px) {
   #tech-skills ul {
-    justify-content: space-between;
     gap: 1rem;
   }
   #tech-skills li{
@@ -108,13 +111,11 @@
 
 @media (max-width: 400px) {
   #tech-skills ul {
+    justify-content: center;
     gap: 0.5rem;
   }
   #tech-skills li {
     flex-basis: 40%;
-  }
-  #tech-skills .skill-container {
-    width: 100px;
   }
   #tech-skills li img {
     height: 50px;

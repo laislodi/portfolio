@@ -18,13 +18,15 @@ export default function FilterOption({ option, checked = true, onChange = () => 
 
   return (
     <div className="filter-option" key={option}>
-      <input
-        type="checkbox"
-        id={"filter-".concat(checkId)}
-        onChange={handleChange}
-        checked={checked}
-      />
-      <label id={"label-".concat(checkId)} htmlFor={"filter-".concat(checkId)}>{option}</label>
+      <label id={"label-".concat(checkId)} htmlFor={"filter-".concat(checkId)}>
+        <input
+          type="checkbox"
+          id={"filter-".concat(checkId)}
+          onChange={handleChange}
+          checked={checked}
+        />
+        {option}
+      </label>
     </div>
   )
 };
