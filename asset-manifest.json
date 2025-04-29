@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6f5a1289.css",
-    "main.js": "/portfolio/static/js/main.ffc4bad4.js",
+    "main.css": "/portfolio/static/css/main.cd4bf15a.css",
+    "main.js": "/portfolio/static/js/main.120aa159.js",
     "static/media/profile-image.jpg": "/portfolio/static/media/profile-image.45337567a8fab0809fdb.jpg",
     "static/media/postgresql-logo.png": "/portfolio/static/media/postgresql-logo.9f6aa013db4214400b08.png",
     "static/media/mysql.png": "/portfolio/static/media/mysql.167c88550478e6f0f85c.png",
@@ -35,11 +35,11 @@
     "static/media/investigative.svg": "/portfolio/static/media/investigative.aedf77506ad3d113090f949b51155f36.svg",
     "index.html": "/portfolio/index.html",
     "static/media/tailwind.svg": "/portfolio/static/media/tailwind.973c73e85d4daa24b257ba20298716c4.svg",
-    "main.6f5a1289.css.map": "/portfolio/static/css/main.6f5a1289.css.map",
-    "main.ffc4bad4.js.map": "/portfolio/static/js/main.ffc4bad4.js.map"
+    "main.cd4bf15a.css.map": "/portfolio/static/css/main.cd4bf15a.css.map",
+    "main.120aa159.js.map": "/portfolio/static/js/main.120aa159.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f5a1289.css",
-    "static/js/main.ffc4bad4.js"
+    "static/css/main.cd4bf15a.css",
+    "static/js/main.120aa159.js"
   ]
 }
