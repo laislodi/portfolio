@@ -9,7 +9,7 @@
 
 #experience .title-link {
   text-decoration: none;
-  color: var(--accent1);
+  color: var(--text);
 }
 
 #exp-max-width {
@@ -22,6 +22,7 @@
 
 #experience ul {
   position: relative;
+  z-index: 1;
   width: 6px;
   padding-top: 20px;
   background-color: var(--path-color);
@@ -30,10 +31,10 @@
 #experience ul li {
   list-style: none;
   position: relative;
+  z-index: -1;
   width: 6px;
   margin: 0 auto;
   padding: 10px 0;
-  background-color: var(--path-color);
 }
 
 #experience ul li .line {
@@ -52,38 +53,38 @@
   padding: 1rem;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
+  font-size: 1.1rem;
+  background-color: var(--accent1-transparent);
+  border: 1px solid var(--accent1);
+  box-shadow: 4px 4px 8px var(--accent1-transparent);
 }
 
 .job h3 {
   color: var(--text);
+  font-size: 1.4rem;
 }
 
 #experience ul li .where-when {
   position: relative;
   line-height: 0.5rem;
   width: 40vw;
+  background-color: var(--bg1);
 }
 
 .where-when h3 {
   color: var(--accent1);
+  font-size: 1.4rem;
 }
 
 #experience ul li .date {
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 #experience ul li .place {
   font-weight: bold;
   line-height: 1.1rem;
-  font-size: 0.8rem;
   font-size: 1rem;
-}
-
-#experience ul li .job {
-  background-color: var(--accent1-transparent);
-  border: 1px solid var(--accent1);
-  box-shadow: 4px 4px 8px var(--accent1-transparent);
 }
 
 /* right side */

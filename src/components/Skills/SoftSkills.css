@@ -8,11 +8,11 @@
 }
 
 #soft-skills h1 {
-  color: var(--accent3);
+  color: var(--accent1);
 }
 
 #soft-skills h4 {
-  color: var(--accent3);
+  color: var(--accent1);
 }
 
 .soft-skill-title-link {
@@ -46,7 +46,7 @@
 }
 
 #soft-skills .skill-container {
-  background-color: var(--accent3);
+  background-color: var(--accent1-transparent);
   padding: 30px 30px;
   width: 150px;
   border-radius: 50%;
@@ -59,8 +59,8 @@
   align-self: center;
 }
 
-#soft-skills li img.bg-color {
-  filter: invert(var(--invert-bg));
+#soft-skills li img.text-color {
+  filter: invert(var(--invert-text-color));
 }
 
 #soft-skills li h4{

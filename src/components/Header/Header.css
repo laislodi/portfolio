@@ -28,9 +28,7 @@ header h1 {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 5rem;
-  background: var(--accent1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent1);
 }
 
 header h3 {
@@ -62,7 +60,7 @@ header .profile-image {
 
 header .button {
   background-color: var(--accent2);
-  color: var(--bg1);
+  color: white;
   border: var(--bg2) solid 3px;
   border-radius: 12px;
   box-shadow: 4px 4px 20px var(--accent2-transparent);

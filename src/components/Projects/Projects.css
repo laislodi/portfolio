@@ -6,7 +6,7 @@
 }
 
 #projects h1 {
-  color: var(--accent2);
+  color: var(--text);
 }
 
 #projects .title-link {
@@ -74,7 +74,7 @@ ul.tech-list li {
 }
 
 .project-links a:hover {
-  color: var(--bg1);
+  color: var(--accent2);
   text-shadow: var(--shadow-color) 3px 3px 4px;
 }
 

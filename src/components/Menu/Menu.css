@@ -53,19 +53,18 @@
   display: inline-flex;
   justify-content: center;
   gap: 8px;
-  background-color: hsla(175, 79%, 26%, 0.85);
+  background-color: var(--text);
   box-shadow: 2px 4px 8px 4px var(--shadow-color);
   border-radius: 20px;
 }
 
 .menu a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.menu .menu-option {
+  color: var(--bg1);
   padding: 0 10px;
+  font-size: 1rem;
+  font-variant: small-caps;
+  font-weight: bold;
 }
 
 @media (max-width: 800px) {

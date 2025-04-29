@@ -4,27 +4,27 @@ export default function Menu() {
   return (<>
       <div className="menu">
         <ul className="menu-list">
-          <a href="#">
-            <li className="menu-option">Portfolio</li>
-          </a>
-          <a href="#projects">
-            <li className="menu-option">Projects</li>
-          </a>
-          <a href="#experience">
-            <li className="menu-option">Experience</li>
-          </a>
-          <a href="#education">
-            <li className="menu-option">Education</li>
-          </a>
-          <a href="#soft-skills">
-            <li className="menu-option">Soft Skills</li>
-          </a>
-          <a href="#tech-skills">
-            <li className="menu-option">Tech Skills</li>
-          </a>
-          <a href="#contact">
-            <li className="menu-option">Contact</li>
-          </a>
+          <li className="menu-option">
+            <a href="#">Portfolio</a>
+          </li>
+          <li className="menu-option">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="menu-option">
+            <a href="#experience">Experience</a>
+          </li>
+          <li className="menu-option">
+            <a href="#education">Education</a>
+          </li>
+          <li className="menu-option">
+            <a href="#soft-skills">Soft Skills</a>
+          </li>
+          <li className="menu-option">
+            <a href="#tech-skills">Tech Skills</a>
+          </li>
+          <li className="menu-option">
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
       <a href="#" className="back-button">
