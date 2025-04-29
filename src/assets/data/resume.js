@@ -237,7 +237,7 @@ export const RESUME = {
     },
     {
       "name": "Project Management",
-      "description": "React application that manages projects with checkable tasks. It deals with context, refs, portal and routes. The application have dark and light modes.",
+      "description": "React application that manages projects with checkable tasks. It deals with context, refs, portal and routes. The application has dark and light modes.",
       "url": "https://laislodi.github.io/project-management/",
       "github": "https://github.com/laislodi/project-management/",
       "languages": ["React", "React Routes", "Javascript", "Tailwind"],
