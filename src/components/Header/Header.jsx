@@ -1,6 +1,10 @@
 import "./Header.css";
+import { RESUME } from "../../assets/data/resume.js";
 
-export default function Header({name, aboutMe}) {
+export default function Header() {
+  const name = RESUME.name;
+  const aboutMe = RESUME.about;
+  
   return (
     <header id="home">
       <div className="profile">
@@ -14,5 +18,4 @@ export default function Header({name, aboutMe}) {
       </div>
     </header>
   )
-}
-
+};

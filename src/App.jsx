@@ -15,7 +15,7 @@ export default function App() {
   
   return (
     <Fragment>
-      <Header name={RESUME.name} aboutMe={RESUME.about} />
+      <Header />
       <Menu />
       <Projects projects={RESUME.projects} />
       <Experience jobExperiences={RESUME.jobExperience} />
