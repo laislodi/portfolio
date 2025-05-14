@@ -1,4 +1,3 @@
-// This component is gonna be used to show my personal projects
 import GitHubImg from "../../assets/images/github-logo.png";
 import "./Projects.css";
 
@@ -12,12 +11,12 @@ export default function Projects({ projects }) {
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <ul className="tech-list">
-              {project.languages.map((language, i) => (
+              {project.languages && project.languages.map((language, i) => (
                 <li key={project.name.concat("-lang-").concat(i.toString())}>
                   {language}
                 </li>
               ))}
-              {project.technologies.map((technology, i) => (
+              {project.technologies && project.technologies.map((technology, i) => (
                 <li key={project.name.concat("-tech-").concat(i.toString())}>
                   {technology}
                 </li>
