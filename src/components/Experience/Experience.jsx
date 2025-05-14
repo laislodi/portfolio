@@ -1,6 +1,26 @@
+import PropTypes from 'prop-types';
 import "./Experience.css";
 
-export default function Experience({ jobExperiences }) {
+function formatDate(date) {
+  if (!date) return "No given Date";
+  const from = `${date.from.month} ${date.from.year}`;
+  const to = `${date.to.month} ${date.to.year}`;
+  return `${from} to ${to}`;
+};
+
+function formatLocation(location) {
+  if (!location) return "";
+  const region = location.state || location.province || "";
+  let str = [location.city, region, location.country].filter(Boolean).join(', ');
+  if (location.type) str += ` (${location.type})`;
+  return str;
+}
+
+/**
+ * Renders a section displaying a Timeline of Job Experiences
+ * @param {JobExperience[]} jobExperiences - Array of JobExperience Objects. 
+ */
+export default function Experience({ jobExperiences = [] }) {
   return (
     <section id="experience">
       <a href="#experience" className="title-link">
@@ -8,24 +28,13 @@ export default function Experience({ jobExperiences }) {
       </a>
       <div id="exp-max-width">
         <ul>
-          {jobExperiences && jobExperiences.map((experience, index) => {
-            const strDateFrom = experience.date ? `${experience.date.from.month} ${experience.date.from.year}` : "";
-            const strDateTo = experience.date ? `${experience.date.to.month} ${experience.date.to.year}` : "";
-            const strDate = experience.date ? `${strDateFrom} to ${strDateTo}` : "No date given";
-            let strLocation = experience.location ?
-                `${experience.location.city}, ${experience.location.state ? 
-                        experience.location.state : experience.location.province}, ${experience.location.country}` :
-                "";
-            if (experience.location && experience.location.type) {
-              strLocation += ` (${experience.location.type})`
-            }
-            return (
-            <li key={"exp-".concat(index.toString())}>
+          {jobExperiences && jobExperiences.map((experience, index) => (
+            <li key={`exp-${index}`}>
               <div className="line">
                 <div className="where-when">
                   <h3>{experience.company}</h3>
-                  <p className="date">{strDate}</p> 
-                  <p className="place">{strLocation}</p>
+                  <p className="date">{formatDate(experience.date)}</p> 
+                  <p className="place">{formatLocation(experience.location)}</p>
                 </div>
                 <div className="job">
                   <h3>{experience.title}</h3>
@@ -33,9 +42,36 @@ export default function Experience({ jobExperiences }) {
                 </div>
               </div>
             </li>
-          )})}
+          ))}
         </ul>
       </div>
     </section>
   );
+};
+
+Experience.propTypes = {
+  jobExperiences: PropTypes.arrayOf(
+    PropTypes.shape({
+      company: PropTypes.string.isRequired,
+      date: PropTypes.shape({
+        from: PropTypes.shape({
+          month: PropTypes.string.isRequired,
+          year: PropTypes.string.isRequired,
+        }),
+        to: PropTypes.shape({
+          month: PropTypes.string.isRequired,
+          year: PropTypes.string.isRequired,
+        }),
+      }),
+      location: PropTypes.shape({
+        city: PropTypes.string,
+        state: PropTypes.string,
+        province: PropTypes.string,
+        country: PropTypes.string,
+        type: PropTypes.string,
+      }),
+      title: PropTypes.string.isRequired,
+      summary: PropTypes.string,
+    })
+  ),
 };
