@@ -1,7 +1,32 @@
 import { render } from '@testing-library/react';
-import Experience from './Experience';
+import Experience, { formatDate } from "./Experience.jsx";
 
 describe('Experience Component', () => {
+  test('should format a date object with a valid from and to properties', () => {
+    const date = {
+      from: { month: "Jan", year: 2015},
+      to: { month: "Oct", year: 2016}
+    };
+
+    const result = formatDate(date);
+    expect(result).toBe("Jan 2015 to Oct 2016");
+  });
+
+  test('should show an empty date if from or to properties is missing', () => {
+    const date = {
+      from: { month: "Jan", year: 2015}
+    };
+
+    const result = formatDate(date);
+    expect(result).toBe("");
+  });
+
+  test('should return "No given Date" when input is null', () => {
+    const result = formatDate(null);
+
+    expect(result).toBe('No given Date');
+  });
+
   test('Function Executes With Valid Input', () => {
     const validProps = {
       company: 'Acme Corp',

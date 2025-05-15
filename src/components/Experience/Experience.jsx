@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import "./Experience.css";
 
-function formatDate(date) {
+export function formatDate(date) {
   if (!date) return "No given Date";
+  if (!date.from || !date.to) return "";
   const from = `${date.from.month} ${date.from.year}`;
   const to = `${date.to.month} ${date.to.year}`;
   return `${from} to ${to}`;
 };
 
-function formatLocation(location) {
+export function formatLocation(location) {
   if (!location) return "";
   const region = location.state || location.province || "";
   let str = [location.city, region, location.country].filter(Boolean).join(', ');
