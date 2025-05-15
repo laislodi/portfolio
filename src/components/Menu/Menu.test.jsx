@@ -4,7 +4,7 @@ import Menu from './Menu.jsx';
 
 describe('Menu', () => {
 
-    it('should render 7 navigation links in total', () => {
+    test('should render 7 navigation links in total', () => {
       const { container } = render(<Menu />);
   
       const menuOptions = container.querySelectorAll('.menu-option');
@@ -12,7 +12,7 @@ describe('Menu', () => {
       expect(menuOptions.length).toBe(7);
     });
   
-    it('should render all 7 navigation links correctly', () => {
+    test('should render all 7 navigation links correctly', () => {
       const { container } = render(<Menu />);
       const links = container.querySelectorAll('.menu-option a');
   
@@ -39,7 +39,7 @@ describe('Menu', () => {
     });
 
     // Component renders correctly when CSS fails to load
-    it('should render correctly even when CSS fails to load', () => {
+    test('should render correctly even when CSS fails to load', () => {
       // Mock a CSS loading error
       jest.spyOn(console, 'error').mockImplementation(() => {});
   

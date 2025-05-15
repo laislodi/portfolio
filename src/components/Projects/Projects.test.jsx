@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import Projects from './Projects';
 
 describe('Projects component', () => {
-  it('should render project names and descriptions', () => {
+  test('should render project names and descriptions', () => {
     const projects = [
       {
         name: 'Project Alpha',
@@ -25,7 +25,7 @@ describe('Projects component', () => {
     expect(screen.getByText('Beta description')).toBeInTheDocument();
   });
 
-  it('should render languages and technologies for each project', () => {
+  test('should render languages and technologies for each project', () => {
     const projects = [
       {
         name: 'Project Gamma',
@@ -41,7 +41,7 @@ describe('Projects component', () => {
     expect(screen.getByText('Django')).toBeInTheDocument();
   });
 
-  it('should render github and live links when present', () => {
+  test('should render github and live links when present', () => {
     const projects = [
       {
         name: 'Project Delta',
@@ -59,13 +59,13 @@ describe('Projects component', () => {
     expect(liveLink).toHaveAttribute('href', 'https://example.com/project-delta');
   });
 
-  it('should render nothing when projects array is empty', () => {
+  test('should render nothing when projects array is empty', () => {
     render(<Projects projects={[]} />);
     // Should not render any project-info list items
     expect(screen.queryByRole('listitem')).not.toBeInTheDocument();
   });
 
-  it('should handle missing languages or technologies arrays', () => {
+  test('should handle missing languages or technologies arrays', () => {
     const projects = [
       {
         name: 'Project Epsilon',
@@ -87,7 +87,7 @@ describe('Projects component', () => {
     expect(screen.getByText('Project Zeta')).toBeInTheDocument();
   });
 
-  it('should not render links when github or url is missing', () => {
+  test('should not render links when github or url is missing', () => {
     const projects = [
       {
         name: 'Project Eta',
