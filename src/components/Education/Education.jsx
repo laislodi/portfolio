@@ -1,6 +1,8 @@
 import "./Education.css";
 
 export default function Education({ education, certifications}) {
+  if (!education && !certifications) return null;
+  
   return (
     <section id="education">
       <div className="max-width">
@@ -16,16 +18,20 @@ export default function Education({ education, certifications}) {
             </li>
           )})}
         </ul>
-        <h2>Certifications</h2>
-        <ul className="certification-list">
-          {certifications.map((cert, index) => {
-            return <li key={"certification-".concat(index.toString())}>
-              <h2>{cert.name}</h2>
-              <h3>{cert.issuedBy}</h3>
-              <h4>{cert.issued}</h4>
-            </li>
-          })}
-        </ul>
+        { certifications && certifications.lenght !== 0 && 
+          (<>
+            <h2>Certifications</h2>
+            <ul className="certification-list">
+              {certifications.map((cert, index) => {
+                return <li key={"certification-".concat(index.toString())}>
+                  <h2>{cert.name}</h2>
+                  <h3>{cert.issuedBy}</h3>
+                  <h4>{cert.issued}</h4>
+                </li>
+              })}
+            </ul>
+          </>)
+        }
       </div>
     </section>
   )
