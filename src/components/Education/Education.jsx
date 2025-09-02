@@ -9,16 +9,20 @@ export default function Education({ education, certifications}) {
         <a href="#education" className="education-title">
           <h1>Education</h1>
         </a>
-        <ul className="education-list">
-          {education.map((ed, index) => {
-            return (<li key={"education-".concat(index.toString())}>
-              <h2>{ed.name}</h2>
-              <h3>{ed.type}</h3>
-              <h4>{ed.institution} {ed.year}</h4>
-            </li>
-          )})}
-        </ul>
-        { certifications && certifications.lenght !== 0 && 
+        {education?.length > 0 && (
+          <ul className="education-list">
+            {education.map((ed, index) => (
+              <li key={`education-${index}`}>
+                <h2>{ed.name}</h2>
+                <h3>{ed.type}</h3>
+                <h4>
+                  {ed.institution} {ed.year}
+                </h4>
+              </li>
+            ))}
+          </ul>
+        )}
+        { certifications && certifications.length !== 0 && 
           (<>
             <h2>Certifications</h2>
             <ul className="certification-list">
