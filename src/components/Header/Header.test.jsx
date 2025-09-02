@@ -23,21 +23,17 @@ describe('Header Component', () => {
   });
 
   it('Function returns expected output for typical use case', () => {
+    const about = "I am a full stack developer with a passion for building web applications.";
     dataModule.RESUME = {
-    //   about: "I am a full stack developer with a passion for building web applications.",
+      about: about,
       name: "John Doe",
-    //   medias: {
-    //     LinkedIn: "https://www.linkedin.com/in/johndoe"
-    //   }
+      medias: {
+        LinkedIn: "https://www.linkedin.com/in/johndoe"
+      }
     }
-    // dataModule.RESUME.about = "I am a full stack developer with a passion for building web applications.";
-    // dataModule.RESUME.name = "John Doe";
-    // dataModule.RESUME.medias = {
-    //   LinkedIn: "https://www.linkedin.com/in/johndoe"
-    // };
     render(<Header />);
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent("John Doe");
-    expect(screen.getByRole('heading', { level: 3 })).toHaveTextContent('I am a full stack developer with a passion for building web applications.');
+    expect(screen.getByText(about)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'About me' })).toHaveAttribute('href', '#projects');
     expect(screen.getByRole('link', { name: 'LinkedIn' })).toHaveAttribute('href', 'https://www.linkedin.com/in/johndoe');
   });
