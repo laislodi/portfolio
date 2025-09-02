@@ -33,7 +33,7 @@ portfolio/
 │-- src/
 │   │-- assets/
 │   │   |-- data/
-│   │   |   |-- data.js
+│   │   |   |-- data.jsx
 │   │   |   |-- resume.js
 │   │   |-- images/
 │   │   |   |-- apollo.png
