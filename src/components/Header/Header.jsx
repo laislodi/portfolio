@@ -1,5 +1,5 @@
 import "./Header.css";
-import { RESUME } from "../../assets/data/resume.js";
+import { RESUME } from "../../assets/data/resume.jsx";
 
 export default function Header() {
   const name = RESUME.name;
