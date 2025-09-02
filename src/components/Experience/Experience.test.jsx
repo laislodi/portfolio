@@ -1,8 +1,10 @@
+import React from 'react';
+import { expect, it, describe } from 'vitest';
 import { render } from '@testing-library/react';
 import Experience, { formatDate } from "./Experience.jsx";
 
 describe('Experience Component', () => {
-  test('should format a date object with a valid from and to properties', () => {
+  it('should format a date object with a valid from and to properties', () => {
     const date = {
       from: { month: "Jan", year: 2015},
       to: { month: "Oct", year: 2016}
@@ -12,7 +14,7 @@ describe('Experience Component', () => {
     expect(result).toBe("Jan 2015 to Oct 2016");
   });
 
-  test('should show an empty date if from or to properties is missing', () => {
+  it('should show an empty date if from or to properties is missing', () => {
     const date = {
       from: { month: "Jan", year: 2015}
     };
@@ -21,13 +23,13 @@ describe('Experience Component', () => {
     expect(result).toBe("");
   });
 
-  test('should return "No given Date" when input is null', () => {
+  it('should return "No given Date" when input is null', () => {
     const result = formatDate(null);
 
     expect(result).toBe('No given Date');
   });
 
-  test('Function Executes With Valid Input', () => {
+  it('Function Executes With Valid Input', () => {
     const validProps = {
       company: 'Acme Corp',
       title: 'Developer',
@@ -56,7 +58,7 @@ describe('Experience Component', () => {
     expect(getByText('Worked on frontend development.')).toBeInTheDocument();
   });
 
-  test('Function Handles Multiple Valid Inputs', () => {
+  it('Function Handles Multiple Valid Inputs', () => {
     const experiences = [
       {
         company: 'Gamma LLC',
@@ -111,12 +113,12 @@ describe('Experience Component', () => {
     });
   });
 
-  test('Function Handles Missing Input', () => {
+  it('Function Handles Missing Input', () => {
     const { container } = render(<Experience />);
     expect(container).toBeDefined();
   });
 
-  test('Function Handles Invalid Input Type', () => {
+  it('Function Handles Invalid Input Type', () => {
     const invalidProps = {
       company: 123,
       title: 456,
@@ -136,7 +138,7 @@ describe('Experience Component', () => {
     expect(container).toBeDefined();
   });
 
-  test('Function Handles Extreme Input Values', () => {
+  it('Function Handles Extreme Input Values', () => {
     const largeString = 'A'.repeat(10000);
     const props = {
       company: largeString,
