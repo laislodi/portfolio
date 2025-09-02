@@ -58,7 +58,31 @@ header .profile-image {
   margin: 40px;
 }
 
-header .button {
+header .about-me-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header .button.linkedIn {
+  background-color: var(--accent1);
+  color: white;
+  border: var(--bg2) solid 3px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 20px var(--accent1-transparent);
+  padding: 20px;
+  max-width: 200px;
+  margin: 50px 0 50px 0;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header .button.about-me {
   background-color: var(--accent2);
   color: white;
   border: var(--bg2) solid 3px;
@@ -75,8 +99,8 @@ header .button {
 }
 
 header .button:hover {
-  color: var(--text);
-  border: var(--text) solid 3px;
+  color: var(--bg1);
+  border: var(--bg1) solid 3px;
 }
 
 header .button:active {
