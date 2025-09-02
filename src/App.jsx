@@ -7,9 +7,9 @@ import SoftSkills from "./components/Skills/SoftSkills.jsx";
 import TechSkills from "./components/Skills/TechSkills.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import { Fragment } from "react/jsx-runtime";
-import { RESUME } from "./assets/data/resume.js";
-import { CONTACT } from "./assets/data/data.js";
 import FilterContextProvider from "./components/Skills/store/filter-context.jsx";
+import { CONTACT } from "./assets/data/data.jsx";
+import { RESUME } from "./assets/data/resume.jsx";
 
 export default function App() {
   
