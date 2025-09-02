@@ -50,7 +50,7 @@ header .profile-image {
   border: 10px solid var(--accent1);
   border-radius: 50%;
   box-shadow: 8px 8px 10px var(--accent1-transparent);
-  background-image: url("profile-image.jpg");
+  background-image: url("/profile-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -30px;
