@@ -1,31 +1,30 @@
-import React from 'react';
+import { expect, it, vi, describe } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Education from './Education.jsx';
 
 describe('Education Component', () => {
-  test('should render education list with valid data', () => {
+  it('should render only education when certifications is missing', () => {
     const education = [
       { name: 'B.Sc. Computer Science', type: 'Degree', institution: 'University A', year: '2020' },
       { name: 'M.Sc. Computer Science', type: 'Degree', institution: 'University B', year: '2022' }
     ];
-    const { container } = render(<Education education={education} certifications={[]} />);
-    const certificationItems = container.querySelectorAll('.certification-list > li');
+    render(<Education education={education} certifications={null} />);
     expect(screen.getByText('Education')).toBeInTheDocument();
-    expect(certificationItems.length).toBe(0);
     expect(screen.getByText('B.Sc. Computer Science')).toBeInTheDocument();
-    expect(screen.getAllByText('Degree').length).toBe(2);
-    expect(screen.getByText('University A 2020')).toBeInTheDocument();
     expect(screen.getByText('M.Sc. Computer Science')).toBeInTheDocument();
+    expect(screen.getAllByText('Degree').length).toBe(2);
+    expect(screen.queryByText('Certifications')).not.toBeInTheDocument();
+    expect(screen.getByText('University A 2020')).toBeInTheDocument();
     expect(screen.getByText('University B 2022')).toBeInTheDocument();
   });
 
-  test('should render certifications list with valid data', () => {
+  it('should render only certifications when education is missing', () => {
     const certifications = [
       { name: 'AWS Certified', issuedBy: 'Amazon', issued: '2021' },
       { name: 'Azure Fundamentals', issuedBy: 'Microsoft', issued: '2022' }
     ];
-    render(<Education education={[]} certifications={certifications} />);
-    expect(screen.getByText('Education')).toBeInTheDocument();
+    render(<Education education={null} certifications={certifications} />);
+
     expect(screen.getByText('Certifications')).toBeInTheDocument();
     expect(screen.getByText('AWS Certified')).toBeInTheDocument();
     expect(screen.getByText('Amazon')).toBeInTheDocument();
@@ -33,47 +32,73 @@ describe('Education Component', () => {
     expect(screen.getByText('Azure Fundamentals')).toBeInTheDocument();
     expect(screen.getByText('Microsoft')).toBeInTheDocument();
     expect(screen.getByText('2022')).toBeInTheDocument();
+    expect(screen.queryByRole('listitem', { name: /MSc|M.Sc.|BSc|B.Sc.|Degree|Masters/ })).not.toBeInTheDocument();
   });
 
-  test('should render both sections with valid data', () => {
+  it('should render both sections with valid data', () => {
     const education = [
-      { name: 'B.Sc. Computer Science', type: 'Degree', institution: 'University A', year: '2020' }
+      { name: 'B.Sc. Computer Science', type: 'Degree', institution: 'University A', year: '2020' },
+      { name: 'M.Sc. Computer Science', type: 'Degree', institution: 'University A', year: '2022' }
     ];
     const certifications = [
-      { name: 'AWS Certified', issuedBy: 'Amazon', issued: '2021' }
+      { name: 'AWS Certified', issuedBy: 'Amazon', issued: '2021' },
+      { name: 'Azure Fundamentals', issuedBy: 'Microsoft', issued: '2022' }
     ];
     render(<Education education={education} certifications={certifications} />);
     expect(screen.getByText('Education')).toBeInTheDocument();
-    expect(screen.getByText('B.Sc. Computer Science')).toBeInTheDocument();
+    expect(screen.getAllByText('Degree').length).toBe(2);
+    expect(screen.getAllByText(/B.Sc.|M.Sc. Computer Science/).length).toBe(2);
+    expect(screen.getAllByText(/University A*/).length).toBe(2);
     expect(screen.getByText('Certifications')).toBeInTheDocument();
     expect(screen.getByText('AWS Certified')).toBeInTheDocument();
+    expect(screen.getByText('Amazon')).toBeInTheDocument();
+    expect(screen.getByText('Azure Fundamentals')).toBeInTheDocument();
+    expect(screen.getByText('Microsoft')).toBeInTheDocument();
+    expect(screen.getByText('2021')).toBeInTheDocument();
+    expect(screen.getByText('2022')).toBeInTheDocument();
+    expect(screen.queryAllByText(/2022/).length).toBe(2);
   });
 
-  test('should handle empty education array', () => {
+  it('should return null when no education or certifications', () => {
+    const { container } = render(<Education />);
+    expect(container.firstChild).toBeNull();
+    const { container: container2 } = render(<Education education={null} certifications={null} />);
+    expect(container2.firstChild).toBeNull();
+    const { container: container3 } = render(<Education education={[]} certifications={[]} />);
+    // Should render section but no lists or headings
+    expect(container3.querySelector('.education-list')).toBeNull();
+    expect(container3.querySelector('.certification-list')).toBeNull();
+    expect(screen.queryByText('Certifications')).not.toBeInTheDocument();
+  });
+
+  it('should not render sections for empty arrays', () => {
     render(<Education education={[]} certifications={[]} />);
+    expect(screen.queryByText('Certifications')).not.toBeInTheDocument();
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
     expect(screen.getByText('Education')).toBeInTheDocument();
-    expect(screen.getByText('Certifications')).toBeInTheDocument();
-    // No education items should be rendered
-    const educationList = screen.getAllByRole('list')[0];
-    expect(educationList.childElementCount).toBe(0);
-    const certificationList = screen.getAllByRole('list')[1];
-    expect(certificationList.childElementCount).toBe(0);
   });
 
-  test('should handle empty certifications array', () => {
+  it('should handle incomplete education or certification items', () => {
     const education = [
-      { name: 'B.Sc. Computer Science', type: 'Degree', institution: 'University A', year: '2020' }
+      { name: 'PhD AI' }, // missing type, institution, year
+      { type: 'Diploma', institution: 'Uni C' }, // missing name, year
+      {} // all fields missing
     ];
-    render(<Education education={education} certifications={[]} />);
-    expect(screen.getByText('Education')).toBeInTheDocument();
-    expect(screen.getByText('B.Sc. Computer Science')).toBeInTheDocument();
-    expect(screen.getByText('Certifications')).toBeInTheDocument();
-    // No certification items should be rendered
-    const certificationList = screen.getAllByRole('list')[1];
-    expect(certificationList.childElementCount).toBe(0);
+    const certifications = [
+      { name: 'Azure Fundamentals' }, // missing issuedBy, issued
+      { issuedBy: 'Microsoft' }, // missing name, issued
+      {} // all fields missing
+    ];
+    render(<Education education={education} certifications={certifications} />);
+    // Should render whatever fields are present, and not throw
+    expect(screen.getByText('PhD AI')).toBeInTheDocument();
+    expect(screen.getByText('Diploma')).toBeInTheDocument();
+    expect(screen.getByText('Uni C')).toBeInTheDocument();
+    expect(screen.getByText('Azure Fundamentals')).toBeInTheDocument();
+    expect(screen.getByText('Microsoft')).toBeInTheDocument();
   });
 
-  test('should handle missing or undefined props', () => {
+  it('should handle missing or undefined props', () => {
     // Both props missing
     const { container } = render(<Education />);
     const educationItems = container.querySelectorAll('.education-list > li');

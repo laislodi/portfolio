@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Menu from './Menu.jsx';
 
 describe('Menu', () => {
@@ -38,29 +38,43 @@ describe('Menu', () => {
       expect(links[6].getAttribute('href')).toBe('#contact');
     });
 
-    // Component renders correctly when CSS fails to load
-    test('should render correctly even when CSS fails to load', () => {
-      // Mock a CSS loading error
-      jest.spyOn(console, 'error').mockImplementation(() => {});
+    test('should render back button with correct href and icon', () => {
+      const { container } = render(<Menu />);
+      const backButton = container.querySelector('.back-button');
+
+      expect(backButton).toBeInTheDocument();
+      expect(backButton.getAttribute('href')).toBe('#');
+
+      const icon = backButton.querySelector('.material-icons');
+      expect(icon).toBeInTheDocument();
+      expect(icon.textContent.trim()).toBe('keyboard_double_arrow_up');
+    });
+
+    test('should render the menu with correct class names', () => {
+      const { container } = render(<Menu />);
+      const menu = container.querySelector('.menu');
+      const menuList = container.querySelector('.menu-list');
+
+      expect(menu).toBeInTheDocument();
+      expect(menuList).toBeInTheDocument();
+      expect(menu.classList.contains('menu')).toBe(true);
+      expect(menuList.classList.contains('menu-list')).toBe(true);
+    });
+
+    test('should render component structure correctly', () => {
   
       const { container } = render(<Menu />);
   
-      // Verify the component structure is intact
       expect(container.querySelector('.menu')).toBeInTheDocument();
       expect(container.querySelector('.menu-list')).toBeInTheDocument();
       expect(container.querySelectorAll('.menu-option').length).toBe(7);
   
-      // Verify back button is present
       const backButton = container.querySelector('.back-button');
       expect(backButton).toBeInTheDocument();
       expect(backButton.getAttribute('href')).toBe('#');
   
-      // Verify the icon in the back button
       const icon = backButton.querySelector('.material-icons');
       expect(icon).toBeInTheDocument();
       expect(icon.textContent.trim()).toBe('keyboard_double_arrow_up');
-  
-      // Clean up mock
-      console.error.mockRestore();
     });
 });
