@@ -210,7 +210,7 @@ export const RESUME = {
     },
     {
       "name": "Vancouver Aquarium Exibitions",
-      "description": "This app is built using Google Maps Javascript API to create a funny way of showing the exibits going on in the Vancouver Aquarium.",
+      "description": "This app is built using Google Maps Javascript API to create a funny way of showing the exhibits going on in the Vancouver Aquarium.",
       "url": "https://laislodi.github.io/vancouver-aquarium-map/",
       "github": "https://github.com/laislodi/vancouver-aquarium-map/",
       "languages": ["HTML", "CSS3", "Javascript"],

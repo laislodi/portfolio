@@ -1,6 +1,6 @@
 import "./SoftSkills.css";
 
-import { SKILLS } from "../../assets/data/data.js";
+import { SKILLS } from "../../assets/data/data.jsx";
 
 export default function SoftSkills() {
 

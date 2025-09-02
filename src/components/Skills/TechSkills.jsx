@@ -1,5 +1,5 @@
 import "./TechSkills.css";
-import { SKILLS } from "../../assets/data/data.js";
+import { SKILLS } from "../../assets/data/data.jsx";
 import Filter from "./Filter.jsx";
 import { useContext } from "react";
 import { FilterContext } from "./store/filter-context";
