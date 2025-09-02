@@ -1,30 +1,24 @@
 import "./Menu.css";
 
+const menu = [
+  { title: "Portfolio", href: "#" },
+  { title: "Projects", href: "#projects" },
+  { title: "Experience", href: "#experience" },
+  { title: "Education", href: "#education" },
+  { title: "Soft Skills", href: "#soft-skills" },
+  { title: "Tech Skills", href: "#tech-skills" },
+  { title: "Contact", href: "#contact" }
+];
+
 export default function Menu() {
   return (<>
       <div className="menu">
         <ul className="menu-list">
-          <li className="menu-option">
-            <a href="#">Portfolio</a>
-          </li>
-          <li className="menu-option">
-            <a href="#projects">Projects</a>
-          </li>
-          <li className="menu-option">
-            <a href="#experience">Experience</a>
-          </li>
-          <li className="menu-option">
-            <a href="#education">Education</a>
-          </li>
-          <li className="menu-option">
-            <a href="#soft-skills">Soft Skills</a>
-          </li>
-          <li className="menu-option">
-            <a href="#tech-skills">Tech Skills</a>
-          </li>
-          <li className="menu-option">
-            <a href="#contact">Contact</a>
-          </li>
+          {menu.map((menuOption, index) => (
+            <li key={index} className="menu-option">
+              <a href={menuOption.href}>{menuOption.title}</a>
+            </li>
+          ))}
         </ul>
       </div>
       <a href="#" className="back-button">
