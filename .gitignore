@@ -3,8 +3,20 @@
 # IDE related
 /.vscode
 
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
 # dependencies
 /node_modules
+dist
+dist-ssr
+*.local
 /.pnp
 .pnp.js
 
@@ -14,6 +26,9 @@
 # production
 /build
 
+# Intlayer folder
+.intlayer
+
 # misc
 .DS_Store
 .env.local
@@ -21,6 +36,3 @@
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*

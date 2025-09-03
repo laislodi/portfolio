@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { intlayerPlugin } from "vite-intlayer";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), intlayerPlugin()],
   base: '/portfolio/', // important for GitHub Pages
   test: {
     globals: true,
