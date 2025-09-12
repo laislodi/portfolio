@@ -137,7 +137,6 @@ header .button:active {
   header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   header h1 {
     font-size: 4rem;
@@ -157,7 +156,6 @@ header .button:active {
   header .profile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   header .profile-image {
     overflow: hidden;

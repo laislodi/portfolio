@@ -3,7 +3,7 @@ import { configuration } from "intlayer";
 import { useLocale, useIntlayer } from "react-intlayer";
 
 export default function Header() {
-  const content = useIntlayer("education_content");
+  const content = useIntlayer("header_content");
   
   const { locale, setLocale } = useLocale();
   const { internationalization } = configuration;
