@@ -2,39 +2,52 @@ import React from 'react';
 import { expect, it, describe, vi, afterEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Header from './Header.jsx';
-import * as dataModule from "../../assets/data/resume.jsx";
 
-vi.mock('../../assets/data/resume.jsx');
+// Mock intlayer modules
+vi.mock('intlayer', () => ({
+  configuration: {
+    internationalization: {
+      locales: ['en', 'fr-CA'],
+      defaultLocale: 'en'
+    }
+  }
+}));
+
+vi.mock('react-intlayer', () => ({
+  useLocale: () => ({
+    locale: 'en',
+    setLocale: vi.fn()
+  }),
+  useIntlayer: () => ({
+    name: 'John Doe',
+    title: 'Software Developer',
+    summary: 'I am a full stack developer with a passion for building web applications.',
+    aboutMe: 'About me',
+    linkedIn: 'https://www.linkedin.com/in/johndoe'
+  })
+}));
 
 describe('Header Component', () => {
   afterEach(() => {
     vi.clearAllMocks();
   });
 
-  it('Test header renders without errors with valid resume', () => {
+  it('should render without errors', () => {
     expect(() => render(<Header />)).not.toThrow();
   });
 
-  it('Applies semantic roles to elements', () => {
+  it('should render header elements with correct content', () => {
     render(<Header />);
-    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 3 })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'About me' })).toBeInTheDocument();
-  });
-
-  it('Function returns expected output for typical use case', () => {
-    const about = "I am a full stack developer with a passion for building web applications.";
-    dataModule.RESUME = {
-      about: about,
-      name: "John Doe",
-      medias: {
-        LinkedIn: "https://www.linkedin.com/in/johndoe"
-      }
-    }
-    render(<Header />);
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent("John Doe");
-    expect(screen.getByText(about)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('John Doe');
+    expect(screen.getByRole('heading', { level: 3 })).toHaveTextContent('Software Developer');
+    expect(screen.getByText('I am a full stack developer with a passion for building web applications.')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'About me' })).toHaveAttribute('href', '#projects');
     expect(screen.getByRole('link', { name: 'LinkedIn' })).toHaveAttribute('href', 'https://www.linkedin.com/in/johndoe');
+  });
+
+  it('should render locale selector buttons', () => {
+    render(<Header />);
+    expect(screen.getByRole('button', { name: 'EN' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'FR-CA' })).toBeInTheDocument();
   });
 });
