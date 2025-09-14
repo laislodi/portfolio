@@ -1,5 +1,5 @@
 import React from 'react';
-import { expect, it, describe } from 'vitest';
+import { expect, it, describe, vi, afterEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Header from './Header.jsx';
 import * as dataModule from "../../assets/data/resume.jsx";

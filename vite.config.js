@@ -9,6 +9,14 @@ export default defineConfig({
     globals: true,
     setupFiles: 'src/setupTests.js',
     environment: 'jsdom',
+    pool: 'forks',
+    deps: {
+      optimizer: {
+        web: {
+          exclude: ['intlayer']
+        }
+      }
+    }
   }
 });
 // This configuration sets up Vite with React support and specifies the base path for deployment on GitHub Pages.

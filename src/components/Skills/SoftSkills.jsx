@@ -13,8 +13,8 @@ export default function SoftSkills() {
           <h1>Soft Skills</h1>
         </a>
         <ul>
-          {skills.map(skill => (
-            <li key={skill.title}>
+          {skills.map((skill, index) => (
+            <li key={skill.title || index}>
               <div className="skill-container">
                 <div className="img-container">
                   <img className="text-color" src={skill.image} alt={skill.title} />

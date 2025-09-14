@@ -22,7 +22,7 @@ export default function Menu() {
         </ul>
       </div>
       <a href="#" className="back-button">
-        <span class="material-icons">
+        <span className="material-icons">
           keyboard_double_arrow_up
         </span>
       </a>
