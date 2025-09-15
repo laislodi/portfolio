@@ -8,7 +8,7 @@ vi.mock('intlayer', () => ({
   configuration: {
     internationalization: {
       locales: ['en', 'fr-CA'],
-      defaultLocale: 'en'
+      defaultLocale: 'fr-CA'
     }
   }
 }));
@@ -43,11 +43,5 @@ describe('Header Component', () => {
     expect(screen.getByText('I am a full stack developer with a passion for building web applications.')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'About me' })).toHaveAttribute('href', '#projects');
     expect(screen.getByRole('link', { name: 'LinkedIn' })).toHaveAttribute('href', 'https://www.linkedin.com/in/johndoe');
-  });
-
-  it('should render locale selector buttons', () => {
-    render(<Header />);
-    expect(screen.getByRole('button', { name: 'EN' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'FR-CA' })).toBeInTheDocument();
   });
 });

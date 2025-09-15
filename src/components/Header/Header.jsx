@@ -1,26 +1,11 @@
 import "./Header.css";
-import { configuration } from "intlayer";
-import { useLocale, useIntlayer } from "react-intlayer";
+import { useIntlayer } from "react-intlayer";
 
 export default function Header() {
   const content = useIntlayer("header_content");
   
-  const { locale, setLocale } = useLocale();
-  const { internationalization } = configuration;
-  const { locales, defaultLocale } = internationalization;
-  
-  const currentLocale = locale ?? defaultLocale;
   return (
     <header id="home">
-      <div className="locale-selector">
-        {locales.map(locale => <button
-          key={locale}
-          onClick={() => setLocale(locale)}
-          className={`${locale === currentLocale ? 
-            "selected-locale" : "unselected-locale"}`}>
-            {locale.toUpperCase()}
-        </button>)}
-      </div>
       <div className="profile">
         <div className="profile-image"></div>
         <div className="profile-info">

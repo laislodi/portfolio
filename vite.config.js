@@ -13,9 +13,12 @@ export default defineConfig({
     deps: {
       optimizer: {
         web: {
-          exclude: ['intlayer']
+          exclude: ['intlayer', 'react-intlayer']
         }
       }
+    },
+    define: {
+      'process.env.NODE_ENV': '"test"'
     }
   }
 });
