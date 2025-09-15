@@ -30,7 +30,7 @@ export default {
       d'applications Web à grande échelle. Maîtrise de ReactJS, Javascript, HTML et CSS. 
       Connaissance aussi en Java, Python, bases de données relationnelles, Docker, Jenkins, 
       environnements Linux et AWS. Une ardente défenseure des meilleures pratiques. Collaborative 
-      et axée sur les données, passionnée par la fourniture de solutions de haute qualité, 
+      et axée sur les données, passionnée par la livraison de solutions de haute qualité, 
       centrées sur l'utilisateur, dans des environnements dynamiques.`
     }),
     linkedIn: "https://www.linkedin.com/in/laislodi/"
