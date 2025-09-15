@@ -18,7 +18,7 @@ export default function Menu() {
             onClick={() => setLocale(locale)}
             className={`${locale === currentLocale ? 
               "selected-locale" : "unselected-locale"}`}>
-              {locale.toUpperCase()}
+              {locale}
           </button>)}
         </div>
         <ul className="menu-list">
@@ -33,11 +33,6 @@ export default function Menu() {
           })}
         </ul>
       </div>
-      <a href="#" className="back-button">
-        <span className="material-icons">
-          keyboard_double_arrow_up
-        </span>
-      </a>
     </>
   );
 };
