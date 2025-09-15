@@ -24,7 +24,7 @@ export default function Menu() {
         <ul className="menu-list">
           {content.menuList.map((menuOption, index) => (
             <li key={`menu-${index}`} className="menu-option">
-              <a href={menuOption.href.key}>{menuOption.title}</a>
+              <a href={menuOption.href}>{menuOption.title}</a>
             </li>
           ))}
         </ul>
