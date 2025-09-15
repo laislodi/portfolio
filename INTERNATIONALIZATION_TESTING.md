@@ -22,7 +22,7 @@ The development server is running at `http://localhost:5175/portfolio/`
      - Name: "Lais Gabrielle Lodi" (unchanged)
      - Title: "Développeuse  Full Stack"
      - About Me button: "Sur moi"
-     - Summary: "Salut, Je sui une Développeuse Full Stack..."
+     - Summary: "Salut, Je suis une Développeuse Full Stack..."
 
 3. **Menu Component Translation**
    - **English (EN):**
