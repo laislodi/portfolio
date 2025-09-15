@@ -14,7 +14,7 @@ export default {
     name: "Lais Gabrielle Lodi",
     title: t({
       en: "Full Stack Developer",
-      "fr-CA": "Développeur Full Stack"
+      "fr-CA": "Développeuse Full Stack"
     }),
     aboutMe: t({
       en: "About me",

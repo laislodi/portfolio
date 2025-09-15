@@ -1,22 +1,30 @@
+import { configuration } from "intlayer";
+import { useLocale, useIntlayer } from "react-intlayer";
 import "./Menu.css";
 
-const menu = [
-  { title: "Portfolio", href: "#" },
-  { title: "Projects", href: "#projects" },
-  { title: "Experience", href: "#experience" },
-  { title: "Education", href: "#education" },
-  { title: "Soft Skills", href: "#soft-skills" },
-  { title: "Tech Skills", href: "#tech-skills" },
-  { title: "Contact", href: "#contact" }
-];
-
 export default function Menu() {
+  const content = useIntlayer("menu_content");
+  
+  const { locale, setLocale } = useLocale();
+  const { internationalization } = configuration;
+  const { locales, defaultLocale } = internationalization;
+  
+  const currentLocale = locale ?? defaultLocale;
   return (<>
       <div className="menu">
+        <div className="locale-selector">
+          {locales.map(locale => <button
+            key={locale}
+            onClick={() => setLocale(locale)}
+            className={`${locale === currentLocale ? 
+              "selected-locale" : "unselected-locale"}`}>
+              {locale.toUpperCase()}
+          </button>)}
+        </div>
         <ul className="menu-list">
-          {menu.map((menuOption, index) => (
-            <li key={index} className="menu-option">
-              <a href={menuOption.href}>{menuOption.title}</a>
+          {content.menuList.map((menuOption, index) => (
+            <li key={`menu-${index}`} className="menu-option">
+              <a href={menuOption.href.key}>{menuOption.title}</a>
             </li>
           ))}
         </ul>

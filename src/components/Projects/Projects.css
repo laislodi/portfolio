@@ -97,14 +97,6 @@ img.text-color {
   }
 }
 
-@media (max-width: 1000px) {
-  .back-button {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-  }
-}
-
 @media (max-width: 800px) {
   #projects {
     padding: 15px;

@@ -2,6 +2,52 @@ import React from 'react';
 import { expect, it, describe } from 'vitest';
 import { render } from '@testing-library/react';
 import Menu from './Menu.jsx';
+import { useLocale } from 'react-intlayer';
+
+
+// Mock intlayer modules
+vi.mock('intlayer', () => ({
+  configuration: {
+    internationalization: {
+      locales: ['en', 'fr-CA'],
+      defaultLocale: 'en'
+    }
+  }
+}));
+
+vi.mock('react-intlayer', () => ({
+  useLocale: () => ({
+    locale: 'en',
+    setLocale: vi.fn()
+  }),
+  useIntlayer: () => ({
+    menuList: [
+      {
+        title: "Portfolio", 
+        href: "#"
+      }, {
+        title: "Projects",
+        href: "#projects"
+      }, {
+        title: "Experience",
+        href: "#experience"
+      }, {
+        title: "Education",
+        href: "#education"
+      }, {
+        title: "Soft Skills",
+        href: "#soft-skills"
+      }, {
+        title: "Tech Skills",
+        href: "#tech-skills"
+      }, {
+        title: "Contact",
+        href: "#contact"
+      }
+    ],
+    t: () => vi.fn()
+  })
+}));
 
 describe('Menu', () => {
   it('should render 7 navigation links in total', () => {
