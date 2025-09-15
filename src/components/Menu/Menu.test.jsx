@@ -84,18 +84,6 @@ describe('Menu', () => {
     expect(links[6].getAttribute('href')).toBe('#contact');
   });
 
-  it('should render back button with correct href and icon', () => {
-    const { container } = render(<Menu />);
-    const backButton = container.querySelector('.back-button');
-
-    expect(backButton).toBeInTheDocument();
-    expect(backButton.getAttribute('href')).toBe('#');
-
-    const icon = backButton.querySelector('.material-icons');
-    expect(icon).toBeInTheDocument();
-    expect(icon.textContent.trim()).toBe('keyboard_double_arrow_up');
-  });
-
   it('should render the menu with correct class names', () => {
     const { container } = render(<Menu />);
     const menu = container.querySelector('.menu');
@@ -114,13 +102,5 @@ describe('Menu', () => {
     expect(container.querySelector('.menu')).toBeInTheDocument();
     expect(container.querySelector('.menu-list')).toBeInTheDocument();
     expect(container.querySelectorAll('.menu-option').length).toBe(7);
-
-    const backButton = container.querySelector('.back-button');
-    expect(backButton).toBeInTheDocument();
-    expect(backButton.getAttribute('href')).toBe('#');
-
-    const icon = backButton.querySelector('.material-icons');
-    expect(icon).toBeInTheDocument();
-    expect(icon.textContent.trim()).toBe('keyboard_double_arrow_up');
   });
 });

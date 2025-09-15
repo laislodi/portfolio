@@ -12,6 +12,9 @@
   border-radius: 8px;
   padding: 5px;
   margin: 0 3px;
+  opacity: 1;
+  font-size: medium;
+  font-variant: small-caps;
   font-weight: bold;
 }
 
@@ -21,37 +24,9 @@
   border: var(--accent1) solid 2px;
   border-radius: 8px;
   padding: 5px;
-}
-
-.back-button {
-  position: fixed;
-  z-index: 2;
-  bottom: 80px;
-  right: 80px;
-  border: 2px solid var(--text);
-  color: var(--text);
-  border-radius: 40%;
-  background-color: var(--bg1);
-}
-
-.back-button:hover {
-  box-shadow: 2px 2px 2px var(--accent1);
-  background-color: var(--bg2);
-}
-
-.material-icons {
-  transform: translateY(3px);
-}
-
-.material-icons:hover {
-  animation:  up 0.5s;
-  animation-iteration-count: infinite;
-  transform: translateY(0);
-}
-
-@keyframes up {
-  from {transform: translateY(0);}
-  to {transform: translateY(3px);}
+  opacity: 1;
+  font-size: medium;
+  font-variant: small-caps;
 }
 
 .menu .locale-selector {
@@ -60,7 +35,7 @@
   opacity: 1;
 }
 
-@keyframes fade-in {
+@keyframes fade-out {
   to {opacity: 1; z-index: 10}
 }
 
@@ -82,7 +57,7 @@
   border-radius: 20px;
   z-index: -2;
   opacity: 0;
-  animation: fade-in linear forwards;
+  animation: fade-out linear forwards;
   animation-timeline: view();
 }
 
@@ -100,22 +75,33 @@
 }
 
 @media (max-width: 1300px) {
-  .back-button {
-    position: fixed;
-    z-index: 2;
-    bottom: 120px;
-    right: 120px;
-  }
   .menu .menu-list {
     gap: 2px;
+  }
+  .locale-selector {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    gap: 6px;
+  }
+  .selected-locale {
+    opacity: 0.8;
+    margin: 0;
+    font-size: small;
+    font-variant: normal;
+  }
+  .unselected-locale {
+    opacity: 0.8;
+    font-size: small;
+    font-variant: normal;
   }
 }
 
 @media (max-width: 800px) {
-  .menu {
+  .menu .menu-list {
     display: none;
   }
-  .back-button {
-    display: none;
+  header .about-me-buttons .button {
+    font-size: 1rem;
   }
 }
