@@ -22,11 +22,15 @@ export default function Menu() {
           </button>)}
         </div>
         <ul className="menu-list">
-          {content.menuList.map((menuOption, index) => (
-            <li key={`menu-${index}`} className="menu-option">
-              <a href={menuOption.href}>{menuOption.title}</a>
-            </li>
-          ))}
+          {content.menuList.map((menuOption, index) => {
+            // Extract href from React element key property to handle intlayer Proxy objects
+            const hrefValue = menuOption.href?.key || menuOption.href;
+            return (
+              <li key={`menu-${index}`} className="menu-option">
+                <a href={hrefValue}>{menuOption.title}</a>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <a href="#" className="back-button">

@@ -23,10 +23,7 @@ export default {
           en: "Portfolio",
           "fr-CA": "Portefeuille"
         }), 
-        href: t({
-          en: "#",
-          "fr-CA": "#"
-        })
+        href: "#"
       }, {
         title: t({en: "Projects", "fr-CA": "Projets"}), 
         href: "#projects"

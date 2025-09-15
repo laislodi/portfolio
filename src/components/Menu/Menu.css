@@ -115,5 +115,7 @@
   .menu {
     display: none;
   }
+  .back-button {
+    display: none;
+  }
 }
-
