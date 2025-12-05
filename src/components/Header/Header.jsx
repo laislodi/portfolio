@@ -14,7 +14,7 @@ export default function Header() {
           <p>{content.summary}</p>
           <div className="about-me-buttons">
             <a href="#projects" className="button about-me">{content.aboutMe}</a>
-            <a href={content.linkedIn} target="_blank" className="button linkedIn">LinkedIn</a>
+            <a href={"https://www.linkedin.com/in/laislodi/"} target="_blank" className="button linkedIn">LinkedIn</a>
           </div>
         </div>
       </div>
