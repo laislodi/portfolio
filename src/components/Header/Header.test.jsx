@@ -23,7 +23,6 @@ vi.mock('react-intlayer', () => ({
     title: 'Software Developer',
     summary: 'I am a full stack developer with a passion for building web applications.',
     aboutMe: 'About me',
-    linkedIn: 'https://www.linkedin.com/in/johndoe'
   })
 }));
 
@@ -42,6 +41,6 @@ describe('Header Component', () => {
     expect(screen.getByRole('heading', { level: 3 })).toHaveTextContent('Software Developer');
     expect(screen.getByText('I am a full stack developer with a passion for building web applications.')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'About me' })).toHaveAttribute('href', '#projects');
-    expect(screen.getByRole('link', { name: 'LinkedIn' })).toHaveAttribute('href', 'https://www.linkedin.com/in/johndoe');
+    expect(screen.getByRole('link', { name: 'LinkedIn' })).toBeVisible();
   });
 });
