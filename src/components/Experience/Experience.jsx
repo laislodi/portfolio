@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import "./Experience.css";
 import { useIntlayer } from 'react-intlayer';
 
