@@ -42,6 +42,34 @@ export const RESUME = {
   },
   "jobExperience": [
     {
+      "company": "Edvisor IO",
+      "title": "Frontend Developer",
+      "date": {
+        "from": {
+          "month": "Sep",
+          "year": 2025
+        },
+        "to": {
+          "month": "Jan",
+          "year": 2026
+        }
+      },
+      "location": {
+        "city": "Vancouver",
+        "province": "BC",
+        "country": "Canada",
+        "type": "remote"
+      },
+      "summary": "Collaborated with full-stack well stablish team to assist with rebuilding the frontend application, following a very detailed mockup on Figma.",
+      "tasks": [
+        "Develop and maintain client-facing web applications using React and TypeScript, translating business requirements and Jira user stories into scalable UI components.",
+        "Collaborate with backend engineers, designers, and product stakeholders to ensure all deliverables meet client requirements and adhere to established design specifications and best practices",
+        "Refine user stories and translate design mockups into functional, responsive UI components.",
+        "Leverage AI-assisted development tools (e.g., Claude.ai) to improve code quality, refactor legacy components, and accelerate delivery while maintaining reliability."
+      ],
+      "technologies": ["React", "Typescript", "Claude.ai", "REST", "CSS", "Jira", "Git", "GitHub"]
+    },
+    {
       "company": "Arctic Wolf",
       "title": "Software Developer",
       "date": {
@@ -85,7 +113,7 @@ export const RESUME = {
         }
       },
       "location": {
-        "city": "Vanvcouver",
+        "city": "Vancouver",
         "province": "BC",
         "country": "Canada",
         "type": "remote"
