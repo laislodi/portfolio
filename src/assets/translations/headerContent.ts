@@ -29,7 +29,7 @@ export default {
       "fr-CA": `Salut, Je sui une Développeuse Full Stack avec plus de 5 ans d'expérience dans la création 
       d'applications Web à grande échelle. Je maîtrise de ReactJS, Javascript, HTML et CSS.
       et possède également des connaissances em Java, Python, bases de données relationnelles, Docker, Jenkins, 
-      environnements Linux et AWS. Ardente défenseure des meilleures pratiquespratiques. Je suis collaborative 
+      environnements Linux et AWS. Ardente défenseure des meilleures pratiques. Je suis collaborative 
       et axée sur les données, passionnée par la fourniture de solutions de haute qualité, 
       centrées sur l'utilisateur, dans des environnements dynamiques.`
     }),

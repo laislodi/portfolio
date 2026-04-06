@@ -1,41 +1,31 @@
-import PropTypes from 'prop-types';
 import "./Experience.css";
-
-export function formatDate(date) {
-  if (!date) return "No given Date";
-  if (!date.from || !date.to) return "";
-  const from = `${date.from.month} ${date.from.year}`;
-  const to = `${date.to.month} ${date.to.year}`;
-  return `${from} to ${to}`;
-};
-
-export function formatLocation(location) {
-  if (!location) return "";
-  const region = location.state || location.province || "";
-  let str = [location.city, region, location.country].filter(Boolean).join(', ');
-  if (location.type) str += ` (${location.type})`;
-  return str;
-}
+import { useIntlayer } from 'react-intlayer';
 
 /**
  * Renders a section displaying a Timeline of Job Experiences
  * @param {JobExperience[]} jobExperiences - Array of JobExperience Objects. 
  */
-export default function Experience({ jobExperiences = [] }) {
+export default function Experience() {
+  const content = useIntlayer("experience_content");
+
   return (
     <section id="experience">
       <a href="#experience" className="title-link">
-        <h1 id="timeline">Experience</h1>
+        <h1 id="timeline">{content.section_title}</h1>
       </a>
       <div id="exp-max-width">
         <ul>
-          {jobExperiences && jobExperiences.map((experience, index) => (
+          {content && content.experience.map((experience, index) => (
             <li key={`exp-${index}`}>
               <div className="line">
                 <div className="where-when">
                   <h3>{experience.company}</h3>
-                  <p className="date">{formatDate(experience.date)}</p> 
-                  <p className="place">{formatLocation(experience.location)}</p>
+                  <p className="date">
+                      {experience.date.from.month} {experience.date.from.year} to {experience.date.to.month} {experience.date.to.year}
+                  </p> 
+                  <p className="place">
+                    {experience.location.city}, {experience.location.province}, {experience.location.country} ({experience.location.type})
+                  </p>
                 </div>
                 <div className="job">
                   <h3>{experience.title}</h3>
@@ -48,31 +38,4 @@ export default function Experience({ jobExperiences = [] }) {
       </div>
     </section>
   );
-};
-
-Experience.propTypes = {
-  jobExperiences: PropTypes.arrayOf(
-    PropTypes.shape({
-      company: PropTypes.string.isRequired,
-      date: PropTypes.shape({
-        from: PropTypes.shape({
-          month: PropTypes.string.isRequired,
-          year: PropTypes.string.isRequired,
-        }),
-        to: PropTypes.shape({
-          month: PropTypes.string.isRequired,
-          year: PropTypes.string.isRequired,
-        }),
-      }),
-      location: PropTypes.shape({
-        city: PropTypes.string,
-        state: PropTypes.string,
-        province: PropTypes.string,
-        country: PropTypes.string,
-        type: PropTypes.string,
-      }),
-      title: PropTypes.string.isRequired,
-      summary: PropTypes.string,
-    })
-  ),
 };
