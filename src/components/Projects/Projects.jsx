@@ -1,19 +1,26 @@
 import GitHubImg from "../../assets/images/github-logo.png";
 import PropTypes from 'prop-types';
 import "./Projects.css";
+import { useIntlayer, t } from "react-intlayer";
 
-/**
- * Projects component displays a list of project entries with details and links.
- * @param {Project[]} projects - Array of project Projects.
- */
-export default function Projects({ projects }) {
+export default function Projects() {
+  const content = useIntlayer("projects_content");
+  const check_code = t({
+    en: "Check the code!",
+    "fr-CA": "Regarde ça!"
+  });
+  const try_it = t({
+    en: "Try it!",
+    "fr-CA": "Essaye le!"
+  })
+
   return (
     <section id="projects">
       <a href="#projects" className="title-link">
-        <h1>Projects</h1>
+        <h1>{content.section_title}</h1>
       </a>
       <ul className="project-list">
-        {projects.map((project, index) => {
+        {content && content.projects.map((project, index) => {
           const keyBase = `${project.name}-${index}`;
           return (
             <li key={keyBase} className="project-info">
@@ -31,12 +38,12 @@ export default function Projects({ projects }) {
                 { project.github && 
                 <a href={project.github} target="_blank">
                   <img className="github-link text-color" src={GitHubImg} alt="GitHub logo" />
-                  <span>Check the code!</span>
+                  <span>{check_code}</span>
                 </a>
                 }
                 { project.url && 
                   <a href={project.url} target="_blank">
-                    <span>Try it!</span>
+                    <span>{try_it}</span>
                   </a>
                 }
               </div>
