@@ -1,19 +1,20 @@
+import { useIntlayer } from "react-intlayer";
 import "./Education.css";
 
-export default function Education({ education, certifications}) {
-  if (!education && !certifications) return null;
+export default function Education() {
+  const content = useIntlayer("education_content");
   
   return (
     <section id="education">
       <div className="max-width">
         <a href="#education" className="education-title">
-          <h1>Education</h1>
+          <h1>{content.education_title}</h1>
         </a>
-        {education?.length > 0 && (
+        {content.education?.length > 0 && (
           <ul className="education-list">
-            {education.map((ed, index) => (
+            {content.education.map((ed, index) => (
               <li key={`education-${index}`}>
-                <h2>{ed.name}</h2>
+                <h2>{ed.course}</h2>
                 <h3>{ed.type}</h3>
                 <h4>
                   {ed.institution} {ed.year}
@@ -22,15 +23,15 @@ export default function Education({ education, certifications}) {
             ))}
           </ul>
         )}
-        { certifications && certifications.length !== 0 && 
+        { content.certifications && content.certifications.length !== 0 && 
           (<>
-            <h2>Certifications</h2>
+            <h2>{content.certification_title}</h2>
             <ul className="certification-list">
-              {certifications.map((cert, index) => {
+              {content.certifications.map((cert, index) => {
                 return <li key={"certification-".concat(index.toString())}>
                   <h2>{cert.name}</h2>
                   <h3>{cert.issuedBy}</h3>
-                  <h4>{cert.issued}</h4>
+                  <h4><spam>{cert.issued.month}</spam> <spam>{cert.issued.year}</spam></h4>
                 </li>
               })}
             </ul>
