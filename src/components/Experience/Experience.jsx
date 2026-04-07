@@ -17,8 +17,8 @@ export default function Experience() {
                 <div className="where-when">
                   <h3>{experience.company}</h3>
                   <p className="date">
-                    <spam>{experience.date.from.month} {experience.date.from.year}</spam>
-                    <spam>{experience.date.to.month} {experience.date.to.year}</spam>
+                    <span>{experience.date.from.month} {experience.date.from.year}</span>
+                    <span>{experience.date.to.month} {experience.date.to.year}</span>
                   </p> 
                   <p className="place">
                     {experience.location.city}, {experience.location.province}, {experience.location.country} ({experience.location.type})
