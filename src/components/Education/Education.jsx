@@ -8,7 +8,7 @@ export default function Education() {
     <section id="education">
       <div className="max-width">
         <a href="#education" className="education-title">
-          <h1>{content.education_title}</h1>
+          <h1>{content.educationTitle}</h1>
         </a>
         {content.education?.length > 0 && (
           <ul className="education-list">
@@ -25,7 +25,7 @@ export default function Education() {
         )}
         { content.certifications && content.certifications.length !== 0 && 
           (<>
-            <h2>{content.certification_title}</h2>
+            <h2>{content.certificationTitle}</h2>
             <ul className="certification-list">
               {content.certifications.map((cert, index) => {
                 return <li key={"certification-".concat(index.toString())}>

@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <section id="projects">
       <a href="#projects" className="title-link">
-        <h1>{content.section_title}</h1>
+        <h1>{content.sectionTitle}</h1>
       </a>
       <ul className="project-list">
         {content && content.projects.map((project, index) => {

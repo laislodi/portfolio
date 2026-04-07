@@ -1,4 +1,4 @@
-import { t, type Dictionary }from "intlayer";
+import { t, type Dictionary } from "intlayer";
 
 interface EducationType {
   institution: string,
@@ -25,16 +25,16 @@ interface CertificateType {
 }
 
 interface EducationContent {
-  education_title: string,
+  educationTitle: string,
   education: EducationType[],
-  certification_title: string,
+  certificationTitle: string,
   certifications: CertificateType[]
 }
 
 export default {
   key: "education_content",
   content: {
-    education_title: t({
+    educationTitle: t({
       en: "Education",
       "fr-CA": "Éducation"
     }),
@@ -70,7 +70,7 @@ export default {
       type: "High School",
       year: 2005
     }],
-    certification_title: "Certifications",
+    certificationTitle: "Certifications",
     certifications: [
       {
       name: "React Hooks",
