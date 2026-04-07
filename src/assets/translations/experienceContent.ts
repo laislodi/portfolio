@@ -25,7 +25,7 @@ interface ExperienceType {
 }
 
 interface ExperienceContent {
-  section_title: string,
+  sectionTitle: string,
   experience: ExperienceType[]
 }
 
@@ -56,7 +56,7 @@ function job_type(job_type: JobType) {
 export default {
   key: "experience_content",
   content: {
-    section_title: t({
+    sectionTitle: t({
       en: "Experience",
       "fr-CA": "Expérience"
     }),

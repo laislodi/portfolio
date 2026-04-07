@@ -9,7 +9,6 @@ import Footer from "./components/Footer/Footer.jsx";
 import { Fragment } from "react/jsx-runtime";
 import FilterContextProvider from "./components/Skills/store/filter-context.jsx";
 import { CONTACT } from "./assets/data/data.jsx";
-import { RESUME } from "./assets/data/resume.jsx";
 
 export default function App() {
   
@@ -17,9 +16,9 @@ export default function App() {
     <Fragment>
       <Header />
       <Menu />
-      <Projects projects={RESUME.projects} />
-      <Experience jobExperiences={RESUME.jobExperience} />
-      <Education education={RESUME.education} certifications={RESUME.certifications} />
+      <Projects />
+      <Experience />
+      <Education />
       <SoftSkills />
       <FilterContextProvider>
         <TechSkills />

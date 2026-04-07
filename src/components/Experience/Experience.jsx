@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <section id="experience">
       <a href="#experience" className="title-link">
-        <h1 id="timeline">{content.section_title}</h1>
+        <h1 id="timeline">{content.sectionTitle}</h1>
       </a>
       <div id="exp-max-width">
         <ul>

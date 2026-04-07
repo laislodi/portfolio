@@ -11,14 +11,14 @@ interface ProjectsType {
 };
 
 interface PRojectsContent {
-  section_title: string,
+  sectionTitle: string,
   projects: ProjectsType[]
 }
 
 export default {
   key: "projects_content",
   content: {
-    section_title: t({
+    sectionTitle: t({
       en: "Projects",
       "fr-CA": "Projets"
     }),
