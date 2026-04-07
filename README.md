@@ -40,7 +40,6 @@ portfolio/
 │   │-- assets/
 │   │   |-- data/
 │   │   |   |-- data.jsx
-│   │   |   |-- resume.jsx
 │   │   |-- images/
 │   │   |   |-- apollo.png
 │   │   |   |-- bash-shell-logo.png
@@ -80,11 +79,9 @@ portfolio/
 │   │   │-- Education/
 │   │   |   |-- Education.jsx
 │   │   |   |-- Education.css
-│   │   |   |-- Education.test.jsx
 │   │   │-- Experience/
 │   │   |   |-- Experience.jsx
 │   │   |   |-- Experience.css
-│   │   |   |-- Experience.test.jsx
 │   │   │-- Footer/
 │   │   |   |-- Footer.jsx
 │   │   |   |-- Footer.css
@@ -93,13 +90,14 @@ portfolio/
 │   │   |   |-- Header.jsx
 │   │   |   |-- Header.css
 │   │   |   |-- Header.test.jsx
+|   |   |   |-- Header.integration.test.jsx
 │   │   │-- Menu/
 │   │   |   |-- Menu.jsx
 │   │   |   |-- Menu.css
 │   │   |   |-- Menu.test.jsx
 │   │   │-- Projects/
 │   │   |   |-- Projects.jsx
-│   │   |   |-- Projects.css
+│   │   |   |-- Projects.cs
 │   │   |   |-- Projects.test.jsx
 │   │   │-- Skills/
 │   │   |   |-- store
@@ -111,13 +109,16 @@ portfolio/
 │   │   |   |-- SoftSkills.test.jsx
 │   │   |   |-- TechSkills.jsx
 │   │   |   |-- TechSkills.css
-│   │   |   |-- TechSkills.test.jsx
 │   │-- App.jsx
 │   │-- index.jsx
 │   │-- index.css
 │   │-- setupTests.js
 │-- .gitignore
+|-- CLAUDE.MD
 │-- index.html
+|-- INTERNATIONALIZATION_TESTING.md
+|-- intlayer.config.ts
+|-- package-lock.json
 │-- package.json
 │-- README.md
 │-- tsconfig.json
