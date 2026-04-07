@@ -1,10 +1,6 @@
 import "./Experience.css";
 import { useIntlayer } from 'react-intlayer';
 
-/**
- * Renders a section displaying a Timeline of Job Experiences
- * @param {JobExperience[]} jobExperiences - Array of JobExperience Objects. 
- */
 export default function Experience() {
   const content = useIntlayer("experience_content");
 
@@ -21,7 +17,8 @@ export default function Experience() {
                 <div className="where-when">
                   <h3>{experience.company}</h3>
                   <p className="date">
-                      {experience.date.from.month} {experience.date.from.year} to {experience.date.to.month} {experience.date.to.year}
+                    <spam>{experience.date.from.month} {experience.date.from.year}</spam>
+                    <spam>{experience.date.to.month} {experience.date.to.year}</spam>
                   </p> 
                   <p className="place">
                     {experience.location.city}, {experience.location.province}, {experience.location.country} ({experience.location.type})
