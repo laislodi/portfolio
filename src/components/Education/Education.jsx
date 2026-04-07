@@ -31,7 +31,7 @@ export default function Education() {
                 return <li key={"certification-".concat(index.toString())}>
                   <h2>{cert.name}</h2>
                   <h3>{cert.issuedBy}</h3>
-                  <h4><spam>{cert.issued.month}</spam> <spam>{cert.issued.year}</spam></h4>
+                  <h4><span>{cert.issued.month}</span> <span>{cert.issued.year}</span></h4>
                 </li>
               })}
             </ul>
