@@ -74,8 +74,7 @@ ul.tech-list li {
 }
 
 .project-links a:hover {
-  color: var(--accent2);
-  text-shadow: var(--shadow-color) 3px 3px 4px;
+  text-shadow: var(--text) 3px 3px 4px;
 }
 
 .project-links a img {
