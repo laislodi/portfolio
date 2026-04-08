@@ -1,8 +1,8 @@
 import { createContext, useContext, useState } from "react";
 
 export const FilterContext = createContext({
-  category: ["Frontend", "Backend", "API", "DevOps", "Collaboration", "Testing", "Linux", "Database"],
-  filterSelector: ["Frontend", "Backend", "API", "DevOps", "Collaboration", "Testing", "Linux", "Database"],
+  category: ["frontend", "backend", "api", "devops", "collaboration", "testing", "linux", "database"],
+  filterSelector: ["frontend", "backend", "api", "devops", "collaboration", "testing", "linux", "database"],
   onAdd: () => {},
   onRemove: () => {},
   onAddAll: () => {},
@@ -19,12 +19,12 @@ export default function FilterContextProvider({ children }) {
   }
 
   function removeFilter(oldFilterSelector) {
-    const newFilters = filterSelector.filter(selector => selector !== oldFilterSelector);
+    const newFilters = filterSelector.filter(selector => selector != oldFilterSelector);
     setFilterSelector([...newFilters]);
   }
 
   function addAll() {
-    setFilterSelector([...context.category])
+    setFilterSelector([...context.category]);
   }
 
   function removeAll() {

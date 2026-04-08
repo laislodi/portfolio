@@ -1,4 +1,4 @@
-import GitHubImg from "../../assets/images/github-logo.png";
+import GitHubImg from "/github-logo.png";
 import PropTypes from 'prop-types';
 import "./Projects.css";
 import { useIntlayer, t } from "react-intlayer";

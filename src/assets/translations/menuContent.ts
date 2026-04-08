@@ -34,10 +34,10 @@ export default {
         title: t({en: "Education", "fr-CA": "Éducation"}), 
         href: "#education"
       }, {
-        title: t({en: "Soft Skills", "fr-CA": "Compétences générales"}), 
+        title: t({en: "Soft Skills", "fr-CA": "Compétences Générales"}), 
         href: "#soft-skills"
       }, {
-        title: t({en: "Tech Skills", "fr-CA": "Compétences techniques"}), 
+        title: t({en: "Tech Skills", "fr-CA": "Compétences Techniques"}), 
         href: "#tech-skills"
       }, {
         title: t({en: "Contact", "fr-CA": "Contact"}), 
