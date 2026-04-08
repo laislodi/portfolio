@@ -2,7 +2,7 @@ import { t, type Dictionary } from "intlayer";
 
 
 interface SoftSkillType {
-  imageKey: string,
+  imagePath: string,
   title: string,
   description: string
 }
@@ -21,7 +21,7 @@ export default {
     }),
     soft: [
       {
-        imageKey: "mentorship",
+        imagePath: "src/assets/images/soft-sill-mentorship.png",
         title: t({
           en: "Mentorship",
           "fr-CA": "Mentorat"
@@ -32,7 +32,7 @@ export default {
         }),
       },
       {
-        imageKey: "creativity",
+        imagePath: "src/assets/images/soft-skill-creativity-innovation.png",
         title: t({
           en: "Creativity",
           "fr-CA": "Créativité"
@@ -43,7 +43,7 @@ export default {
         }),
       },
       {
-        imageKey: 'teamwork',
+        imagePath: "src/assets/images/soft-skill-teamwork.png",
         title: t({
           en: "Teamwork",
           "fr-CA": "Travail d'équipe",
@@ -54,7 +54,7 @@ export default {
         }),
       },
       {
-        imageKey: 'communication',
+        imagePath: "src/assets/images/soft-skills-communication.png",
         title: "Communication",
         description: t({
           en: "I've talked to more senior developers about how to communicate better with juniors and how to express their feedback more respectfully and considered.",
@@ -62,7 +62,7 @@ export default {
         }),
       },
       {
-        imageKey: "empathy",
+        imagePath: "src/assets/images/empathy.svg",
         title: t({
           en: "Empathy",
           "fr-CA": "Empathie"
@@ -73,7 +73,7 @@ export default {
         }),
       },
       {
-        imageKey: "feedback",
+        imagePath: "src/assets/images/feedback.svg",
         title: t({
           en: "Constructive Feedback",
           "fr-CA": "Feedback constructifs"
@@ -84,7 +84,7 @@ export default {
         }),
       },
       {
-        imageKey: "selfMotivated",
+        imagePath: "src/assets/images/self-motivated.svg",
         title: t({
           en: "Self-Motivation",
           "fr-CA": "Motivation Personnelle"
@@ -95,7 +95,7 @@ export default {
         }),
       },
       {
-        imageKey: "investigative",
+        imagePath: "src/assets/images/investigative.svg",
         title: t({
           en: "Investigative",
           "fr-CA": "Enquêteur"
@@ -106,7 +106,7 @@ export default {
         }),
       },
       {
-        imageKey: "knowledgeShare",
+        imagePath: "src/assets/images/knowledge-share.svg",
         title: t({
           en: "Knowledge Sharing",
           "fr-CA": "Partage des connaissances"
