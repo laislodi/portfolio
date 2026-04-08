@@ -1,4 +1,4 @@
-import {t, type Dictionary} from "intlayer";
+import { t, type Dictionary } from "intlayer";
 
 interface ProjectsType {
   name: string,
@@ -10,7 +10,7 @@ interface ProjectsType {
   screenshots: string[]
 };
 
-interface PRojectsContent {
+interface ProjectsContent {
   sectionTitle: string,
   projects: ProjectsType[]
 }
@@ -111,4 +111,4 @@ export default {
       }
     ]
   }
-} satisfies Dictionary<PRojectsContent>;
+} satisfies Dictionary<ProjectsContent>;
