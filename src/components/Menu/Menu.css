@@ -80,15 +80,11 @@
   }
   .locale-selector {
     display: flex;
-    flex-direction: column;
     justify-items: stretch;
     gap: 6px;
   }
   .selected-locale {
-    opacity: 0.8;
-    margin: 0;
-    font-size: small;
-    font-variant: normal;
+    display: none;
   }
   .unselected-locale {
     opacity: 0.8;
