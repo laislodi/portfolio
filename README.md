@@ -29,6 +29,45 @@ The portfolio consists of multiple sections, each highlighting different aspects
 ```
 portfolio/
 |-- public/
+|   |-- softskills/
+|   |   |-- communication.svg
+|   |   |-- creativity.svg
+|   |   |-- empathy.svg
+|   |   |-- feedback.svg
+|   |   |-- investigative.svg
+|   |   |-- knowledge-share.svg
+|   |   |-- mentorship.svg
+|   |   |-- self-motivated.svg
+|   |   |-- teamwork.svg
+|   |---techskills/
+|   |   |-- apollo-logo.svg
+|   |   |-- bash-shell-logo.svg
+|   |   |-- bootstrap.svg
+|   |   |-- confluence.svg
+|   |   |-- css3.svg
+|   |   |-- cypress.svg
+|   |   |-- django.svg
+|   |   |-- docker-logo.svg
+|   |   |-- git.svg
+|   |   |-- github.svg
+|   |   |-- graphql.svg
+|   |   |-- html.svg
+|   |   |-- intlayer-logo.svg
+|   |   |-- java.svg
+|   |   |-- jenkins.svg
+|   |   |-- jest.svg
+|   |   |-- jira.svg
+|   |   |-- js.svg
+|   |   |-- linux.svg
+|   |   |-- mysql.svg
+|   |   |-- playwright.svg
+|   |   |-- postgresql.svg
+|   |   |-- python.svg
+|   |   |-- react.svg
+|   |   |-- rest-api.svg
+|   |   |-- spring.svg
+|   |   |-- tailwind.svg
+|   |   |-- ts.svg
 │   │-- Experience-dark.png
 │   │-- Experience-light.png
 │   │-- logo-purple-sm.png
@@ -40,41 +79,15 @@ portfolio/
 │   │-- assets/
 │   │   |-- data/
 │   │   |   |-- data.jsx
-│   │   |-- images/
-│   │   |   |-- apollo.png
-│   │   |   |-- bash-shell-logo.png
-│   │   |   |-- bootstrap.png
-│   │   |   |-- confluence.svg
-│   │   |   |-- css3.png
-│   │   |   |-- django.png
-│   │   |   |-- docker-logo.png
-│   │   |   |-- empathy.svg
-│   │   |   |-- feedback.svg
-│   │   |   |-- git-logo.png
-│   │   |   |-- github-logo.png
-│   │   |   |-- graphql-query.png
-│   │   |   |-- html5.png
-│   │   |   |-- investigating.svg
-│   │   |   |-- java-logo.png
-│   │   |   |-- javascript.png
-│   │   |   |-- jenkins-logo.png
-│   │   |   |-- jest.svg
-│   │   |   |-- jira.svg
-│   │   |   |-- knowledge-share.svg
-│   │   |   |-- logo-purple.png
-│   │   |   |-- mysql.png
-│   │   |   |-- postgresql-logo.png
-│   │   |   |-- python-logo.png
-│   │   |   |-- react-logo.png
-│   │   |   |-- restfull-api.png
-│   │   |   |-- self-motivated.svg
-│   │   |   |-- soft-skill-mentorship.png
-│   │   |   |-- soft-skill-creativity-innovation.png
-│   │   |   |-- soft-skill-communication.png
-│   │   |   |-- spring-framework.png
-│   │   |   |-- tailwind.svg
-│   │   |   |-- typescript.png
-│   │   |   |-- unix.png
+│   │   |-- translations/
+│   │   |   |-- educationContent.ts
+│   │   |   |-- experienceContent.ts
+│   │   |   |-- headerContent.ts
+│   │   |   |-- menuContent.ts
+│   │   |   |-- projectsContent.ts
+│   │   |   |-- softskillsContent.ts
+│   │   |   |-- techskillsContent.ts
+│   │   |   |-- translations.text.ts
 │   │-- components/
 │   │   │-- Education/
 │   │   |   |-- Education.jsx
