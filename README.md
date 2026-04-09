@@ -111,7 +111,6 @@ portfolio/
 │   │   │-- Projects/
 │   │   |   |-- Projects.jsx
 │   │   |   |-- Projects.cs
-│   │   |   |-- Projects.test.jsx
 │   │   │-- Skills/
 │   │   |   |-- store
 │   │   |   |   |-- filter-content.jsx

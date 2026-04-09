@@ -77,8 +77,8 @@ export default {
           },
           to: {
             month: t({
-              en: "Jun",
-              "fr-CA": "Juin" 
+              en: "Feb",
+              "fr-CA": "Fev"
             }),
             year: 2026
           }
