@@ -1,7 +1,12 @@
 import { useContext } from "react";
 import { FilterContext } from "./store/filter-context";
 
-export default function FilterOption({ option, checked = true, onChange = () => {} }) {
+export default function FilterOption({ 
+  option = "selectAll",
+  label = "Select All",
+  checked = true,
+  onChange = () => {}
+}) {
 
   const context = useContext(FilterContext);
 
@@ -11,21 +16,19 @@ export default function FilterOption({ option, checked = true, onChange = () => 
     } else {
       context.onRemove(option);
     }
-    onChange(!checked, option);
+    onChange(option, !checked);
   };
 
-  const checkId = option.toLowerCase().replace(" ","-");
-
   return (
-    <div className="filter-option" key={option}>
-      <label id={"label-".concat(checkId)} htmlFor={"filter-".concat(checkId)}>
+    <div className="filter-option" key={"option" + option}>
+      <label id={"label-".concat(option)} htmlFor={"filter-".concat(option)}>
         <input
           type="checkbox"
-          id={"filter-".concat(checkId)}
+          id={"filter-".concat(option)}
           onChange={handleChange}
           checked={checked}
         />
-        {option}
+        {label}
       </label>
     </div>
   )
