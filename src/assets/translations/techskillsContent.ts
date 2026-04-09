@@ -87,11 +87,11 @@ export default {
     },
     tech: [
       {
-        imagePath: "techskills/git-logo.png",
+        imagePath: "techskills/git.svg",
         types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.COLLABORATION],
         title: "Git"
       }, {
-        imagePath: "techskills/github-logo.png",
+        imagePath: "techskills/github.svg",
         types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.COLLABORATION],
         title: "GitHub"
       }, {
@@ -103,63 +103,63 @@ export default {
         types: [SKILL_TYPE.COLLABORATION],
         title: "Confluence"
       }, {
-        imagePath: "techskills/bash-shell-logo.png",
+        imagePath: "techskills/bash-shell.svg",
         types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
         title: "Bash"
       }, {
-        imagePath: "techskills/docker-logo.png",
+        imagePath: "techskills/docker.svg",
         types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
         title: "Docker"
       }, {
-        imagePath: "techskills/unix.png",
+        imagePath: "techskills/linux.svg",
         types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
         title: "Linux"
       }, {
-        imagePath: "techskills/jenkins-logo.png",
+        imagePath: "techskills/jenkins.svg",
         types: [SKILL_TYPE.DEVOPS, SKILL_TYPE.LINUX],
         title: "Jenkins"
       }, {
-        imagePath: "techskills/python-logo.png",
+        imagePath: "techskills/python.svg",
         types: [SKILL_TYPE.BACKEND],
         title: "Python"
       }, {
-        imagePath: "techskills/django.png",
+        imagePath: "techskills/django.svg",
         types: [SKILL_TYPE.BACKEND],
         title: "Django"
       }, {
-        imagePath: "techskills/java-logo.png",
+        imagePath: "techskills/java.svg",
         types: [SKILL_TYPE.BACKEND],
         title: "Java"
       }, {
-        imagePath: "techskills/spring-framework.png",
+        imagePath: "techskills/spring.svg",
         types: [SKILL_TYPE.BACKEND],
         title: "Spring"
       }, {
-        imagePath: "techskills/restfull-api.png",
+        imagePath: "techskills/rest-api.svg",
         types: [SKILL_TYPE.API],
         title: "REST"
       }, {
-        imagePath: "techskills/graphql-query.png",
+        imagePath: "techskills/graphql.svg",
         types: [SKILL_TYPE.API],
         title: "GraphQL"
       }, {
-        imagePath: "techskills/apollo.png",
+        imagePath: "techskills/apollo.svg",
         types: [SKILL_TYPE.FRONTEND],
         title: "Apollo"
       }, {
-        imagePath: "techskills/typescript.png",
+        imagePath: "techskills/ts.svg",
         types: [SKILL_TYPE.FRONTEND],
         title: "Typescript"
       }, {
-        imagePath: "techskills/html5.png",
+        imagePath: "techskills/html.svg",
         types: [SKILL_TYPE.FRONTEND],
         title: "HTML5"
       }, {
-        imagePath: "techskills/javascript.png",
+        imagePath: "techskills/js.svg",
         types: [SKILL_TYPE.FRONTEND],
         title: "Javascript"
       }, {
-        imagePath: "techskills/css3.png",
+        imagePath: "techskills/css3.svg",
         types: [SKILL_TYPE.FRONTEND],
         title: "CSS3"
       }, {
@@ -167,23 +167,23 @@ export default {
         types: [SKILL_TYPE.FRONTEND],
         title: "Tailwind"
       }, {
-        imagePath: "techskills/react-logo.png",
+        imagePath: "techskills/react.svg",
         types: [SKILL_TYPE.FRONTEND],
         title: "React"
       }, {
-        imagePath: "techskills/intlayer-logo.svg",
+        imagePath: "techskills/intlayer.svg",
         types: [SKILL_TYPE.FRONTEND],
         title: "Intlayer"
       }, {
-        imagePath: "techskills/bootstrap.png",
+        imagePath: "techskills/bootstrap.svg",
         types: [SKILL_TYPE.FRONTEND],
         title: "Bootstrap"
       }, {
-        imagePath: "techskills/postgresql-logo.png",
+        imagePath: "techskills/postgresql.svg",
         types: [SKILL_TYPE.DATABASE, SKILL_TYPE.BACKEND],
         title: "PostgreSQL"
       }, {
-        imagePath: "techskills/mysql.png",
+        imagePath: "techskills/mysql.svg",
         types: [SKILL_TYPE.DATABASE, SKILL_TYPE.BACKEND],
         title: "MySQL"
       }, {
@@ -194,6 +194,10 @@ export default {
         imagePath: "techskills/jest.svg",
         types: [SKILL_TYPE.TESTING, SKILL_TYPE.FRONTEND],
         title: "Jest"
+      }, {
+        imagePath: "techskills/playwright.svg",
+        types: [SKILL_TYPE.TESTING, SKILL_TYPE.FRONTEND],
+        title: "Playwright"
       }
     ]
   }

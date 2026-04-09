@@ -21,7 +21,7 @@ export default {
     }),
     soft: [
       {
-        imagePath: "softskills/soft-skill-mentorship.png",
+        imagePath: "softskills/mentorship.svg",
         title: t({
           en: "Mentorship",
           "fr-CA": "Mentorat"
@@ -32,7 +32,7 @@ export default {
         }),
       },
       {
-        imagePath: "softskills/soft-skill-creativity-innovation.png",
+        imagePath: "softskills/creativity.svg",
         title: t({
           en: "Creativity",
           "fr-CA": "Créativité"
@@ -43,7 +43,7 @@ export default {
         }),
       },
       {
-        imagePath: "softskills/soft-skill-teamwork.png",
+        imagePath: "softskills/teamwork.svg",
         title: t({
           en: "Teamwork",
           "fr-CA": "Travail d'équipe",
@@ -54,7 +54,7 @@ export default {
         }),
       },
       {
-        imagePath: "softskills/soft-skills-communication.png",
+        imagePath: "softskills/communication.svg",
         title: "Communication",
         description: t({
           en: "I've talked to more senior developers about how to communicate better with juniors and how to express their feedback more respectfully and considered.",
