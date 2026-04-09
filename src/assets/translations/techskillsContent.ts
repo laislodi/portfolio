@@ -171,6 +171,10 @@ export default {
         types: [SKILL_TYPE.FRONTEND],
         title: "React"
       }, {
+        imagePath: "techskills/intlayer-logo.svg",
+        types: [SKILL_TYPE.FRONTEND],
+        title: "Intlayer"
+      }, {
         imagePath: "techskills/bootstrap.png",
         types: [SKILL_TYPE.FRONTEND],
         title: "Bootstrap"
