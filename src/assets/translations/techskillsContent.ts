@@ -49,35 +49,35 @@ export default {
       },
       options: [
         {
-          option: "frontend",
+          option: SKILL_TYPE.FRONTEND,
           description: "Frontend"
         },
         {
-          option: "backend",
+          option: SKILL_TYPE.BACKEND,
           description: "Backend"
         },
         {
-          option: "api",
+          option: SKILL_TYPE.API,
           description: "API"
         },
         {
-          option: "devops",
+          option: SKILL_TYPE.DEVOPS,
           description: "DevOps"
         },
         {
-          option: "collaboration",
+          option: SKILL_TYPE.COLLABORATION,
           description: "Collaboration"
         },
         {
-          option: "testing",
+          option: SKILL_TYPE.TESTING,
           description: "Testing"
         },
         {
-          option: "linux",
+          option: SKILL_TYPE.LINUX,
           description: "Linux"
         },
         {
-          option: "database",
+          option: SKILL_TYPE.DATABASE,
           description: t({
             en: "Database",
             "fr-CA": "Base de Données"
@@ -197,4 +197,4 @@ export default {
       }
     ]
   }
-}satisfies Dictionary<TechSkillContent>;
+} satisfies Dictionary<TechSkillContent>;

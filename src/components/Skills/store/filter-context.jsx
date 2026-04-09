@@ -1,8 +1,37 @@
 import { createContext, useContext, useState } from "react";
 
+const SKILL_TYPE = {
+  FRONTEND: "frontend",
+  BACKEND: "backend",
+  API: "api",
+  DEVOPS: "devops",
+  COLLABORATION: "collaboration",
+  TESTING: "testing",
+  LINUX: "linux",
+  DATABASE: "database"
+}
+
 export const FilterContext = createContext({
-  category: ["frontend", "backend", "api", "devops", "collaboration", "testing", "linux", "database"],
-  filterSelector: ["frontend", "backend", "api", "devops", "collaboration", "testing", "linux", "database"],
+  category: [
+    SKILL_TYPE.FRONTEND,
+    SKILL_TYPE.BACKEND,
+    SKILL_TYPE.API,
+    SKILL_TYPE.DEVOPS,
+    SKILL_TYPE.COLLABORATION,
+    SKILL_TYPE.TESTING,
+    SKILL_TYPE.LINUX,
+    SKILL_TYPE.DATABASE
+  ],
+  filterSelector: [
+    SKILL_TYPE.FRONTEND,
+    SKILL_TYPE.BACKEND,
+    SKILL_TYPE.API,
+    SKILL_TYPE.DEVOPS,
+    SKILL_TYPE.COLLABORATION,
+    SKILL_TYPE.TESTING,
+    SKILL_TYPE.LINUX,
+    SKILL_TYPE.DATABASE
+  ],
   onAdd: () => {},
   onRemove: () => {},
   onAddAll: () => {},
@@ -19,7 +48,7 @@ export default function FilterContextProvider({ children }) {
   }
 
   function removeFilter(oldFilterSelector) {
-    const newFilters = filterSelector.filter(selector => selector != oldFilterSelector);
+    const newFilters = filterSelector.filter(selector => selector !== oldFilterSelector);
     setFilterSelector([...newFilters]);
   }
 

@@ -20,7 +20,7 @@ export default function TechSkills() {
           {skills.tech.map((skill, index) => {
             let hasCategory = false;
             filterCtx.filterSelector.forEach(selector => {
-              const found = skill.types.find(type => type.value == selector);
+              const found = skill.types.find(type => type.value === selector);
               if (found) {
                 hasCategory = true;
               }

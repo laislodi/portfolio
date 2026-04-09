@@ -11,7 +11,7 @@ export default function Filter() {
 
   const allIsSelected = useMemo(() => {
     return selected.length === filterCtx.category.length;
-  }, [selected.length]);
+  }, [selected.length, filterCtx.category.length]);
 
   function handleSelect(option, checked) {
     if (checked) {
