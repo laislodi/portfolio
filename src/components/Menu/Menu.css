@@ -7,7 +7,7 @@
 
 .selected-locale {
   background-color: var(--accent1);
-  color: white;
+  color: var(--text);
   border: var(--bg2) solid 2px;
   border-radius: 8px;
   padding: 5px;
@@ -20,7 +20,7 @@
 
 .unselected-locale {
   background-color: var(--bg2);
-  color: white;
+  color: var(--text);
   border: var(--accent1) solid 2px;
   border-radius: 8px;
   padding: 5px;
