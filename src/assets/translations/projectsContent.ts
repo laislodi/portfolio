@@ -30,7 +30,7 @@ export default {
         }),
         description: t({
           en: "A functional, beautiful and user-friendly design. A mock design for a cooking course website, with plans to subscribe to get access to recipes, videos of how to cook, images of dishes and a list of ingredients used in the recipes.",
-          "fr-CA": "Un design fonctionnel, esthétique et intuitif. Maquette d'un site Web de cours de cuisine, offrant un abonnement pour accéder aux recettes, aux tutoriels vidéo, aux photos des plats et à la liste des ingrédients."
+          "fr-CA": "Un design fonctionnel, esthétique et intuitif. Maquette d'un site Web de cours de cuisine, offrant un abonnement pour accéder des recettes, des tutoriels vidéo, des photos de plats et des liste d'ingrédients."
         }),
         url: "https://laislodi.github.io/easy-cooking_design/",
         github: "https://github.com/laislodi/easy-cooking_design",
@@ -41,11 +41,11 @@ export default {
       {
         name: t({
           en: "Rock, Paper, Scissors, Lizard, Spock",
-          "fr-CA": "Roche, Papier Ciseaux, Lézard et Spock"
+          "fr-CA": "Roche, papier, ciseaux, lézard et Spock"
         }),
         description: t({
           en: "Rock, Paper, Scissors, Lizard, Spock is a game of chance that expands the traditional game of Rock, Paper, Scissors. It is first used to settle a dispute about what to watch on TV between Sheldon and Raj in 'The Lizard-Spock Expansion'",
-          "fr-CA": "Roche, Papier Ciseaux, Lézard et Spock est un jeu de hasard qui enrichit le jeu traditionnel Roche, Papier Ciseaux. Il est utilisé pour la première fois afin de régler un différend entre Sheldon et Raj au sujet de l'émission de télévision à regarder, dans l'épisode \"L'extension Lézard-Spock\"."
+          "fr-CA": "Roche, papier, ciseaux, lézard et Spock est un jeu de hasard qui enrichit le jeu traditionnel toche, papier, ciseaux. Il a été utilisé pour la première fois afin de régler un différend entre Sheldon Cooper et Raj Koothrappali au sujet de l'émission de télévision à regarder, dans l'épisode \"L'extension Lézard-Spock\" de la série The Big Bang Theory."
         }),
         github: "https://github.com/laislodi/Rock-Paper-Scissors-Lizard-Spock",
         languages: ["Python"],
@@ -55,7 +55,7 @@ export default {
       {
         name: t({
           en: "Vancouver Aquarium Exhibits",
-          "fr-CA": "Expositions de l'Aquarium de Vancouver"
+          "fr-CA": "Expositions de l'aquarium de Vancouver"
         }),
         description: t({
           en: "This app is built using Google Maps Javascript API to create a funny way of showing the exhibits going on in the Vancouver Aquarium.",
@@ -71,7 +71,7 @@ export default {
         name: "Tic-Tac-Toe",
         description: t({
           en: "A Beautiful Tic Tac Toe game to play online.",
-          "fr-CA": "Un magnifique jeu de Tic Tac Toe à jouer en ligne."
+          "fr-CA": "Un magnifique jeu de Tic Tac Toe en ligne."
         }),
         url: "https://laislodi.github.io/tic-tac-toe/",
         github: "https://github.com/laislodi/tic-tac-toe",
@@ -86,7 +86,7 @@ export default {
         }),
         description: t({
           en: "Investor Calculator is a React single-page application that helps users estimate the growth of their investments over time. By inputting key financial details, the app calculates the future value of an investment based on compound interest.",
-          "fr-CA": "Calculateur de placement est une application en React qui permet d'estimer la croissance de ses investissements au fil du temps. En saisissant des informations financières clés, l'application calcule la valeur future d'un investissement en fonction des intérêts composés."
+          "fr-CA": "Calculateur de placement est une application avec React qui permet d'estimer la croissance d'um investissement au fil du temps. En saisissant des informations financières clés, l'application calcule la valeur future d'un investissement en fonction des intérêts composés."
         }),
         url: "https://laislodi.github.io/investment-calculator/",
         github: "https://github.com/laislodi/investment-calculator/",
@@ -101,7 +101,7 @@ export default {
         }),
         description: t({
           en: "React application that manages projects with checkable tasks. It deals with context, refs, portal and routes. The application has dark and light modes.",
-          "fr-CA": "Application React de gestion de projets avec tâches vérifiables. Elle gère le contexte, les références, le portail et les routes. L'application offre un mode clair et un mode sombre."
+          "fr-CA": "Application React de gestion de projets avec des tâches vérifiables. Elle gère le contexte, les références, le portail et les routes. L'application offre un mode clair et un mode sombre."
         }),
         url: "https://laislodi.github.io/project-management/",
         github: "https://github.com/laislodi/project-management/",
