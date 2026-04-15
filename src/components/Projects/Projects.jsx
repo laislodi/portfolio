@@ -36,13 +36,13 @@ export default function Projects() {
               </ul>
               <div className="project-links">
                 { project.github && 
-                <a href={project.github} target="_blank">
+                <a href={project.github.value} target="_blank">
                   <img className="github-link text-color" src={GitHubImg} alt="GitHub logo" />
                   <span>{check_code}</span>
                 </a>
                 }
                 { project.url && 
-                  <a href={project.url} target="_blank">
+                  <a href={project.url.value} target="_blank">
                     <span>{try_it}</span>
                   </a>
                 }
