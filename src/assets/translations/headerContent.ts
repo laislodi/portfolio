@@ -26,10 +26,10 @@ export default {
     Java, Python, Relational databases, Docker, Jenkins, Linux environments and AWS. A 
     strong advocate for best practices. Collaborative and data-driven, passionate about 
     delivering high-quality, user-centred solutions in dynamic environments.`,
-      "fr-CA": `Bonjour, Je sui une Développeuse Full Stack avec plus de 5 ans d'expérience dans la development 
-      d'applications Web à grande échelle. Je maîtrise ReactJS, Javascript, HTML et CSS.
-      Plui possède également des connaissances em Java, Python, bases de données relationnelles, Docker, Jenkins, 
-      environnements Linux et AWS. Ardente défenseure des meilleures pratiques. Je suis collaborative 
+      "fr-CA": `Bonjour, Je suis une Développeuse Full Stack avec plus de 5 ans d'expérience dans le développement 
+      d'applications Web à grande échelle. Je maîtrise ReactJS, Javascript, HTML pluis CSS.
+      Puis je possède également des connaissances em Java, Python, bases de données relationnelles, Docker, Jenkins, 
+      environnements Linux et AWS. Ardente défenseuse des meilleures pratiques. Je suis collaborativee 
       et axée sur les données, passionnée par la fourniture de solutions de haute qualité, 
       centrées sur l'utilisateur, dans des environnements dynamiques.`
     }),
