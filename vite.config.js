@@ -10,6 +10,7 @@ export default defineConfig({
     setupFiles: 'src/setupTests.js',
     environment: 'jsdom',
     pool: 'forks',
+    include: ['src/**/*.{test,spec}.{js,jsx,ts,tsx}'],
     deps: {
       optimizer: {
         web: {
