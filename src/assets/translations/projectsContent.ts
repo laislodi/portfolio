@@ -25,6 +25,28 @@ export default {
     projects: [
       {
         name: t({
+          en: "Hebrew Calendar",
+          "fr-CA": "Calendrier hébraïque (Juif)"
+        }),
+        description: t({
+          en: "A calendar web application built with React, TypeScript, and Vite that uses the Hebrew (Jewish) lunisolar calendar instead of the Gregorian calendar.",
+          "fr-CA": "Une application web de calendrier construite avec React, TypeScript et Vite qui utilise le calendrier luni-solaire hébraïque (juif) au lieu du calendrier grégorien."
+        }),
+        url: "https://laislodi.github.io/hebrew_calendar/",
+        github: "https://github.com/laislodi/hebrew_calendar",
+        languages: ["HTML5", "CSS3", "Typescript", "React", "Vite"],
+        technologies: [],
+        screenshots: [
+          "/src/assets/screenshots/hebrew_calendar/MonthlyView-dark.png",
+          "/src/assets/screenshots/hebrew_calendar/YearlyView-dark.png",
+          "/src/assets/screenshots/hebrew_calendar/WeeklyView-dark.png",
+          "/src/assets/screenshots/hebrew_calendar/MonthlyView-light.png",
+          "/src/assets/screenshots/hebrew_calendar/YearlyView-light.png",
+          "/src/assets/screenshots/hebrew_calendar/WeeklyView-light.png",
+        ]
+      },
+      {
+        name: t({
           en: "Easy Cooking Design",
           "fr-CA": "Easy Cooking Design (Conception de cuisine facile)"
         }),
@@ -36,7 +58,10 @@ export default {
         github: "https://github.com/laislodi/easy-cooking_design",
         languages: ["HTML5", "CSS3", "Javascript"],
         technologies: [],
-        screenshots: []
+        screenshots: [
+          "/src/assets/screenshots/easy_cooking/large_screen_view.png",
+          "/src/assets/screenshots/easy_cooking/large_screen_view_packages.png",
+        ]
       },
       {
         name: t({
@@ -65,7 +90,10 @@ export default {
         github: "https://github.com/laislodi/vancouver-aquarium-map/",
         languages: ["HTML", "CSS3", "Javascript"],
         technologies: ["Google API"],
-        screenshots: []
+        screenshots: [
+          "/src/assets/screenshots/vancouver_aquarium/map-view.png",
+          "/src/assets/screenshots/vancouver_aquarium/satellite-view.png",
+        ]
       },
       {
         name: "Tic-Tac-Toe",
@@ -77,7 +105,9 @@ export default {
         github: "https://github.com/laislodi/tic-tac-toe",
         languages: ["React", "Javascript", "CSS3"],
         technologies: [],
-        screenshots: []
+        screenshots: [
+          "/src/assets/screenshots/tic_tac_toe/home.png",
+        ]
       },
       {
         name: t({
