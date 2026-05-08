@@ -30,7 +30,7 @@ export default function Projects() {
       <ul className="project-list">
         {content && content.projects.map((project, index) => {
           const keyBase = `${project.name}-${index}`;
-          const screenshots = (project.screenshots).map(path => screenshotModules[path.value]?.default).filter(Boolean);
+          const screenshots = project.screenshots.map(path => screenshotModules[path.value]?.default).filter(Boolean);
           const hasScreenshots = screenshots.length > 0;
           return (
             <li key={keyBase} className="project-info">
