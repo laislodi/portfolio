@@ -90,6 +90,72 @@ img.text-color {
   width: 1.5rem;
 }
 
+.screenshots-btn {
+  margin-top: auto;
+  padding: 6px 14px;
+  background-color: var(--accent2-transparent);
+  color: var(--text);
+  border: 2px solid var(--bg1);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  align-self: center;
+}
+
+.screenshots-btn:hover {
+  box-shadow: 0 0 6px var(--text);
+}
+
+.screenshots-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.screenshots-modal {
+  position: relative;
+  background-color: var(--bg2);
+  border-radius: 10px;
+  padding: 40px 20px 20px;
+  max-width: 90vw;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.screenshots-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.3rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.screenshots-close:hover {
+  opacity: 0.7;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.screenshot-img {
+  width: 100%;
+  max-height: 700px;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
 @media(min-width: 1280px) {
   .project-info {
     flex-basis: 25%;
