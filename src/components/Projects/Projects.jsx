@@ -76,7 +76,9 @@ export default function Projects() {
             <button className="screenshots-close" onClick={() => setActiveScreenshots(null)}>✕</button>
             <div className="screenshots-grid">
               {activeScreenshots.map((src, i) => (
-                <img key={i} src={src} alt={`Screenshot ${i + 1}`} className="screenshot-img" />
+                <a href={src} target='_blank'>
+                  <img key={i} src={src} alt={`Screenshot ${i + 1}`} className="screenshot-img" />
+                </a>
               ))}
             </div>
           </div>
