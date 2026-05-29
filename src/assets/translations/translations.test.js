@@ -11,11 +11,11 @@ const mockHeaderContent = {
     },
     aboutMe: {
       en: 'About me',
-      'fr-CA': 'Sur moi'
+      'fr-CA': 'À propos de moi'
     },
     summary: {
       en: 'Hello, I am a Full Stack Developer',
-      'fr-CA': 'Salut, Je sui une Développeuse Full Stack'
+      'fr-CA': 'Bonjour, je suis une Développeuse Full Stack'
     },
     linkedIn: 'https://www.linkedin.com/in/laislodi/'
   }
@@ -25,10 +25,10 @@ const mockMenuContent = {
   key: 'menu_content',
   content: {
     menuList: [
-      { title: { en: 'Portfolio', 'fr-CA': 'Portefeuille' }, href: '#' },
+      { title: { en: 'Portfolio', 'fr-CA': 'Portfolio' }, href: '#' },
       { title: { en: 'Projects', 'fr-CA': 'Projets' }, href: '#projects' },
       { title: { en: 'Experience', 'fr-CA': 'Expérience' }, href: '#experience' },
-      { title: { en: 'Education', 'fr-CA': 'Éducation' }, href: '#education' },
+      { title: { en: 'Education', 'fr-CA': 'Études' }, href: '#education' },
       { title: { en: 'Soft Skills', 'fr-CA': 'Compétences générales' }, href: '#soft-skills' },
       { title: { en: 'Tech Skills', 'fr-CA': 'Compétences techniques' }, href: '#tech-skills' },
       { title: { en: 'Contact', 'fr-CA': 'Contact' }, href: '#contact' }
