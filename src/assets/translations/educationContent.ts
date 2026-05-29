@@ -36,11 +36,11 @@ export default {
   content: {
     educationTitle: t({
       en: "Education",
-      "fr-CA": "Éducation"
+      "fr-CA": "Études"
     }),
     education: [
       {
-        institution: "Universidade Federal do Espirito Santo",
+        institution: "Universidade Federal do Espírito Santo",
         course: t({
           en: "Computer Engineering",
           "fr-CA": "Génie informatique"
@@ -57,10 +57,10 @@ export default {
         year: 2015
       },
       {
-      institution: "Centro Federal de Educacao Tecnologica do Espirito Santo",
+      institution: "Centro Federal de Educação Tecnológica do Espírito Santo",
       course: t({
         en: "High School",
-        "fr-CA": "École Secondaire"
+        "fr-CA": "École secondaire"
       }),
       location: {
         city: "Colatina",
