@@ -37,14 +37,14 @@ export default {
   content: {
     sectionTitle: t({
       en: "Tech Skills",
-      "fr-CA": "Compétences Techniques"
+      "fr-CA": "Compétences techniques"
     }),
     filter: {
       selectAll: {
         option: "selectAll",
         description: t({
           en: "Select All",
-          "fr-CA": "Sélectionner Tout"
+          "fr-CA": "Sélectionner tout"
         }),
       },
       options: [
@@ -80,7 +80,7 @@ export default {
           option: SKILL_TYPE.DATABASE,
           description: t({
             en: "Database",
-            "fr-CA": "Base de Données"
+            "fr-CA": "Base de données"
           })
         }
       ]
@@ -149,7 +149,7 @@ export default {
       }, {
         imagePath: "techskills/ts.svg",
         types: [SKILL_TYPE.FRONTEND],
-        title: "Typescript"
+        title: "TypeScript"
       }, {
         imagePath: "techskills/html.svg",
         types: [SKILL_TYPE.FRONTEND],
@@ -157,7 +157,7 @@ export default {
       }, {
         imagePath: "techskills/js.svg",
         types: [SKILL_TYPE.FRONTEND],
-        title: "Javascript"
+        title: "JavaScript"
       }, {
         imagePath: "techskills/css3.svg",
         types: [SKILL_TYPE.FRONTEND],
