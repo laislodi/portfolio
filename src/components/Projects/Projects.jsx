@@ -10,12 +10,12 @@ export default function Projects() {
   const [activeScreenshots, setActiveScreenshots] = useState(null);
 
   const check_code = t({
-    en: "Check the code!",
-    "fr-CA": "Regarde ça!"
+    en: "See the code!",
+    "fr-CA": "Consulter le code !"
   });
   const try_it = t({
     en: "Try it!",
-    "fr-CA": "Essaye le!"
+    "fr-CA": "Essayez !"
   });
   const screenshots_label = t({
     en: "Screenshots",
