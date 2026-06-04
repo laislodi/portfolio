@@ -30,7 +30,7 @@ export default {
         }),
         description: t({
           en: "A calendar web application built with React, TypeScript, and Vite that uses the Hebrew (Jewish) lunisolar calendar instead of the Gregorian calendar.",
-          "fr-CA": "Une application web de calendrier construite avec React, TypeScript et Vite qui utilise le calendrier luni-solaire hébraïque (juif) au lieu du calendrier grégorien."
+          "fr-CA": "Un calendrier construite avec React, TypeScript et Vite qui utilise le calendrier luni-solaire hébraïque (juif) au lieu du calendrier grégorien."
         }),
         url: "https://laislodi.github.io/hebrew_calendar/",
         github: "https://github.com/laislodi/hebrew_calendar",
@@ -70,7 +70,7 @@ export default {
         }),
         description: t({
           en: "Rock, Paper, Scissors, Lizard, Spock is a game of chance that expands the traditional game of Rock, Paper, Scissors. It is first used to settle a dispute about what to watch on TV between Sheldon and Raj in 'The Lizard-Spock Expansion'",
-          "fr-CA": "Roche, papier, ciseaux, lézard et Spock est un jeu de hasard qui enrichit le jeu traditionnel toche, papier, ciseaux. Il a été utilisé pour la première fois afin de régler un différend entre Sheldon Cooper et Raj Koothrappali au sujet de l'émission de télévision à regarder, dans l'épisode \"L'extension Lézard-Spock\" de la série The Big Bang Theory."
+          "fr-CA": "Roche, Papier, Ciseaux, Lézard and Spock est un jeu de hasard qui est l'appellation québécoise du traditionnel Pierre-Feuille-Ciseaux. Il a été utilisé pour la première fois afin de régler un différend entre Sheldon Cooper et Raj Koothrappali au sujet de l'émission de télévision à regarder, dans l'épisode \"L'extension Lézard-Spock\" de la série The Big Bang Theory."
         }),
         github: "https://github.com/laislodi/Rock-Paper-Scissors-Lizard-Spock",
         languages: ["Python"],
@@ -112,11 +112,11 @@ export default {
       {
         name: t({
           en: "Investment Calculator",
-          "fr-CA": "Calculateur de placement"
+          "fr-CA": "Calculatrice de placement"
         }),
         description: t({
           en: "Investor Calculator is a React single-page application that helps users estimate the growth of their investments over time. By inputting key financial details, the app calculates the future value of an investment based on compound interest.",
-          "fr-CA": "Calculateur de placement est une application avec React qui permet d'estimer la croissance d'um investissement au fil du temps. En saisissant des informations financières clés, l'application calcule la valeur future d'un investissement en fonction des intérêts composés."
+          "fr-CA": "Calculatrice de placement est une application avec React qui permet d'estimer la croissance d'um investissement au fil du temps. En saisissant des informations financières clés, l'application calcule la valeur future d'un investissement en fonction des intérêts composés."
         }),
         url: "https://laislodi.github.io/investment-calculator/",
         github: "https://github.com/laislodi/investment-calculator/",
@@ -131,7 +131,7 @@ export default {
         }),
         description: t({
           en: "React application that manages projects with checkable tasks. It deals with context, refs, portal and routes. The application has dark and light modes.",
-          "fr-CA": "Application React de gestion de projets avec des tâches vérifiables. Elle gère le contexte, les références, le portail et les routes. L'application offre un mode clair et un mode sombre."
+          "fr-CA": "Une application en React de gestion de projets avec des tâches vérifiables. Elle gère le contexte, les références, le portail et les routes. L'application offre un mode clair et un mode sombre."
         }),
         url: "https://laislodi.github.io/project-management/",
         github: "https://github.com/laislodi/project-management/",
