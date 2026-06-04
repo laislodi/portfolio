@@ -21,7 +21,7 @@ export default {
       {
         title: t({
           en: "Portfolio",
-          "fr-CA": "Portefeuille"
+          "fr-CA": "Portfolio"
         }), 
         href: "#"
       }, {
@@ -31,7 +31,7 @@ export default {
         title: t({en: "Experience", "fr-CA": "Expérience"}), 
         href: "#experience"
       }, {
-        title: t({en: "Education", "fr-CA": "Éducation"}), 
+        title: t({en: "Education", "fr-CA": "Études"}), 
         href: "#education"
       }, {
         title: t({en: "Soft Skills", "fr-CA": "Compétences Générales"}), 

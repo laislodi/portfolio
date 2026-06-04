@@ -48,7 +48,7 @@ function job_type(job_type: JobType) {
   else if (job_type === JobType["On-site"])
     jobType = t({
       en: "On Site",
-      "fr-CA": "Sur Site"
+      "fr-CA": "Sur site"
     })
   return jobType
 }
@@ -78,7 +78,7 @@ export default {
           to: {
             month: t({
               en: "Feb",
-              "fr-CA": "Fev"
+              "fr-CA": "Févr"
             }),
             year: 2026
           }
@@ -96,11 +96,11 @@ export default {
         tasks: [
           t({
             en: "Develop and maintain client-facing web applications using React and TypeScript, translating business requirements and Jira user stories into scalable UI components.",
-            "fr-CA": "Développer et maintenir des applications Web destinées aux clients en utilisant React et TypeScript, en traduisant les exigences commerciales et les récits utilisateurs Jira en composants d'interface utilisateur évolutifs."
+            "fr-CA": "Développer et maintenir des applications Web destinées aux clients en utilisant React et TypeScript, en traduisant les exigences commerciales et histoires d'utilisateur Jira en composants d'interface utilisateur évolutifs."
           }),
           t({
             en: "Collaborate with backend engineers, designers, and product stakeholders to ensure all deliverables meet client requirements and adhere to established design specifications and best practices",
-            "fr-CA": "Collaborer avec les ingénieurs backend, les concepteurs et les intervenants du produit pour s'assurer que tous les livrables répondent aux exigences du client et respectent les spécifications de conception établies et les meilleures pratiques."
+            "fr-CA": "Collaborer avec les ingénieurs backend, les concepteurs et les parties prenantes du produit pour s'assurer que tous les livrables répondent aux exigences du client et respectent les spécifications de conception établies et les meilleures pratiques."
           }),
           t({
             en: "Refine user stories and translate design mockups into functional, responsive UI components.",
@@ -117,7 +117,7 @@ export default {
         company: "Arctic Wolf",
         title: t({
           en: "Software Developer",
-          "fr-CA": "Développeuse de Software" 
+          "fr-CA": "Développeuse de logiciels" 
         }),
         date: {
           from: {
@@ -130,7 +130,7 @@ export default {
           to: {
             month: t({
               en: "Aug",
-              "fr-CA": "Aout"
+              "fr-CA": "Août"
             }),
             year: 2024
           }
@@ -148,7 +148,7 @@ export default {
         tasks: [
           t({
             en: "Delivered data-driven dashboard leveraging Typescript and React aggregating Zendesk ticket data and key metrics, enabling teams to optimize support processes, and increasing team efficiency.",
-            "fr-CA": "J'ai conçu un tableau de bord basé sur les données, utilisant Typescript et React, qui regroupe les données des billets Zendesk et les indicateurs clés, permettant aux équipes d'optimiser les processus de soutien et d'accroître leur efficacité."
+            "fr-CA": "J'ai conçu un tableau de bord basé sur les données, utilisant Typescript et React, qui regroupe les données des tickets Zendesk et les indicateurs clés, permettant aux équipes d'optimiser les processus de soutien et d'accroître leur efficacité."
           }),
           t({
             en: "Collaborated with UX/UI designers to translate designs into visually appealing and engaging, functional user interfaces.",
@@ -164,7 +164,7 @@ export default {
           }),
           t({
             en: "Improved test coverage integrating Cypress testing best practices, ensuring robust feature delivery and seamless deployments.",
-            "fr-CA": "Couverture de test améliorée intégrant les meilleures pratiques de test Cypress, garantissant une livraison de fonctionnalités robustes et des déploiements sans faille."
+            "fr-CA": "Couverture de test améliorée intégrant les meilleures pratiques de test Cypress, garantissant une livraison de fonctionnalités robustes et des déploiements sans accroc."
           })
         ],
         technologies: ["Golang", "Postgres", "REST", "React", "Hooks", "Typescript", "ECMA Script", "CSS", "AWS",
@@ -186,7 +186,7 @@ export default {
           },
           to: {
             month: t({
-              en: "Sept",
+              en: "Sep",
               "fr-CA": "Sept"
             }),
             year: 2022
@@ -248,7 +248,7 @@ export default {
           },
           to: {
             month: t({
-              en: "Sept",
+              en: "Sep",
               "fr-CA": "Sept"
             }),
             year: 2019
@@ -291,7 +291,7 @@ export default {
           from: {
             month: t({
               en: "Oct",
-              "fr-CA": "Auot"
+              "fr-CA": "Oct"
             }),
             year: 2017
           },
