@@ -25,6 +25,36 @@ export default {
     projects: [
       {
         name: t({
+          en: 'Budget Maker App',
+          "fr-CA": 'Créateur de Budget'
+        }),
+        description: t({
+          en: 'A full-stack budgeting application built on the zero-based budget principle — every dollar of income is assigned a job before the month begins, so the balance always reaches exactly $0.',
+          "fr-CA": "Une application full-stack budgétaire basée sur le principe du budget à base zéro: chaque dollar de revenu se voit attribuer une tâche avant le début du mois, de sorte que le solde atteigne toujours exactement 0$."
+        }),
+        url: 'https://laislodi.github.io/personal-budget-maker' ,
+        github: 'https://github.com/laislodi/easy-cooking_design',
+        languages: ['HTML5', 'CSS3', 'Typescript'],
+        technologies: ['React', 'Vite', 'GitHub Pages'],
+        screenshots: ['/src/assets/screenshots/budget_maker/dashboard.png']
+      },
+      {
+        name: t({
+          en: "Budget Maker API",
+          "fr-CA": "l'API de la Créateur de Budget"
+        }),
+        description: t({
+          en: 'The API for the Budget Maker App',
+          "fr-CA": "L'API de l'application Créateur de Budget"
+        }),
+        github: 'https://github.com/laislodi/personal-budget-maker-api',
+        url: 'https://personal-budget-maker.onrender.com/docs',
+        languages: ['Python', 'FastAPI', 'Postgres'],
+        technologies: ['Render', 'Alembic', 'Docker', 'sqlite', 'Pytest', 'JWT'],
+        screenshots: []
+      },
+      {
+        name: t({
           en: "Hebrew Calendar",
           "fr-CA": "Calendrier hébraïque (Juif)"
         }),
@@ -34,8 +64,8 @@ export default {
         }),
         url: "https://laislodi.github.io/hebrew_calendar/",
         github: "https://github.com/laislodi/hebrew_calendar",
-        languages: ["HTML5", "CSS3", "Typescript", "React", "Vite"],
-        technologies: [],
+        languages: ["HTML5", "CSS3", "Typescript"],
+        technologies: ["React", "Vite"],
         screenshots: [
           "/src/assets/screenshots/hebrew_calendar/MonthlyView-dark.png",
           "/src/assets/screenshots/hebrew_calendar/YearlyView-dark.png",
@@ -103,8 +133,8 @@ export default {
         }),
         url: "https://laislodi.github.io/tic-tac-toe/",
         github: "https://github.com/laislodi/tic-tac-toe",
-        languages: ["React", "Javascript", "CSS3"],
-        technologies: [],
+        languages: ["Javascript", "CSS3"],
+        technologies: ["React"],
         screenshots: [
           "/src/assets/screenshots/tic_tac_toe/home.png",
         ]
@@ -120,8 +150,8 @@ export default {
         }),
         url: "https://laislodi.github.io/investment-calculator/",
         github: "https://github.com/laislodi/investment-calculator/",
-        languages: ["React", "Javascript", "CSS3"],
-        technologies: [],
+        languages: ["Javascript", "CSS3"],
+        technologies: ["React"],
         screenshots: []
       },
       {
@@ -135,8 +165,8 @@ export default {
         }),
         url: "https://laislodi.github.io/project-management/",
         github: "https://github.com/laislodi/project-management/",
-        languages: ["React", "React Routes", "Javascript", "Tailwind"],
-        technologies: [],
+        languages: ["Javascript", "Tailwind"],
+        technologies: ["React", "React Routes"],
         screenshots: []
       }
     ]
