@@ -4,6 +4,8 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { useIntlayer } from 'react-intlayer';
 import Projects from './Projects';
 
+vi.mock('/github-logo.png', () => ({ default: 'github-logo.png' }));
+
 vi.mock('react-intlayer', () => ({
   useIntlayer: vi.fn(),
   t: (obj) => obj.en ?? ''
