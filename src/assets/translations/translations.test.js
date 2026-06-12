@@ -11,7 +11,7 @@ const mockHeaderContent = {
     },
     aboutMe: {
       en: 'About me',
-      'fr-CA': 'Sur moi'
+      'fr-CA': 'À propos de moi'
     },
     summary: {
       en: 'Hello, I am a Full Stack Developer',
@@ -28,7 +28,7 @@ const mockMenuContent = {
       { title: { en: 'Portfolio', 'fr-CA': 'Portfolio' }, href: '#' },
       { title: { en: 'Projects', 'fr-CA': 'Projets' }, href: '#projects' },
       { title: { en: 'Experience', 'fr-CA': 'Expérience' }, href: '#experience' },
-      { title: { en: 'Education', 'fr-CA': 'Éducation' }, href: '#education' },
+      { title: { en: 'Education', 'fr-CA': 'Études' }, href: '#education' },
       { title: { en: 'Soft Skills', 'fr-CA': 'Compétences générales' }, href: '#soft-skills' },
       { title: { en: 'Tech Skills', 'fr-CA': 'Compétences techniques' }, href: '#tech-skills' },
       { title: { en: 'Contact', 'fr-CA': 'Contact' }, href: '#contact' }
