@@ -59,7 +59,7 @@ describe('Header Integration Tests (Enhanced Mocks)', () => {
       name: 'Lais Gabrielle Lodi',
       title: 'Développeuse Full Stack',
       summary: 'Salut, Je suis une Développeuse Full Stack avec plus de 5 ans d\'expérience...',
-      aboutMe: 'Sur moi',
+      aboutMe: 'À propos de moi',
       linkedIn: 'https://www.linkedin.com/in/laislodi/'
     };
 
@@ -68,7 +68,7 @@ describe('Header Integration Tests (Enhanced Mocks)', () => {
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Lais Gabrielle Lodi');
     expect(screen.getByRole('heading', { level: 3 })).toHaveTextContent('Développeuse Full Stack');
     expect(screen.getByText(/Salut, Je suis une Développeuse Full Stack/)).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Sur moi' })).toHaveAttribute('href', '#projects');
+    expect(screen.getByRole('link', { name: 'À propos de moi' })).toHaveAttribute('href', '#projects');
     expect(screen.getByRole('link', { name: 'LinkedIn' })).toHaveAttribute('href', 'https://www.linkedin.com/in/laislodi/');
   });
 
@@ -79,7 +79,7 @@ describe('Header Integration Tests (Enhanced Mocks)', () => {
 
     // Update to French mock and rerender
     mockContent.title = 'Développeuse Full Stack';
-    mockContent.aboutMe = 'Sur moi';
+    mockContent.aboutMe = 'À propos de moi';
 
     rerender(<Header />);
 

@@ -19,7 +19,7 @@ test.describe('Locale switching', () => {
     await clickLocale(page, 'fr-CA');
 
     await expect(page.locator('header h3')).toContainText('Développeuse Full Stack');
-    await expect(page.locator('.about-me-buttons .about-me')).toContainText('Sur moi');
+    await expect(page.locator('.about-me-buttons .about-me')).toContainText('À propos de moi');
   });
 
   test('switches header content back to English when en is clicked', async ({ page }) => {
@@ -43,7 +43,7 @@ test.describe('Locale switching', () => {
 
     await expect(page.locator('.menu-option a').filter({ hasText: 'Projets' })).toBeVisible();
     await expect(page.locator('.menu-option a').filter({ hasText: 'Expérience' })).toBeVisible();
-    await expect(page.locator('.menu-option a').filter({ hasText: 'Éducation' })).toBeVisible();
+    await expect(page.locator('.menu-option a').filter({ hasText: 'Études' })).toBeVisible();
     await expect(page.locator('.menu-option a').filter({ hasText: 'Compétences Générales' })).toBeVisible();
     await expect(page.locator('.menu-option a').filter({ hasText: 'Compétences Techniques' })).toBeVisible();
   });
@@ -51,7 +51,7 @@ test.describe('Locale switching', () => {
   test('switches section headings to French', async ({ page }) => {
     await clickLocale(page, 'fr-CA');
 
-    await expect(page.locator('#education h1')).toContainText('Éducation');
+    await expect(page.locator('#education h1')).toContainText('Études');
     await expect(page.locator('#experience h1')).toContainText('Expérience');
     await expect(page.locator('#projects h1')).toContainText('Projets');
   });
