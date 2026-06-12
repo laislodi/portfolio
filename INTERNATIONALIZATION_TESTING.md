@@ -21,7 +21,7 @@ The development server is running at `http://localhost:5175/portfolio/`
    - **French Canadian (FR-CA):**
      - Name: "Lais Gabrielle Lodi" (unchanged)
      - Title: "Développeuse  Full Stack"
-     - About Me button: "Sur moi"
+     - About Me button: "À propos de moi"
      - Summary: "Salut, Je suis une Développeuse Full Stack..."
 
 3. **Menu Component Translation**
@@ -29,7 +29,7 @@ The development server is running at `http://localhost:5175/portfolio/`
      - Portfolio, Projects, Experience, Education, Soft Skills, Tech Skills, Contact
 
    - **French Canadian (FR-CA):**
-     - Portefeuille, Projets, Expérience, Éducation, Compétences générales, Compétences techniques, Contact
+     - Portfolio, Projets, Expérience, Études, Compétences générales, Compétences techniques, Contact
 
 ## Configuration Files
 

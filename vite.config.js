@@ -1,6 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { intlayerPlugin } from "vite-intlayer";
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [react(), intlayerPlugin()],
@@ -11,6 +15,9 @@ export default defineConfig({
     environment: 'jsdom',
     pool: 'forks',
     include: ['src/**/*.{test,spec}.{js,jsx,ts,tsx}'],
+    alias: {
+      '/github-logo.png': path.resolve(__dirname, 'public/github-logo.png')
+    },
     deps: {
       optimizer: {
         web: {

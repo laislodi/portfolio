@@ -15,7 +15,7 @@ const mockHeaderContent = {
     },
     summary: {
       en: 'Hello, I am a Full Stack Developer',
-      'fr-CA': 'Bonjour, je suis une Développeuse Full Stack'
+      'fr-CA': 'Salut, je suis une Développeuse Full Stack'
     },
     linkedIn: 'https://www.linkedin.com/in/laislodi/'
   }
@@ -54,13 +54,13 @@ describe('Translation Content Tests (Mocked)', () => {
     it('should have English and French Canadian translations for aboutMe', () => {
       const aboutMeTranslations = mockHeaderContent.content.aboutMe;
       expect(aboutMeTranslations.en).toBe('About me');
-      expect(aboutMeTranslations['fr-CA']).toBe('Sur moi');
+      expect(aboutMeTranslations['fr-CA']).toBe('À propos de moi');
     });
 
     it('should have English and French Canadian translations for summary', () => {
       const summaryTranslations = mockHeaderContent.content.summary;
       expect(summaryTranslations.en).toContain('Hello, I am a Full Stack Developer');
-      expect(summaryTranslations['fr-CA']).toContain('Salut, Je sui une Développeuse Full Stack');
+      expect(summaryTranslations['fr-CA']).toContain('Salut, je suis une Développeuse Full Stack');
     });
   });
 
@@ -95,7 +95,7 @@ describe('Translation Content Tests (Mocked)', () => {
     it('should have French Canadian translations for all menu items', () => {
       const menuList = mockMenuContent.content.menuList;
       const expectedFrenchTitles = [
-        'Portefeuille', 'Projets', 'Expérience', 'Éducation',
+        'Portfolio', 'Projets', 'Expérience', 'Études',
         'Compétences générales', 'Compétences techniques', 'Contact' // Fixed: Contact should be Contact
       ];
 
