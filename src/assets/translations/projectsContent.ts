@@ -30,10 +30,10 @@ export default {
         }),
         description: t({
           en: 'A full-stack budgeting application built on the zero-based budget principle — every dollar of income is assigned a job before the month begins, so the balance always reaches exactly $0.',
-          "fr-CA": "Une application full-stack budgétaire basée sur le principe du budget à base zéro: chaque dollar de revenu se voit attribuer une tâche avant le début du mois, de sorte que le solde atteigne toujours exactement 0$."
+          "fr-CA": "Une application de gestion budgétaire full-stack basée sur le principle du budget à base zero: chaque dollar de revenu est affectée à un usage précis une tâche avant le début du mois, de sorte que soit toujours de 0$."
         }),
         url: 'https://laislodi.github.io/personal-budget-maker' ,
-        github: 'https://github.com/laislodi/easy-cooking_design',
+        github: 'https://github.com/laislodi/personal-budget-maker',
         languages: ['HTML5', 'CSS3', 'Typescript'],
         technologies: ['React', 'Vite', 'GitHub Pages'],
         screenshots: ['/src/assets/screenshots/budget_maker/dashboard.png']
