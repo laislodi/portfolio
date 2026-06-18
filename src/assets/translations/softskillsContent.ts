@@ -34,7 +34,7 @@ export default {
           en: "Mentoring is one of my passions. I've mentored co-ops at Tasktop and I fell in love with guiding and nourishing younger minds.",
           "fr-CA": "Le mentorat est une de mes passions. J'ai encadré des stagiaires chez Tasktop et j'ai adoré guider et accompagner les jeunes esprits.",
           es: "La mentoría es una de mis pasiones. He sido mentora de estudiantes en prácticas en Tasktop y me enamoré de guiar y nutrir las mentes jóvenes.",
-          "pt-BR": "A mentoria é uma das minhas paixões. Já fui mentor de estagiários na Tasktop e me apaixonei por orientar e nutrir mentes mais jovens."
+          "pt-BR": "A mentoria é uma das minhas paixões. Já fui mentora de estagiários na Tasktop e me apaixonei por orientar e nutrir mentes mais jovens."
         }),
       },
       {
@@ -64,7 +64,7 @@ export default {
           en: "I've facilitated weekly deployment process, updated documentation, transferred knowledge to another team to ensure smooth operations. I've led discussions about how to best design and code GraphQL APIs using Django.",
           "fr-CA": "J'ai facilité le processus de déploiement hebdomadaire, mis à jour la documentation et transféré les connaissances à une autre équipe afin d'assurer le bon déroulement des opérations. J'ai animé des discussions sur la conception et le développement optimaux d'API GraphQL avec Django.",
           es: "He facilitado el proceso de despliegue semanal, actualizado la documentación y transferido conocimientos a otro equipo para garantizar el buen funcionamiento. He liderado debates sobre la mejor manera de diseñar y programar API GraphQL con Django.",
-          "pt-BR": "Facilitei o processo de implantação semanal, atualizei a documentação e compartilhei conhecimento com outra equipe para garantir operações tranquilas. Lideri discussões sobre a melhor forma de projetar e codificar APIs GraphQL usando Django."
+          "pt-BR": "Facilitei o processo de implantação semanal, atualizei a documentação e compartilhei conhecimento com outra equipe para garantir operações tranquilas. Liderei discussões sobre a melhor forma de projetar e codificar APIs GraphQL usando Django."
         }),
       },
       {
@@ -108,7 +108,7 @@ export default {
         description: t({
           en: "I try to find the best timing and the best way to give feedback. I always correct people in private. I always compliment in public. Giving constructive feedback is not just saying what is wrong, but finding out what we can do to get better together, as a team.",
           "fr-CA": "J'essaie de trouver le moment et la manière les plus pertinents pour donner du feedback. Je corrige toujours les gens en privé et je fais toujours des compliments en public. Donner un feedback constructif, ce n'est pas seulement pointer du doigt ce qui ne va pas, mais aussi identifier ensemble les axes d'amélioration, en équipe.",
-          es: "Intento encontrar el momento y la manera más adecuados para dar retroalimentación. Siempre corrijo en privado y siempre felicito en público. Dar retroalimentación constructiva no se trata solo de señalar los errores, sino de descubrir cómo podemos mejorar juntos, como equipo.",
+          es: "Intento encontrar el momento y la manera más adecuados para dar feedback. Siempre corrijo en privado y siempre felicito en público. Dar feedback constructiva no se trata solo de señalar los errores, sino de descubrir cómo podemos mejorar juntos, como equipo.",
           "pt-BR": "Procuro encontrar o melhor momento e a melhor forma de dar feedback. Sempre corrijo as pessoas em particular. Sempre elogio em público. Dar feedback construtivo não é apenas apontar o que está errado, mas descobrir o que podemos fazer para melhorar juntos, como equipe."
         }),
       },
@@ -123,7 +123,7 @@ export default {
         description: t({
           en: "I love learning! I am always learning a new language, new technology, or new hobby. I'm constantly updating this portfolio with new projects where I can expand my capacities.",
           "fr-CA": "J'adore apprendre! J'apprends constamment une nouvelle langue, une nouvelle technologie ou je m'adonne à un nouveau loisir. Je mets à jour ce portfolio régulièrement avec de nouveaux projets qui me permettent de développer mes compétences.",
-          es: "¡Me encanta aprender! Siempre estoy aprendiendo un nuevo idioma, una nueva tecnología o una nueva afición. Constantemente actualizo este portafolio con nuevos proyectos donde puedo ampliar mis capacidades.",
+          es: "¡Me encanta aprender! Siempre estoy aprendiendo un nuevo idioma, una nueva tecnología o una nueva afición. Constantemente actualizo esta cartera con nuevos proyectos donde puedo ampliar mis capacidades.",
           "pt-BR": "Eu amo aprender! Estou sempre aprendendo um novo idioma, uma nova tecnologia ou um novo hobby. Estou constantemente atualizando este portfólio com novos projetos onde posso expandir minhas habilidades."
         }),
       },
@@ -133,12 +133,12 @@ export default {
           en: "Investigative",
           "fr-CA": "Esprit investigateur",
           es: "Investigativa",
-          "p-BR": "Investigativa"
+          "pt-BR": "Investigativa"
         }),
         description: t({
           en: "At Arctic Wolf, I refactored 1,600+ lines of legacy Golang integration tests. At Tasktop, I investigated and fixed false positive tests improving test reliability and effectiveness.",
           "fr-CA": "Chez Arctic Wolf, j'ai remanié plus de 1 600 lignes de tests d'intégration Golang existants. Chez Tasktop, j'ai analysé et corrigé les faux positifs, améliorant ainsi la fiabilité et l'efficacité des tests.",
-          es: "En Arctic Wolf, refactoricé más de 1600 líneas de pruebas de integración heredadas de Golang. En Tasktop, investigué y corregí pruebas que generaban falsos positivos, mejorando así la fiabilidad y la eficacia de las pruebas.",
+          es: "En Arctic Wolf, refactoricé más de 1600 líneas de testes de integración heredadas de Golang. En Tasktop, investigué y corregí testes que generaban falsos positivos, mejorando así la fiabilidad y la eficacia de los testes.",
           "pt-BR": "Na Arctic Wolf, refatorei mais de 1.600 linhas de testes de integração legados em Golang. Na Tasktop, investiguei e corrigi testes com falsos positivos, melhorando a confiabilidade e a eficácia dos testes."
         }),
       },
