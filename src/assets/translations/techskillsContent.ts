@@ -37,14 +37,18 @@ export default {
   content: {
     sectionTitle: t({
       en: "Tech Skills",
-      "fr-CA": "Compétences techniques"
+      "fr-CA": "Compétences techniques",
+      es: "Habilidades Técnicas",
+      "pt-BR": "Habilidades Técnicas"
     }),
     filter: {
       selectAll: {
         option: "selectAll",
         description: t({
           en: "Select All",
-          "fr-CA": "Sélectionner tout"
+          "fr-CA": "Sélectionner tout",
+          es: "Seleccionar todo",
+          "pt-BR": "Selecionar tudo"
         }),
       },
       options: [
@@ -66,11 +70,21 @@ export default {
         },
         {
           option: SKILL_TYPE.COLLABORATION,
-          description: "Collaboration"
+          description: t({
+            en: "Collaboration",
+            "fr-CA": "Collaboration",
+            es: "Colaboración",
+            "pt-BR": "Colaboração"
+          })
         },
         {
           option: SKILL_TYPE.TESTING,
-          description: "Testing"
+          description: t({
+            en: "Testing",
+            "fr-CA": "Testing",
+            es: "Testes",
+            "pt-BR": "Testes"
+          })
         },
         {
           option: SKILL_TYPE.LINUX,
@@ -80,7 +94,9 @@ export default {
           option: SKILL_TYPE.DATABASE,
           description: t({
             en: "Database",
-            "fr-CA": "Base de données"
+            "fr-CA": "Base de données",
+            es: "Base de datos",
+            "pt-BR": "Bancos de dados"
           })
         }
       ]
