@@ -11,15 +11,21 @@ export default function Projects() {
 
   const check_code = t({
     en: "See the code!",
-    "fr-CA": "Consulter le code !"
+    "fr-CA": "Consulter le code!",
+    es: "Pruébalo!",
+    "pt-BR": "Ver o código!"
   });
   const try_it = t({
     en: "Try it!",
-    "fr-CA": "Essayez !"
+    "fr-CA": "Essayez!",
+    es: "Experiménta-lo!",
+    "pt-BR": "Experimente!"
   });
   const screenshots_label = t({
     en: "Screenshots",
-    "fr-CA": "Captures d'écran"
+    "fr-CA": "Captures d'écran",
+    es: "Capturas de pantalla",
+    "pt-BR": "Capturas de tela"
   });
 
   return (

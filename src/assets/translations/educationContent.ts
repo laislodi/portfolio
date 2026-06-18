@@ -36,14 +36,18 @@ export default {
   content: {
     educationTitle: t({
       en: "Education",
-      "fr-CA": "Études"
+      "fr-CA": "Études",
+      es: "Educación",
+      "pt-BR": "Educação"
     }),
     education: [
       {
         institution: "Universidade Federal do Espírito Santo",
         course: t({
           en: "Computer Engineering",
-          "fr-CA": "Génie informatique"
+          "fr-CA": "Génie informatique",
+          es: "Ingeniería Informática",
+          "pt-BR": "Engenharia de Computação"
         }),
         location: {
           city: "Sao Mateus",
@@ -53,6 +57,8 @@ export default {
         type: t({
           en: "Bachelor",
           "fr-CA": "Baccalauréat",
+          es: "Licenciatura",
+          "pt-BR": "Bacharelado"
         }),
         year: 2015
       },
@@ -60,7 +66,9 @@ export default {
       institution: "Centro Federal de Educação Tecnológica do Espírito Santo",
       course: t({
         en: "High School",
-        "fr-CA": "École secondaire"
+        "fr-CA": "École secondaire",
+        es: "Escuela secundaria",
+        "pt-BR": "Ensino Médio"
       }),
       location: {
         city: "Colatina",
@@ -70,7 +78,12 @@ export default {
       type: "High School",
       year: 2005
     }],
-    certificationTitle: "Certifications",
+    certificationTitle: t({
+      en: "Certifications",
+      "fr-CA": "Certificacions",
+      es: "Certificaciones",
+      "pt": "Certificações"
+    }),
     certifications: [
       {
       name: "React Hooks",
