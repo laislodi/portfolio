@@ -3,6 +3,10 @@ import { expect, it, describe } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Footer from './Footer';
 
+vi.mock('react-intlayer', () => ({
+  t: (translations) => translations.en
+}));
+
 describe('Footer', () => {
   it('should render all contact links', () => {
     const contacts = [
