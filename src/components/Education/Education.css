@@ -27,6 +27,92 @@
   flex-basis: 50%;
 }
 
+/* ── Languages ── */
+.languages-section-title {
+  margin-top: 40px;
+}
+
+#education ul.language-list {
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#education ul.language-list li {
+  flex-basis: 300px;
+  flex-grow: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.lang-name {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.lang-overall {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.lang-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.lang-level-badge {
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: var(--accent1);
+}
+
+.lang-bar-track {
+  background-color: color-mix(in srgb, var(--bg1) 60%, transparent);
+  border-radius: 6px;
+  height: 6px;
+  overflow: hidden;
+}
+
+.lang-bar-track--overall {
+  height: 10px;
+}
+
+.lang-bar-fill {
+  height: 100%;
+  background-color: var(--accent1);
+  border-radius: 6px;
+}
+
+.lang-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lang-skill {
+  display: grid;
+  grid-template-columns: 68px 1fr auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-skill-label {
+  font-size: 0.72rem;
+  font-variant: small-caps;
+  opacity: 0.8;
+  white-space: wrap;
+}
+
+.lang-skill-level {
+  font-size: 0.68rem;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
 @media (max-width: 800px) {
   #education ul.certification-list {
     display: flex;
@@ -43,6 +129,10 @@
   }
   #education ul.education-list li {
     flex-basis: 80%;
+  }
+  #education ul.language-list li {
+    flex-basis: 100%;
+    max-width: 100%;
   }
 }
 
