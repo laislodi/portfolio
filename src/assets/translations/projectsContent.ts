@@ -27,6 +27,25 @@ export default {
     projects: [
       {
         name: t({
+          en: 'Endless & Joy Mock Website',
+          "fr-CA": 'Mock Website du Endless & Joy',
+          es: "Mock Website de Endless & Joy",
+          "pt-BR": "Mock Website de Endless & Joy",
+        }),
+        description: t({
+          en: 'A mock website for my entrepreneurship course. A frontend application that gives the user the whole experience of buying a cookie box. The application is written in React/TypeScript.',
+          "fr-CA": "Un site web fictif pour mon cours d'entrepreneuriat. Une application frontale qui offre à l'utilisateur une expérience complète d'achat d'une boîte de biscuits. L'application est développée avec React/TypeScript.",
+          es: "Un sitio web de prueba para mi curso de emprendimiento. Una aplicación frontend que ofrece al usuario la experiencia completa de comprar una caja de galletas. La aplicación está desarrollada con React y TypeScript.",
+          "pt-BR": "Um site fictício para o meu curso de empreendedorismo. Uma aplicação frontend que proporciona ao usuário a experiência completa de comprar uma caixa de cookies. A aplicação foi desenvolvida em React/TypeScript."
+        }),
+        url: 'https://laislodi.github.io/endless-joy/',
+        github: 'https://github.com/laislodi/endless-joy/',
+        languages: ['HTML5', 'CSS3', 'Typescript'],
+        technologies: ['React', 'Vite', 'GitHub Pages'],
+        screenshots: []
+      },
+      {
+        name: t({
           en: 'Budget Maker App',
           "fr-CA": 'Créateur de Budget',
           es: "Creador de Planificación Financiera",
